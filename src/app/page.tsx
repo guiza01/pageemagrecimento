@@ -50,7 +50,7 @@ export default function Home() {
         </button>
 
         {isMenuOpen && (
-          <div className="fixed inset-0 bg-[#382513] bg-opacity-10 backdrop-blur-md flex justify-center items-center transition-all duration-500">
+          <div className="fixed inset-0 bg-[#382513] bg-opacity-10 backdrop-blur-md flex justify-center items-center transition-all duration-500 z-20">
             <div className="w-[80%] h-full bg-[#382513]/50 p-6 flex flex-col justify-center items-center gap-[2rem] rounded-lg shadow-lg ml-auto">
               <a
                 href="#home"
@@ -112,7 +112,7 @@ export default function Home() {
               <span className="font-bold">Resultados duradouros, sem efeitos radicais.</span>
             </p>
 
-            <div className="md:mt-[3rem]">
+            <div className="md:mt-[3rem] relative z-10">
               <button className="bg-[#ffffff] bg-opacity-35 w-full text-white text-[0.875rem] font-semibold py-3 px-6 rounded-lg shadow hover:bg-[#4A3723] md:w-auto md:text-[1rem] font-sans md:py-[1rem] md:px-[4rem] backdrop-blur-sm">
                 Quero saber mais
               </button>
