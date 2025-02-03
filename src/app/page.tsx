@@ -50,46 +50,46 @@ export default function Home() {
         </button>
 
         {isMenuOpen && (
-        <div className="fixed inset-0 bg-[#382513] bg-opacity-10 backdrop-blur-md flex justify-center items-center transition-all duration-500">
-          <div className="w-[80%] h-full bg-[#382513]/50 p-6 flex flex-col justify-center items-center gap-4 rounded-lg shadow-lg ml-auto">
-            <a
-              href="#home"
-              onClick={closeMenu}
-              className="text-lg font-medium text-white hover:text-[#FFF2C0]"
-            >
-              Como funciona?
-            </a>
-            <a
-              href="#kit"
-              onClick={closeMenu}
-              className="text-lg font-medium text-white hover:text-[#FFF2C0]"
-            >
-              Kit exclusivo
-            </a>
-            <a
-              href="#historia"
-              onClick={closeMenu}
-              className="text-lg font-medium text-white hover:text-[#FFF2C0]"
-            >
-              Histórias de Sucesso
-            </a>
-            <a
-              href="#beneficio"
-              onClick={closeMenu}
-              className="text-lg font-medium text-white hover:text-[#FFF2C0]"
-            >
-              Exclusividade e benefícios
-            </a>
-            <a
-              href="#faq"
-              onClick={closeMenu}
-              className="text-lg font-medium text-white hover:text-[#FFF2C0]"
-            >
-              FAQ
-            </a>
+          <div className="fixed inset-0 bg-[#382513] bg-opacity-10 backdrop-blur-md flex justify-center items-center transition-all duration-500">
+            <div className="w-[80%] h-full bg-[#382513]/50 p-6 flex flex-col justify-center items-center gap-4 rounded-lg shadow-lg ml-auto">
+              <a
+                href="#home"
+                onClick={closeMenu}
+                className="text-lg font-medium text-white hover:text-[#FFF2C0]"
+              >
+                Como funciona?
+              </a>
+              <a
+                href="#kit"
+                onClick={closeMenu}
+                className="text-lg font-medium text-white hover:text-[#FFF2C0]"
+              >
+                Kit exclusivo
+              </a>
+              <a
+                href="#historia"
+                onClick={closeMenu}
+                className="text-lg font-medium text-white hover:text-[#FFF2C0]"
+              >
+                Histórias de Sucesso
+              </a>
+              <a
+                href="#beneficio"
+                onClick={closeMenu}
+                className="text-lg font-medium text-white hover:text-[#FFF2C0]"
+              >
+                Exclusividade e benefícios
+              </a>
+              <a
+                href="#faq"
+                onClick={closeMenu}
+                className="text-lg font-medium text-white hover:text-[#FFF2C0]"
+              >
+                FAQ
+              </a>
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
         <div className="p-6 max-w-md mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8 md:p-16">
           <div className="md:items-start md:text-left">
