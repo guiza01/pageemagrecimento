@@ -41,7 +41,7 @@ export default function Home() {
 
   return (
     <div>
-      <div id="home" className="relative min-h-screen bg-gray-100 bg-cover bg-no-repeat bg-[url('/Hero.png')] md:bg-[url('/heroDesktop.png')]">
+      <div id="home" className="relative min-h-screen bg-gray-100 bg-cover bg-no-repeat bg-[url('/Hero.png')] md:bg-[url('/HeroDesktop.png')]">
         <button
           onClick={toggleMenu}
           className="absolute top-4 right-4 z-50 text-2xl text-white md:hidden"
