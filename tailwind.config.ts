@@ -10,7 +10,7 @@ export default {
     extend: {
       fontFamily: {
         albert: ['"Albert Sans"', 'sans-serif'],
-        liberata: ['"Liberata"', 'serif'],
+        literata: ['"Literata"', 'serif'],
       },
       colors: {
         background: "var(--background)",
