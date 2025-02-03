@@ -55,35 +55,35 @@ export default function Home() {
               <a
                 href="#home"
                 onClick={closeMenu}
-                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albertsans"
+                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albert"
               >
                 Como funciona?
               </a>
               <a
                 href="#kit"
                 onClick={closeMenu}
-                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albertsans"
+                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albert"
               >
                 Kit exclusivo
               </a>
               <a
                 href="#historia"
                 onClick={closeMenu}
-                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albertsans"
+                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albert"
               >
                 Histórias de Sucesso
               </a>
               <a
                 href="#beneficio"
                 onClick={closeMenu}
-                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albertsans"
+                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albert"
               >
                 Exclusividade e benefícios
               </a>
               <a
                 href="#faq"
                 onClick={closeMenu}
-                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albertsans"
+                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albert"
               >
                 FAQ
               </a>
@@ -93,7 +93,7 @@ export default function Home() {
 
         <div className="p-6 max-w-md mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8 md:p-16">
           <div className="md:items-start md:text-left">
-            <h2 className="bg-[#F9D689] bg-opacity-10 text-lg text-[#FFF2C0] rounded uppercase font-albertsans mb-5 mt-20 px-3 py-1 inline-block md:text-[1rem] md:px-[1rem] md:py-[0.5rem] md:tracking-[0.1rem] text-[0.875rem] px-[0.75rem] py-[0.38rem]">
+            <h2 className="bg-[#F9D689] bg-opacity-10 text-lg text-[#FFF2C0] rounded uppercase font-albert mb-5 mt-20 px-3 py-1 inline-block md:text-[1rem] md:px-[1rem] md:py-[0.5rem] md:tracking-[0.1rem] text-[0.875rem] px-[0.75rem] py-[0.38rem]">
               RESTAM APENAS 15 VAGAS!
             </h2>
 
@@ -106,7 +106,7 @@ export default function Home() {
               Proteção muscular e resultados duradouros baseados na ciência.
             </p>
 
-            <p className="text-[0.875rem] text-white mb-5 md:text-[1rem] font-albertsans md:leading-[150%] md:text-[#CECECE]">
+            <p className="text-[0.875rem] text-white mb-5 md:text-[1rem] font-albert md:leading-[150%] md:text-[#CECECE]">
               Um programa personalizado que respeita sua individualidade metabólica
               e cuida da sua saúde de forma completa.{" "}
               <span className="font-bold">Resultados duradouros, sem efeitos radicais.</span>
@@ -142,7 +142,7 @@ export default function Home() {
       <div className="relative min-h-screen md:min-h-[60vh] bg-gray-100 bg-pilates bg-cover bg-no-repeat p-6 md:p-16">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between p-6 md:p-16 md:bg-[#FFFFFF] md:bg-opacity-10 md:border-2 md:border-white/20 rounded-lg">
           <div className="mb-10 md:mb-0 md:w-1/2">
-            <h2 className="bg-[#FFF2C0] text-lg text-[#382513] uppercase rounded font-albertsans mb-5 mt-20 px-3 py-1 inline-block">
+            <h2 className="bg-[#FFF2C0] text-lg text-[#382513] uppercase rounded font-albert mb-5 mt-20 px-3 py-1 inline-block">
               O desafio da menopausa
             </h2>
             <h1 className="text-4xl text-white mb-10 font-literata">O que acontece com seu corpo?</h1>
@@ -152,17 +152,17 @@ export default function Home() {
               <h3 className="text-white ml-4 mr-4 flex gap-2 items-center mt-5">
                 <AiOutlineWoman className="text-2xl" color="#F1C183" /> Menopausa
               </h3>
-              <p className="text-white ml-4 mr-4 mt-2 font-albertsans">
+              <p className="text-white ml-4 mr-4 mt-2 font-albert">
                 Durante a menopausa, o corpo feminino sofre alterações hormonais que dificultam a perda de peso.
               </p>
               <h3 className="text-white ml-4 mr-4 flex gap-2 items-center mt-5">
                 <HiArrowTrendingDown className="text-2xl" color="#F1C183" /> Alterações hormonais
               </h3>
-              <p className="text-white ml-4 mr-4 mb-10 mt-2 font-albertsans">
+              <p className="text-white ml-4 mr-4 mb-10 mt-2 font-albert">
                 As mudanças nos níveis de estrogênio e testosterona afetam diretamente o metabolismo e a distribuição de gordura.
               </p>
               <div className="w-[90%] h-[1px] bg-opacity-30 bg-gray-300 my-4 mx-auto"></div>
-              <p className="text-white ml-4 mr-4 mt-8 mb-5 font-albertsans">
+              <p className="text-white ml-4 mr-4 mt-8 mb-5 font-albert">
                 Mas isso não significa que você não possa alcançar seus objetivos de emagrecimento - basta entender o que seu corpo precisa e seguir um programa adaptado à sua realidade.
               </p>
             </div>
@@ -179,10 +179,10 @@ export default function Home() {
               <HiArrowTrendingDown color="#F1C183" />
               Diminuição de Testosterona
             </h1>
-            <p className="text-xl font-albertsans text-gray-500 mb-5">
+            <p className="text-xl font-albert text-gray-500 mb-5">
               A testosterona, responsável pela preservação muscular, também diminui na menopausa. Isso contribui para a perda de massa muscular e aceleração do ganho de peso, conforme estudo.
             </p>
-            <p className="text-lg font-albertsans text-gray-400">
+            <p className="text-lg font-albert text-gray-400">
               Fonte: Journal of Clinical Endocrinology & Metabolism.
             </p>
           </div>
@@ -194,10 +194,10 @@ export default function Home() {
             <HiArrowTrendingDown color="#F1C183" />
             Diminuição de Testosterona
           </h1>
-          <p className="text-xl ml-4 mr-4 flex font-albertsans text-gray-500">
+          <p className="text-xl ml-4 mr-4 flex font-albert text-gray-500">
             A testosterona, responsável pela preservação muscular, também diminui na menopausa. Isso contribui para a perda de massa muscular e aceleração do ganho de peso, conforme estudo.
           </p>
-          <p className="text-lg ml-4 mr-4 flex mt-5 font-albertsans text-gray-400">
+          <p className="text-lg ml-4 mr-4 flex mt-5 font-albert text-gray-400">
             Fonte: Journal of Clinical Endocrinology & Metabolism.
           </p>
         </div>
@@ -210,10 +210,10 @@ export default function Home() {
               <AiOutlineFieldTime color="#F1C183" />
               Metabolismo mais lento
             </h1>
-            <p className="text-xl font-albertsans text-gray-500 mb-5">
+            <p className="text-xl font-albert text-gray-500 mb-5">
               Após a menopausa, seu metabolismo pode cair até 10%. A perda de massa muscular diminui o gasto energético diário, tornando a perda de peso mais difícil.
             </p>
-            <p className="text-lg font-albertsans text-gray-400">
+            <p className="text-lg font-albert text-gray-400">
               Fonte: American Journal of Clinical Nutrition
             </p>
           </div>
@@ -226,10 +226,10 @@ export default function Home() {
             <AiOutlineFieldTime color="#F1C183" />
             Metabolismo mais lento
           </h1>
-          <p className="text-xl ml-4 mr-4 flex font-albertsans text-gray-500">
+          <p className="text-xl ml-4 mr-4 flex font-albert text-gray-500">
             Após a menopausa, seu metabolismo pode cair até 10%. A perda de massa muscular diminui o gasto energético diário, tornando a perda de peso mais difícil.
           </p>
-          <p className="text-lg ml-4 mr-4 flex mt-5 font-albertsans text-gray-400">
+          <p className="text-lg ml-4 mr-4 flex mt-5 font-albert text-gray-400">
             Fonte: American Journal of Clinical Nutrition
           </p>
         </div>
@@ -243,10 +243,10 @@ export default function Home() {
               <AiOutlineWoman color="#F1C183" />
               Redução do Estrogênio
             </h1>
-            <p className="text-xl ml-4 mr-4 flex font-albertsans text-gray-500">
+            <p className="text-xl ml-4 mr-4 flex font-albert text-gray-500">
               A queda do estrogênio durante a menopausa faz com que a gordura se acumule na região abdominal, um fator conhecido por aumentar o risco de doenças metabólicas e cardiovasculares.
             </p>
-            <p className="text-lg ml-4 mr-4 flex mt-5 font-albertsans text-gray-400">
+            <p className="text-lg ml-4 mr-4 flex mt-5 font-albert text-gray-400">
               Fonte: Journal of Clinical Endocrinology & Metabolism.
             </p>
           </div>
@@ -258,10 +258,10 @@ export default function Home() {
             <AiOutlineWoman color="#F1C183" />
             Redução do Estrogênio
           </h1>
-          <p className="text-xl ml-4 mr-4 flex font-albertsans text-gray-500">
+          <p className="text-xl ml-4 mr-4 flex font-albert text-gray-500">
             A queda do estrogênio durante a menopausa faz com que a gordura se acumule na região abdominal, um fator conhecido por aumentar o risco de doenças metabólicas e cardiovasculares.
           </p>
-          <p className="text-lg ml-4 mr-4 flex mt-5 font-albertsans text-gray-400">
+          <p className="text-lg ml-4 mr-4 flex mt-5 font-albert text-gray-400">
             Fonte: Journal of Clinical Endocrinology & Metabolism.
           </p>
         </div>
@@ -284,7 +284,7 @@ export default function Home() {
             <h1 className="text-4xl font-semibold flex gap-2 mb-5 justify-center font-literata">
               Como nosso programa exclusivo ajudará você a emagrecer de forma sustentável?
             </h1>
-            <p className="text-2xl text-gray-500 mx-auto max-w-3xl font-albertsans mb-10">
+            <p className="text-2xl text-gray-500 mx-auto max-w-3xl font-albert mb-10">
               Durante o emagrecimento, a preservação da massa muscular é a chave para manter seu metabolismo ativo. Músculos queimam mais calorias do que gordura, mesmo em repouso. Então, ao preservar seus músculos enquanto você pode perder gordura, você mantém seu metabolismo acelerado.
             </p>
           </div>
@@ -293,7 +293,7 @@ export default function Home() {
             <h1 className="text-3xl ml-4 mr-4 font-semibold flex gap-2 mb-5 font-literata">
               Como nosso programa exclusivo ajudará você a emagrecer de forma sustentável?
             </h1>
-            <p className="text-xl text-gray-500 ml-4 mr-4 flex font-albertsans">
+            <p className="text-xl text-gray-500 ml-4 mr-4 flex font-albert">
               Durante o emagrecimento, a preservação da massa muscular é a chave para manter seu metabolismo ativo. Músculos queimam mais calorias do que gordura, mesmo em repouso. Então, ao preservar seus músculos enquanto você pode perder gordura, você mantém seu metabolismo acelerado.
             </p>
           </div>
@@ -343,7 +343,7 @@ export default function Home() {
               Não é sobre perder peso, mas sobre transformar seu corpo de forma
               <span className="text-[#AC7D53]"> saudável e sustentável.</span>
             </h1>
-            <p className="text-xl flex font-albertsans">
+            <p className="text-xl flex font-albert">
               A sua jornada começa aqui. Agende sua consulta inicial e descubra como podemos ajudar você a alcançar resultados duradouros.
             </p>
             <button className="mt-16 bg-[#341900] w-[90%] text-white text-lg font-semibold py-3 px-6 rounded-2xl">
@@ -369,7 +369,7 @@ export default function Home() {
             Não é sobre perder peso, mas sobre transformar seu corpo de forma
             <span className="text-[#AC7D53]"> saudável e sustentável.</span>
           </h1>
-          <p className="text-xl ml-4 mr-4 flex font-albertsans">
+          <p className="text-xl ml-4 mr-4 flex font-albert">
             A sua jornada começa aqui. Agende sua consulta inicial e descubra como podemos ajudar você a alcançar resultados duradouros.
           </p>
           <button className="mt-16 ml-4 mb-16 mr-4 bg-[#341900] w-[90%] text-white text-lg font-semibold py-3 px-6 rounded-2xl">
@@ -381,14 +381,14 @@ export default function Home() {
       <div>
         <div className="p-6 min-h-screen max-w-md mx-auto bg-clorblur bg-no-repeat lg:hidden">
           <div className="text-center">
-            <h2 className="text-lg px-3 py-1 text-[#FFF2C0] bg-[#F9D689] rounded bg-opacity-10 uppercase font-albertsans mt-8 inline-block">
+            <h2 className="text-lg px-3 py-1 text-[#FFF2C0] bg-[#F9D689] rounded bg-opacity-10 uppercase font-albert mt-8 inline-block">
               Entenda
             </h2>
           </div>
           <h1 className="text-3xl text-center text-white ml-4 mr-4 font-semibold font-literata flex gap-2 items-center mt-8 justify-center">
             Como funciona o Programa Essência?
           </h1>
-          <p className="text-xl text-white text-center mt-8 ml-4 mr-4 flex font-albertsans">
+          <p className="text-xl text-white text-center mt-8 ml-4 mr-4 flex font-albert">
             Nosso programa é baseado em evidências científicas, com métodos validados que garantem que você perca peso sem comprometer sua saúde ou seu metabolismo.
           </p>
 
@@ -432,19 +432,19 @@ export default function Home() {
                 {item.icon}
                 {item.title}
               </h1>
-              <p className="text-white mt-4 font-albertsans">{item.text}</p>
+              <p className="text-white mt-4 font-albert">{item.text}</p>
             </div>
           ))}
         </div>
 
         <div className="hidden lg:flex flex-col items-center bg-clorblur min-h-screen py-16">
-          <h2 className="text-lg px-3 py-1 text-[#FFF2C0] bg-[#F9D689] rounded bg-opacity-10 uppercase font-albertsans mb-8">
+          <h2 className="text-lg px-3 py-1 text-[#FFF2C0] bg-[#F9D689] rounded bg-opacity-10 uppercase font-albert mb-8">
             Entenda
           </h2>
           <h1 className="text-4xl text-center text-white font-semibold font-literata mb-8">
             Como Funciona o Programa Essência?
           </h1>
-          <p className="text-xl text-white text-center max-w-3xl font-albertsans mb-16">
+          <p className="text-xl text-white text-center max-w-3xl font-albert mb-16">
             Nosso programa é baseado em evidências científicas, com métodos validados que garantem que você perca peso sem comprometer sua saúde ou seu metabolismo.
           </p>
 
@@ -497,7 +497,7 @@ export default function Home() {
                 <h1 className="text-xl text-white font-literata mb-4 flex items-center gap-2">
                   {item.icon} {item.title}
                 </h1>
-                <p className="text-white font-albertsans">{item.text}</p>
+                <p className="text-white font-albert">{item.text}</p>
               </div>
             ))}
           </div>
@@ -506,14 +506,14 @@ export default function Home() {
 
       <div id="kit" className="p-3 max-w-md mx-auto relative min-h-screen bg-white bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
         <div className="text-center md:w-1/2">
-          <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albertsans ml-5 mt-8 px-3 py-1 inline-block">
+          <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert ml-5 mt-8 px-3 py-1 inline-block">
             exclusividade essêncial
           </h2>
           <h1 className="text-3xl ml-4 mr-4 font-semibold font-literata gap-2 items-center mb-5 mt-8 text-center md:text-justify">
             Bem-vinda ao primeiro passo da sua
             <span className="font-literata italic"> transformação!</span>
           </h1>
-          <p className="text-xl text-gray-500 font-albertsans ml-4 mr-4 flex md:text-justify">
+          <p className="text-xl text-gray-500 font-albert ml-4 mr-4 flex md:text-justify">
             Cada detalhe foi pensado para tornar sua experiência única e motivadora. Ao se juntar ao nosso programa, você receberá um kit exclusivo, repleto de itens úteis e sofisticados que simbolizam nosso compromisso com o seu bem-estar.
           </p>
           <h1 className="text-3xl text-[#AC7D53] ml-4 mr-4 font-semibold font-literata flex gap-2 mt-8 text-center">
@@ -552,7 +552,7 @@ export default function Home() {
 
       <div id="historia" className="p-3 max-w-md mx-auto relative min-h-screen bg-white bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
         <div className="text-center md:w-full">
-          <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albertsans mt-16 px-3 py-1 inline-block">
+          <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert mt-16 px-3 py-1 inline-block">
             Transformações que inspiram.
           </h2>
           <h1 className="text-3xl text-center font-semibold font-literata gap-2 items-center mb-5 mt-8">
@@ -583,12 +583,12 @@ export default function Home() {
           </div>
 
           <div className="md:w-1/2 flex flex-col gap-4 md:text-left md:ml-8">
-            <h1 className="text-xl gap-2 items-center mb-5 mt-8 font-albertsans">
+            <h1 className="text-xl gap-2 items-center mb-5 mt-8 font-albert">
               “Eu já tinha tentado tantas dietas e academias, mas nenhuma me ajudava de verdade. Com o Programa essência,
               <span className="font-semibold"> finalmente consegui entender meu corpo e alcançar resultados que jamais pensei ser possível!”</span>
             </h1>
-            <p className="text-gray-400 text-xl font-albertsans italic mt-4">- Mariana, 47 anos</p>
-            <p className="text-gray-400 text-xl font-albertsans mt-4">Perdeu 12kg em 6 meses, mais energia e autoestima renovada.</p>
+            <p className="text-gray-400 text-xl font-albert italic mt-4">- Mariana, 47 anos</p>
+            <p className="text-gray-400 text-xl font-albert mt-4">Perdeu 12kg em 6 meses, mais energia e autoestima renovada.</p>
             <div className="flex justify-between mt-16 mb-8">
               <div className="w-[30%] h-[8px] bg-gray-400 my-4 rounded"></div>
               <div className="w-[30%] h-[8px] bg-gray-300 my-4 rounded"></div>
@@ -607,7 +607,7 @@ export default function Home() {
             </div>
             <div className="bg-white mb-8 mx-auto max-w-4xl px-4 relative z-10 md:w-1/2 w-full">
               <div className="text-center">
-                <h1 className="text-lg text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albertsans mb-5 px-2 py-1 inline-block">
+                <h1 className="text-lg text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert mb-5 px-2 py-1 inline-block">
                   exclusividade e benefícios
                 </h1>
               </div>
@@ -644,13 +644,13 @@ export default function Home() {
         </div>
         <div id="equipe">
           <div className="text-center md:w-4/5 mx-auto">
-            <h1 className="text-lg text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albertsans mb-5 px-2 py-1 inline-block">
+            <h1 className="text-lg text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert mb-5 px-2 py-1 inline-block">
               Conheça a equipe que vai cuidar de você
             </h1>
             <h1 className="mb-4 text-4xl font-literata flex items-center justify-center gap-2">
               Uma equipe dedicada ao seu sucesso
             </h1>
-            <p className="text-lg font-albertsans text-gray-500 text-center mx-4">
+            <p className="text-lg font-albert text-gray-500 text-center mx-4">
               Nosso time é composto por especialistas apaixonados por saúde e bem-estar, prontos para guiar você em cada etapa da sua jornada. Porque cuidar de você é a nossa prioridade.
             </p>
           </div>
@@ -707,7 +707,7 @@ export default function Home() {
         <div className="p-3 flex justify-center items-center">
           <div className="relative bg-white bg-opacity-60 backdrop-blur-lg rounded-3xl p-8 w-full max-w-3xl mx-auto">
             <div className="text-center">
-              <h1 className="text-lg bg-opacity-70 text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albertsans px-2 py-1 inline-block">
+              <h1 className="text-lg bg-opacity-70 text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert px-2 py-1 inline-block">
                 Você não está sozinha!
               </h1>
             </div>
@@ -731,7 +731,7 @@ export default function Home() {
               <div className="bg-white bg-opacity-60 border-2 rounded py-2">
                 <div className="flex justify-center mb-6">
                   <div className="bg-[#FFF2C0] rounded-xl px-3 py-1 w-fit">
-                    <h2 className="text-lg text-[#382513] text-center uppercase font-albertsans">FAQ</h2>
+                    <h2 className="text-lg text-[#382513] text-center uppercase font-albert">FAQ</h2>
                   </div>
                 </div>
                 <h1 className="text-2xl text-center ml-4 mr-4 font-semibold font-literata">
@@ -744,7 +744,7 @@ export default function Home() {
               {faqItems.map((item, index) => (
                 <div key={index} className="border-b border-gray-300 py-2">
                   <button
-                    className="flex justify-between items-center w-full text-left text-lg text-albertsans font-semibold text-[#382513]"
+                    className="flex justify-between items-center w-full text-left text-lg text-albert font-semibold text-[#382513]"
                     onClick={() => toggleFAQ(index)}
                   >
                     {item.question}
@@ -767,7 +767,7 @@ export default function Home() {
                 <div className="bg-white bg-opacity-60 border-2 rounded py-2 w-full flex flex-col items-start p-6">
                   <div className="flex justify-start mb-6 w-full">
                     <div className="bg-[#FFF2C0] rounded-xl px-3 py-1 w-fit">
-                      <h2 className="text-lg text-[#382513] uppercase font-albertsans">FAQ</h2>
+                      <h2 className="text-lg text-[#382513] uppercase font-albert">FAQ</h2>
                     </div>
                   </div>
                   <h1 className="text-2xl text-left font-semibold font-literata">
@@ -780,7 +780,7 @@ export default function Home() {
                 {faqItems.map((item, index) => (
                   <div key={index} className="border-b border-gray-300 py-4">
                     <button
-                      className="flex justify-between items-center w-full text-left text-xl text-albertsans font-semibold text-[#382513]"
+                      className="flex justify-between items-center w-full text-left text-xl text-albert font-semibold text-[#382513]"
                       onClick={() => toggleFAQ(index)}
                     >
                       {item.question}
