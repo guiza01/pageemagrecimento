@@ -17,8 +17,8 @@ import { IoIosArrowUp } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { CiFacebook } from "react-icons/ci";
-import { IoMdMenu } from "react-icons/io";
-import { RiCloseLargeFill } from "react-icons/ri";
+import { AiOutlineMenu } from "react-icons/ai";
+import { RiCloseLargeLine } from "react-icons/ri";
 import Image from 'next/image';
 
 export default function Home() {
@@ -44,46 +44,46 @@ export default function Home() {
       <div id="home" className="relative min-h-screen bg-gray-100 bg-cover bg-no-repeat bg-[url('/Hero.png')] md:bg-[url('/HeroDesktop.png')]">
         <button
           onClick={toggleMenu}
-          className="absolute top-4 right-4 z-50 text-2xl text-white md:hidden"
+          className="absolute top-[1.5rem] right-4 z-50 text-2xl text-white md:hidden"
         >
-          {isMenuOpen ? <RiCloseLargeFill /> : <IoMdMenu />}
+          {isMenuOpen ? <RiCloseLargeLine /> : <AiOutlineMenu />}
         </button>
 
         {isMenuOpen && (
           <div className="fixed inset-0 bg-[#382513] bg-opacity-10 backdrop-blur-md flex justify-center items-center transition-all duration-500">
-            <div className="w-[80%] h-full bg-[#382513]/50 p-6 flex flex-col justify-center items-center gap-4 rounded-lg shadow-lg ml-auto">
+            <div className="w-[80%] h-full bg-[#382513]/50 p-6 flex flex-col justify-center items-center gap-[2rem] rounded-lg shadow-lg ml-auto">
               <a
                 href="#home"
                 onClick={closeMenu}
-                className="text-lg font-medium text-white hover:text-[#FFF2C0]"
+                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albertsans"
               >
                 Como funciona?
               </a>
               <a
                 href="#kit"
                 onClick={closeMenu}
-                className="text-lg font-medium text-white hover:text-[#FFF2C0]"
+                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albertsans"
               >
                 Kit exclusivo
               </a>
               <a
                 href="#historia"
                 onClick={closeMenu}
-                className="text-lg font-medium text-white hover:text-[#FFF2C0]"
+                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albertsans"
               >
                 Histórias de Sucesso
               </a>
               <a
                 href="#beneficio"
                 onClick={closeMenu}
-                className="text-lg font-medium text-white hover:text-[#FFF2C0]"
+                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albertsans"
               >
                 Exclusividade e benefícios
               </a>
               <a
                 href="#faq"
                 onClick={closeMenu}
-                className="text-lg font-medium text-white hover:text-[#FFF2C0]"
+                className="text-[1rem] font-normal text-white hover:text-[#FFF2C0] hover:text-[#F9D689] font-albertsans"
               >
                 FAQ
               </a>
@@ -93,46 +93,47 @@ export default function Home() {
 
         <div className="p-6 max-w-md mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8 md:p-16">
           <div className="md:items-start md:text-left">
-            <h2 className="bg-[#F9D689] bg-opacity-10 text-lg text-[#FFF2C0] rounded uppercase font-albert mb-5 mt-20 px-3 py-1 inline-block md:text-xl">
+            <h2 className="bg-[#F9D689] bg-opacity-10 text-lg text-[#FFF2C0] rounded uppercase font-albert mb-5 mt-20 px-3 py-1 inline-block md:text-[1rem] md:px-[1rem] md:py-[0.5rem] md:tracking-[0.1rem] text-[0.875rem] px-[0.75rem] py-[0.38rem]">
               RESTAM APENAS 15 VAGAS!
             </h2>
 
-            <h1 className="text-3xl text-white mb-5 font-liberata md:text-5xl">
+            <h1 className="text-[1.25rem] text-white mb-5 font-liberata md:text-[2.5rem] md:font-medium md:leading-[130%]">
               Programa Essência: Emagrecimento inteligente para{" "}
-              <span className="text-[#F9D689] italic">mulheres em Natal</span>.
+              <span className="text-[#F9D689] italic">mulheres em Natal.</span>
             </h1>
 
-            <p className="text-lg font-semibold text-white mb-5 font-liberata md:text-3xl">
+            <p className="text-[0.875rem] font-semibold text-white mb-5 font-liberata md:text-[1.5rem] md:font-medium md:leading-[130%]">
               Proteção muscular e resultados duradouros baseados na ciência.
             </p>
-            <p className="text-lg text-white mb-5 font-liberata md:text-2xl">
+
+            <p className="text-[0.875rem] text-white mb-5 md:text-[1rem] font-sans md:leading-[150%] md:text-[#CECECE]">
               Um programa personalizado que respeita sua individualidade metabólica
-              e cuida da sua saúde de forma completa. Resultados duradouros, sem
-              efeitos radicais.
+              e cuida da sua saúde de forma completa.{" "}
+              <span className="font-bold">Resultados duradouros, sem efeitos radicais.</span>
             </p>
 
-            <div className="md:mt-8">
-              <button className="bg-[#ffffff] bg-opacity-35 w-full text-white text-lg font-semibold py-3 px-6 rounded-lg shadow hover:bg-[#4A3723] md:w-auto md:text-xl">
+            <div className="md:mt-[3rem]">
+              <button className="bg-[#ffffff] bg-opacity-35 w-full text-white text-[0.875rem] font-semibold py-3 px-6 rounded-lg shadow hover:bg-[#4A3723] md:w-auto md:text-[1rem] font-sans md:py-[1rem] md:px-[4rem] backdrop-blur-sm">
                 Quero saber mais
               </button>
             </div>
           </div>
         </div>
 
-        <div className="hidden md:flex md:flex-row md:justify-center md:items-center md:absolute md:top-0 md:left-0 md:right-0 md:p-4 z-50">
-          <a href="#home" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
+        <div className="hidden md:flex md:flex-row md:justify-center md:items-center md:absolute md:top-0 md:left-0 md:right-0 md:py-6 z-50">
+          <a href="#home" className="font-normal font-sans text-white hover:text-[#FFF2C0] mx-6 text-shadow-md">
             Como funciona?
           </a>
-          <a href="#kit" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
+          <a href="#kit" className="font-normal font-sans text-white hover:text-[#FFF2C0] mx-6 text-shadow-md">
             Kit exclusivo
           </a>
-          <a href="#historia" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
+          <a href="#historia" className="font-normal font-sans text-white hover:text-[#FFF2C0] mx-6 text-shadow-md">
             Histórias de Sucesso
           </a>
-          <a href="#beneficio" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
+          <a href="#beneficio" className="font-normal font-sans text-white hover:text-[#FFF2C0] mx-6 text-shadow-md">
             Exclusividade e benefícios
           </a>
-          <a href="#faq" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
+          <a href="#faq" className="font-normal font-sans text-white hover:text-[#FFF2C0] mx-6 text-shadow-md">
             FAQ
           </a>
         </div>
