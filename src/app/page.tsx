@@ -120,19 +120,19 @@ export default function Home() {
         </div>
 
         <div className="hidden md:flex md:flex-row md:justify-center md:items-center md:absolute md:top-0 md:left-0 md:right-0 md:p-4 z-50">
-          <a href="#" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
+          <a href="#home" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
             Como funciona?
           </a>
-          <a href="#" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
+          <a href="#kit" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
             Kit exclusivo
           </a>
-          <a href="#" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
+          <a href="#historia" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
             Histórias de Sucesso
           </a>
-          <a href="#" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
+          <a href="#beneficio" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
             Exclusividade e benefícios
           </a>
-          <a href="#" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
+          <a href="#faq" className="text-lg font-medium text-white hover:text-[#FFF2C0] mx-4">
             FAQ
           </a>
         </div>
