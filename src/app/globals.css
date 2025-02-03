@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-hero {
+  background-image: url('/Hero.png');
+}
+
+.bg-herodesktop {
+  background-image: url('/HeroDesktop.png');
+}
+
+.bg-pilates {
+  background-image: url('/pilates.png');
+}
+
+.bg-blur {
+  background-image: url('/clorblur.png');
+}
+
+.bg-gra1 {
+  background-image: url('/grafico1.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-gra2 {
+  background-image: url('/grafico2.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-gra3 {
+  background-image: url('/grafico3.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-completa {
+  background-image: url('/completa.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-completa2 {
+  background-image: url('/completa2.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-clorblur {
+  background-image: url('/clorblur.png');
+  background-size: 110% 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-redonda {
+  background-image: url('/redonda.png');
+  background-size: contain;
+  background-position: center;
+}
+
+.bg-garrafa {
+  background-image: url('/garrafa.png');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-antes {
+  background-image: url('/antes.png');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-depois {
+  background-image: url('/depois.png');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-mulheres {
+  background-image: url('/mulheres.png');
+  background-position: center;
+}
+
+.bg-equipe {
+  background-image: url('/equipe.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-faq {
+  background-image: url('/faq.png');
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
