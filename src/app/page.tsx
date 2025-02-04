@@ -512,7 +512,7 @@ export default function Home() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white/10 rounded-2xl p-6 border-[8px] border-[rgba(255, 255, 255, 0.05)] backdrop-blur-lg"
+                className="bg-white/15 rounded-xl p-6 border-[8px] border-[rgba(255, 255, 255, 0.05)] backdrop-blur-lg mb-[1.5rem]"
                 style={{
                   border: "8px solid rgba(255, 255, 255, 0.05)",
                   backdropFilter: "blur(15px)",
@@ -533,11 +533,11 @@ export default function Home() {
           <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert ml-5 mt-8 px-3 py-1 inline-block">
             exclusividade essêncial
           </h2>
-          <h1 className="text-3xl ml-4 mr-4 font-semibold font-literata gap-2 items-center mb-5 mt-8 text-center md:text-justify">
+          <h1 className="text-3xl ml-4 mr-4 font-semibold font-literata gap-2 items-center mb-5 mt-8 text-center md:text-center">
             Bem-vinda ao primeiro passo da sua
             <span className="font-literata italic"> transformação!</span>
           </h1>
-          <p className="text-xl text-gray-500 font-albert ml-4 mr-4 flex md:text-justify">
+          <p className="text-xl text-gray-500 font-albert ml-4 mr-4 flex md:text-center">
             Cada detalhe foi pensado para tornar sua experiência única e motivadora. Ao se juntar ao nosso programa, você receberá um kit exclusivo, repleto de itens úteis e sofisticados que simbolizam nosso compromisso com o seu bem-estar.
           </p>
           <h1 className="text-3xl text-[#AC7D53] ml-4 mr-4 font-semibold font-literata flex gap-2 mt-8 text-center">
@@ -558,7 +558,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex justify-center items-center ml-10 mt-8 md:ml-0 md:mt-0 rounded-3xl bg-[#FFFFFF] bg-garrafa md:w-1/3 md:flex md:justify-center" style={{ height: '50vh', width: '33vh' }}></div>
+          <div className="flex justify-center items-center ml-10 mt-8 md:ml-0 md:mt-0 rounded-3xl bg-[rgba(250,247,242,1)] bg-garrafa md:w-1/3 md:flex md:justify-center" style={{ height: '50vh', width: '33vh' }}></div>
 
           <div className="md:w-1/3 flex flex-col gap-5">
             <div className="bg-[#FFF2C0] border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-8 flex flex-col items-center p-6">
