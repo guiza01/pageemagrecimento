@@ -46,6 +46,13 @@
   background-repeat: no-repeat;
 }
 
+.bg-completadesktop {
+  background-image: url('/completadesktop.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .bg-completa2 {
   background-image: url('/completa2.png');
   background-size: contain;

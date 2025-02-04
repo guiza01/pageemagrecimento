@@ -19,6 +19,9 @@ import { FaInstagram } from "react-icons/fa6";
 import { CiFacebook } from "react-icons/ci";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RiCloseLargeLine } from "react-icons/ri";
+import { PiMicroscopeDuotone } from "react-icons/pi";
+import { PiCookingPotDuotone } from "react-icons/pi";
+import { PiPersonSimpleRun } from "react-icons/pi";
 import Image from 'next/image';
 
 export default function Home() {
@@ -40,7 +43,7 @@ export default function Home() {
   ];
 
   return (
-    <div>
+    <div className="bg-[rgba(250,247,242,1)]">
       <div id="home" className="relative min-h-screen bg-gray-100 bg-cover bg-no-repeat bg-[url('/Hero.png')] md:bg-[url('/HeroDesktop.png')]">
         <button
           onClick={toggleMenu}
@@ -50,7 +53,7 @@ export default function Home() {
         </button>
 
         {isMenuOpen && (
-          <div className="fixed inset-0 bg-[#382513] bg-opacity-10 backdrop-blur-md flex justify-center items-center transition-all duration-500 z-20">
+          <div className="fixed inset-0 bg-[#1C1C1C] bg-opacity-70 backdrop-blur-md flex justify-center items-center transition-all duration-500 z-20">
             <div className="w-[80%] h-full bg-[#382513]/50 p-6 flex flex-col justify-center items-center gap-[2rem] rounded-lg shadow-lg ml-auto">
               <a
                 href="#home"
@@ -93,9 +96,10 @@ export default function Home() {
 
         <div className="p-6 max-w-md mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8 md:p-16">
           <div className="md:items-start md:text-left">
-            <h2 className="bg-[#F9D689] bg-opacity-10 text-lg text-[#FFF2C0] rounded uppercase font-albert mb-5 mt-20 px-3 py-1 inline-block md:text-[1rem] md:px-[1rem] md:py-[0.5rem] md:tracking-[0.1rem] text-[0.875rem] px-[0.75rem] py-[0.38rem]">
+            <h2 className="bg-[#F9D689] bg-opacity-10 text-[1rem] text-[#FFF2C0] rounded uppercase font-albert mb-5 mt-20 px-[0.75rem] py-[0.38rem] inline-block md:text-[1rem] md:px-[1rem] md:py-[0.5rem] md:tracking-[0.1rem] text-[0.875rem]">
               RESTAM APENAS 15 VAGAS!
             </h2>
+
 
             <h1 className="text-[1.25rem] text-white mb-5 font-literata md:text-[2.5rem] md:font-medium md:leading-[130%]">
               Programa Essência: Emagrecimento inteligente para{" "}
@@ -106,14 +110,14 @@ export default function Home() {
               Proteção muscular e resultados duradouros baseados na ciência.
             </p>
 
-            <p className="text-[0.875rem] text-white mb-5 md:text-[1rem] font-albert md:leading-[150%] md:text-[#CECECE]">
+            <p className="text-[0.875rem] mb-5 md:text-[1rem] font-albert md:leading-[150%] text-[#CECECE]">
               Um programa personalizado que respeita sua individualidade metabólica
               e cuida da sua saúde de forma completa.{" "}
               <span className="font-bold">Resultados duradouros, sem efeitos radicais.</span>
             </p>
 
             <div className="md:mt-[3rem] relative z-10">
-              <button className="bg-[#ffffff] bg-opacity-35 w-full text-white text-[0.875rem] font-semibold py-3 px-6 rounded-lg shadow hover:bg-[#4A3723] md:w-auto md:text-[1rem] font-sans md:py-[1rem] md:px-[4rem] backdrop-blur-sm">
+              <button className="bg-[#ffffff] bg-opacity-35 w-full text-white text-[0.875rem] font-semibold py-3 px-6 rounded-lg shadow hover:bg-[#4A3723] md:w-auto md:text-[1rem] font-albert md:py-[1rem] md:px-[4rem] backdrop-blur-sm">
                 Quero saber mais
               </button>
             </div>
@@ -139,240 +143,256 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative min-h-screen md:min-h-[60vh] bg-gray-100 bg-pilates bg-cover bg-no-repeat p-6 md:p-16">
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between p-6 md:p-16 md:bg-[#FFFFFF] md:bg-opacity-10 md:border-2 md:border-white/20 rounded-lg">
-          <div className="mb-10 md:mb-0 md:w-1/2">
-            <h2 className="bg-[#FFF2C0] text-lg text-[#382513] uppercase rounded font-albert mb-5 mt-20 px-3 py-1 inline-block">
-              O desafio da menopausa
-            </h2>
-            <h1 className="text-4xl text-white mb-10 font-literata">O que acontece com seu corpo?</h1>
-          </div>
-          <div className="md:w-1/2">
-            <div className="border-2 border-white/20 rounded-xl bg-[#FFFFFF] bg-opacity-10 p-6">
-              <h3 className="text-white ml-4 mr-4 flex gap-2 items-center mt-5">
-                <AiOutlineWoman className="text-2xl" color="#F1C183" /> Menopausa
-              </h3>
-              <p className="text-white ml-4 mr-4 mt-2 font-albert">
-                Durante a menopausa, o corpo feminino sofre alterações hormonais que dificultam a perda de peso.
-              </p>
-              <h3 className="text-white ml-4 mr-4 flex gap-2 items-center mt-5">
-                <HiArrowTrendingDown className="text-2xl" color="#F1C183" /> Alterações hormonais
-              </h3>
-              <p className="text-white ml-4 mr-4 mb-10 mt-2 font-albert">
-                As mudanças nos níveis de estrogênio e testosterona afetam diretamente o metabolismo e a distribuição de gordura.
-              </p>
-              <div className="w-[90%] h-[1px] bg-opacity-30 bg-gray-300 my-4 mx-auto"></div>
-              <p className="text-white ml-4 mr-4 mt-8 mb-5 font-albert">
-                Mas isso não significa que você não possa alcançar seus objetivos de emagrecimento - basta entender o que seu corpo precisa e seguir um programa adaptado à sua realidade.
-              </p>
+      <div className="md:bg-white md:mx-[4rem] md:my-[4.38rem] md:p-6">
+        <div className="relative min-h-screen md:min-h-[calc(100vh-4rem-4.38rem)] md:rounded-2xl bg-gray-100 bg-pilates bg-cover bg-no-repeat p-6 md:p-[4rem_4.38rem]">
+          <div className="flex flex-col md:flex-row md:items-start md:justify-between p-6 md:p-16 md:border-2 md:border-white/20 rounded-lg">
+            <div className="mb-10 md:mb-0 md:w-1/2">
+              <h2 className="bg-[#FFF2C0] text-lg text-[#382513] uppercase rounded font-semibold font-albert mb-5 mt-20 px-3 py-1 inline-block">
+                O desafio da menopausa
+              </h2>
+              <h1 className="text-[2.5rem] text-white font-literata">O que acontece com seu corpo?</h1>
+            </div>
+            <div className="md:w-1/2">
+              <div className="border-8 border-[#FFFFFF] border-opacity-5 rounded-xl bg-[rgba(33,16,0,0.15)] backdrop-blur-[15px] p-6">
+                <h3 className="text-white ml-4 mr-4 flex gap-3 items-center mt-5 font-literata text-[1.25rem] leading-[130%] font-semibold">
+                  <AiOutlineWoman className="text-[2rem] text-[#F1C183]" /> Menopausa
+                </h3>
+                <p className="text-[#FFFBEC] ml-4 mr-4 mt-[0.75rem] font-albert leading-[150%]">
+                  Durante a menopausa, o corpo feminino sofre alterações hormonais que dificultam a perda de peso.
+                </p>
+                <h3 className="text-white ml-4 mr-4 flex gap-3 items-center mt-[1.5rem] font-literata text-[1.25rem] leading-[130%] font-semibold">
+                  <HiArrowTrendingDown className="text-[2rem] text-[#F1C183]" /> Alterações hormonais
+                </h3>
+                <p className="text-[#FFFBEC] ml-4 mr-4 mt-[0.75rem] mb-[1.5rem] font-albert leading-[150%]">
+                  As mudanças nos níveis de estrogênio e testosterona afetam diretamente o metabolismo e a distribuição de gordura.
+                </p>
+                <div className="w-[90%] h-[1px] bg-opacity-30 bg-gray-300 my-4 mx-auto"></div>
+                <p className="text-[#FFFBEC] ml-4 mr-4 mt-[1.5rem] mb-5 font-albert text-[1.125rem] leading-[150%]">
+                  Mas isso não significa que você não possa alcançar seus objetivos de emagrecimento - basta entender o que seu corpo precisa e seguir um programa adaptado à sua realidade.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-[#FFFFFF]">
-        <div className="hidden md:flex flex-row mt-16">
-          <div className="md:w-1/2 bg-gra1 p-6 flex flex-col justify-center">
+      <div className="bg-[rgba(250,247,242,1)] mt-[4rem] mb-[4rem]">
+        <div className="bg-[rgba(250,247,242,1)]">
+          <div className="hidden md:flex flex-row mt-16">
+            <div className="md:w-1/2 bg-gra1 p-6 flex flex-col justify-center">
+            </div>
+            <div className="md:w-1/2 bg-[rgba(250,247,242,1)] p-6">
+              <h1 className="text-3xl font-semibold flex gap-2 items-center mb-5 font-literata">
+                <HiArrowTrendingDown className="text-[2rem]" color="#F1C183" />
+                Diminuição de Testosterona
+              </h1>
+              <p className="text-xl font-albert text-gray-500 mb-5">
+                A testosterona, responsável pela preservação muscular, também diminui na menopausa. Isso contribui para a perda de massa muscular e aceleração do ganho de peso, conforme estudo.
+              </p>
+              <p className="text-lg font-albert mt-5 text-gray-400 mb-[4rem]">
+                Fonte: Journal of Clinical Endocrinology & Metabolism.
+              </p>
+            </div>
           </div>
-          <div className="md:w-1/2 bg-[#FFFFFF] p-6">
-            <h1 className="text-3xl font-semibold flex gap-2 items-center mb-5 font-literata">
-              <HiArrowTrendingDown color="#F1C183" />
+
+          <div className="block md:hidden p-6 mx-auto relative bg-[rgba(250,247,242,1)] bg-gra1 bg-cover bg-no-repeat" style={{ height: '30vh' }}></div>
+          <div className="block md:hidden bg-[rgba(250,247,242,1)] p-6">
+            <h1 className="text-[1.25rem] font-semibold flex gap-2 items-center mb-5 font-literata">
+              <HiArrowTrendingDown className="text-[1.5rem]" color="#F1C183" />
               Diminuição de Testosterona
             </h1>
-            <p className="text-xl font-albert text-gray-500 mb-5">
+            <p className="text-[1rem] flex font-albert text-gray-500">
               A testosterona, responsável pela preservação muscular, também diminui na menopausa. Isso contribui para a perda de massa muscular e aceleração do ganho de peso, conforme estudo.
             </p>
-            <p className="text-lg font-albert text-gray-400">
+            <p className="text-[1rem] flex mt-5 font-albert text-gray-400 mb-[4rem]">
               Fonte: Journal of Clinical Endocrinology & Metabolism.
             </p>
           </div>
         </div>
 
-        <div className="block md:hidden p-6 mx-auto relative bg-[#FFFFFF] bg-gra1 bg-cover bg-no-repeat" style={{ height: '30vh' }}></div>
-        <div className="block md:hidden bg-[#FFFFFF] p-6">
-          <h1 className="text-3xl ml-4 mr-4 font-semibold flex gap-2 items-center mb-5 font-literata">
-            <HiArrowTrendingDown color="#F1C183" />
-            Diminuição de Testosterona
-          </h1>
-          <p className="text-xl ml-4 mr-4 flex font-albert text-gray-500">
-            A testosterona, responsável pela preservação muscular, também diminui na menopausa. Isso contribui para a perda de massa muscular e aceleração do ganho de peso, conforme estudo.
-          </p>
-          <p className="text-lg ml-4 mr-4 flex mt-5 font-albert text-gray-400">
-            Fonte: Journal of Clinical Endocrinology & Metabolism.
-          </p>
-        </div>
-      </div>
+        <div className="bg-[rgba(250,247,242,1)]">
+          <div className="hidden md:flex flex-row mt-16">
+            <div className="md:w-1/2 bg-[rgba(250,247,242,1)] p-6">
+              <h1 className="text-3xl font-semibold flex gap-2 items-center mb-5 font-literata">
+                <AiOutlineFieldTime className="text-[2rem]" color="#F1C183" />
+                Metabolismo mais lento
+              </h1>
+              <p className="text-xl font-albert text-gray-500 mb-5">
+                Após a menopausa, seu metabolismo pode cair até 10%. A perda de massa muscular diminui o gasto energético diário, tornando a perda de peso mais difícil.
+              </p>
+              <p className="text-lg font-albert mt-5 text-gray-400 mb-[4rem]">
+                Fonte: American Journal of Clinical Nutrition
+              </p>
+            </div>
+            <div className="md:w-1/2 bg-gra2 p-6 bg-cover bg-no-repeat" style={{ height: '30vh' }}></div>
+          </div>
 
-      <div className="bg-[#FFFFFF]">
-        <div className="hidden md:flex flex-row mt-16">
-          <div className="md:w-1/2 bg-[#FFFFFF] p-6">
-            <h1 className="text-3xl font-semibold flex gap-2 items-center mb-5 font-literata">
-              <AiOutlineFieldTime color="#F1C183" />
+          <div className="block md:hidden p-6 mx-auto relative bg-[rgba(250,247,242,1)] bg-gra2 bg-cover bg-no-repeat" style={{ height: '30vh' }}></div>
+          <div className="bg-[rgba(250,247,242,1)] p-6 md:hidden">
+            <h1 className="text-[1.25rem] font-semibold flex gap-2 items-center mb-5 font-literata">
+              <AiOutlineFieldTime className="text-[1.5rem]" color="#F1C183" />
               Metabolismo mais lento
             </h1>
-            <p className="text-xl font-albert text-gray-500 mb-5">
+            <p className="text-[1rem] flex font-albert text-gray-500">
               Após a menopausa, seu metabolismo pode cair até 10%. A perda de massa muscular diminui o gasto energético diário, tornando a perda de peso mais difícil.
             </p>
-            <p className="text-lg font-albert text-gray-400">
+            <p className="text-[1rem] flex mt-5 mb-[4rem] font-albert text-gray-400">
               Fonte: American Journal of Clinical Nutrition
             </p>
           </div>
-          <div className="md:w-1/2 bg-gra2 p-6 bg-cover bg-no-repeat" style={{ height: '30vh' }}></div>
         </div>
 
-        <div className="block md:hidden p-6 mx-auto relative bg-[#FFFFFF] bg-gra2 bg-cover bg-no-repeat" style={{ height: '30vh' }}></div>
-        <div className="bg-[#FFFFFF] p-6 md:hidden">
-          <h1 className="text-3xl ml-4 mr-4 font-semibold flex gap-2 items-center mb-5 font-literata">
-            <AiOutlineFieldTime color="#F1C183" />
-            Metabolismo mais lento
-          </h1>
-          <p className="text-xl ml-4 mr-4 flex font-albert text-gray-500">
-            Após a menopausa, seu metabolismo pode cair até 10%. A perda de massa muscular diminui o gasto energético diário, tornando a perda de peso mais difícil.
-          </p>
-          <p className="text-lg ml-4 mr-4 flex mt-5 font-albert text-gray-400">
-            Fonte: American Journal of Clinical Nutrition
-          </p>
-        </div>
-      </div>
+        <div className="bg-[rgba(250,247,242,1)]">
+          <div className="hidden md:flex flex-row mt-16">
+            <div className="md:w-1/2 bg-gra3 p-6 bg-cover bg-no-repeat" style={{ height: '30vh' }}></div>
+            <div className="md:w-1/2 bg-[rgba(250,247,242,1)] p-6">
+              <h1 className="text-3xl mr-4 font-semibold flex gap-2 items-center mb-5 justify-start font-literata">
+                <AiOutlineWoman className="text-[2rem]" color="#F1C183" />
+                Redução do Estrogênio
+              </h1>
+              <p className="text-xl mr-4 flex font-albert text-gray-500">
+                A queda do estrogênio durante a menopausa faz com que a gordura se acumule na região abdominal, um fator conhecido por aumentar o risco de doenças metabólicas e cardiovasculares.
+              </p>
+              <p className="text-lg mr-4 flex mt-5 font-albert text-gray-400 mb-[4rem]">
+                Fonte: Journal of Clinical Endocrinology & Metabolism.
+              </p>
+            </div>
+          </div>
 
-      <div className="bg-[#FFFFFF]">
-        <div className="hidden md:flex flex-row mt-16">
-          <div className="md:w-1/2 bg-gra3 p-6 bg-cover bg-no-repeat" style={{ height: '30vh' }}></div>
-          <div className="md:w-1/2 bg-[#FFFFFF] p-6">
-            <h1 className="text-3xl mr-4 font-semibold flex gap-2 items-center mb-5 justify-center font-literata">
-              <AiOutlineWoman color="#F1C183" />
+          <div className="block md:hidden p-6 mx-auto relative bg-[rgba(250,247,242,1)] bg-gra3 bg-cover bg-no-repeat" style={{ height: '30vh' }}></div>
+          <div className="bg-[rgba(250,247,242,1)] p-6 md:hidden">
+            <h1 className="text-[1.25rem] font-semibold flex gap-2 items-center mb-5 justify-center font-literata">
+              <AiOutlineWoman className="text-[1.5rem]" color="#F1C183" />
               Redução do Estrogênio
             </h1>
-            <p className="text-xl ml-4 mr-4 flex font-albert text-gray-500">
+            <p className="text-[1rem] flex font-albert text-gray-500">
               A queda do estrogênio durante a menopausa faz com que a gordura se acumule na região abdominal, um fator conhecido por aumentar o risco de doenças metabólicas e cardiovasculares.
             </p>
-            <p className="text-lg ml-4 mr-4 flex mt-5 font-albert text-gray-400">
+            <p className="text-[1rem] flex mt-5 font-albert text-gray-400 mb-[4rem]">
               Fonte: Journal of Clinical Endocrinology & Metabolism.
             </p>
           </div>
-        </div>
 
-        <div className="block md:hidden p-6 mx-auto relative bg-[#FFFFFF] bg-gra3 bg-cover bg-no-repeat" style={{ height: '30vh' }}></div>
-        <div className="bg-[#FFFFFF] p-6 md:hidden">
-          <h1 className="text-3xl mr-4 font-semibold flex gap-2 items-center mb-5 justify-center font-literata">
-            <AiOutlineWoman color="#F1C183" />
-            Redução do Estrogênio
-          </h1>
-          <p className="text-xl ml-4 mr-4 flex font-albert text-gray-500">
-            A queda do estrogênio durante a menopausa faz com que a gordura se acumule na região abdominal, um fator conhecido por aumentar o risco de doenças metabólicas e cardiovasculares.
-          </p>
-          <p className="text-lg ml-4 mr-4 flex mt-5 font-albert text-gray-400">
-            Fonte: Journal of Clinical Endocrinology & Metabolism.
-          </p>
-        </div>
-
-        <div className="flex flex-col justify-center items-center min-h-[40vh]">
-          <h1 className="text-4xl mx-4 font-semibold flex gap-2 items-center mt-4 mb-3 text-center font-literata">
-            A boa notícia? Nós sabemos como ajudar você a superar esses desafios!
-          </h1>
-          <div className="flex justify-center items-center mt-2 mb-8">
-            <div className="border-2 bg-[#FFF2C0] rounded-full flex justify-center items-center w-8 h-8">
-              <IoIosArrowDown />
+          <div className="flex flex-col justify-center items-center min-h-[40vh]">
+            <h1 className="text-[2rem] text-[rgba(52,25,0,1)] mx-4 font-semibold items-center mt-4 mb-3 text-center font-literata max-w-[40rem]">
+              A boa notícia? Nós sabemos como ajudar você a <i>superar esses desafios!</i>
+            </h1>
+            <div className="flex justify-center items-center">
+              <div className="border-2 bg-[#FFF2C0] rounded-full flex justify-center items-center w-8 h-8">
+                <IoIosArrowDown className="text-[rgba(52,25,0,1)]" />
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="relative min-h-[80vh] md:min-h-[60vh] bg-[#FFFBEC] bg-cover pb-20">
+      <div className="relative min-h-[80vh] md:min-h-[60vh] bg-[#FFFBEC] bg-cover pb-20 md:mx-[9ren] md:my-[6rem]">
         <div className="pt-10">
           <div className="hidden md:block text-center">
-            <h1 className="text-4xl font-semibold flex gap-2 mb-5 justify-center font-literata">
-              Como nosso programa exclusivo ajudará você a emagrecer de forma sustentável?
+            <h1 className="max-w-[640px] text-[2rem] font-semibold mb-[1rem] mx-auto font-literata text-[rgba(52,25,0,1)]">
+              Como nosso programa exclusivo ajudará você a <span className="italic">emagrecer de forma sustentável</span>?
             </h1>
-            <p className="text-2xl text-gray-500 mx-auto max-w-3xl font-albert mb-10">
+            <p className="max-w-[640px] text-[1rem] text-gray-500 mx-auto font-albert mb-10">
               Durante o emagrecimento, a preservação da massa muscular é a chave para manter seu metabolismo ativo. Músculos queimam mais calorias do que gordura, mesmo em repouso. Então, ao preservar seus músculos enquanto você pode perder gordura, você mantém seu metabolismo acelerado.
             </p>
           </div>
 
           <div className="block md:hidden text-center">
-            <h1 className="text-3xl ml-4 mr-4 font-semibold flex gap-2 mb-5 font-literata">
-              Como nosso programa exclusivo ajudará você a emagrecer de forma sustentável?
+            <h1 className="text-[1.5rem] ml-[1rem] mr-[1rem] font-semibold text-start mb-5 font-literata text-[rgba(52,25,0,1)]">
+              Como nosso programa exclusivo ajudará você a <span className="italic">emagrecer de forma sustentável</span>?
             </h1>
-            <p className="text-xl text-gray-500 ml-4 mr-4 flex font-albert">
+            <p className="text-[1rem] text-rgba(131,131,131,1) ml-[1rem] mr-[1rem] text-start flex font-albert">
               Durante o emagrecimento, a preservação da massa muscular é a chave para manter seu metabolismo ativo. Músculos queimam mais calorias do que gordura, mesmo em repouso. Então, ao preservar seus músculos enquanto você pode perder gordura, você mantém seu metabolismo acelerado.
             </p>
           </div>
 
-          <div className="hidden md:flex justify-center mt-10">
-            <div className="bg-white border-2 rounded-2xl mx-3 p-6 flex flex-col items-center">
-              <BsPatchCheck className="text-[#AC7D53] text-3xl" />
-              <h1 className="text-4xl text-center font-literata">Programa personalizado</h1>
+          <div className="hidden md:flex justify-center gap-[1.37rem] mt-10">
+            <div className="relative flex flex-col items-center h-[9rem] w-[15rem]">
+              <div className="bg-white border-[8px] border-opacity-30 border-white shadow-lg rounded-2xl mx-[1.37rem] p-4 border-solid border-[1px] border-[#F1C183] flex flex-col items-center h-full w-full">
+                <BsPatchCheck className="text-[#AC7D53] text-3xl mb-2" />
+                <h1 className="text-[1.5rem] text-center font-literata text-[rgba(52,25,0,1)] leading-tight">
+                  Programa <br /> Personalizado
+                </h1>
+              </div>
             </div>
-            <div className="bg-white border-2 rounded-2xl mx-3 p-6 flex flex-col items-center">
-              <BsPatchCheck className="text-[#AC7D53] text-3xl" />
-              <h1 className="text-4xl text-center font-literata">Emagreça sem perder massa muscular</h1>
+            <div className="relative flex flex-col items-center mt-[4.12rem] h-[9rem] w-[20rem]">
+              <div className="bg-white border-[8px] border-opacity-30 border-white shadow-lg rounded-2xl mx-[1.37rem] p-4 border-solid border-[1px] border-[#F1C183] flex flex-col items-center h-full w-full">
+                <BsPatchCheck className="text-[#AC7D53] text-3xl mb-2" />
+                <h1 className="text-[1.5rem] text-center font-literata text-[rgba(52,25,0,1)] leading-tight">
+                  Emagreça sem <br /> perder massa muscular
+                </h1>
+              </div>
             </div>
-            <div className="bg-white border-2 rounded-2xl mx-3 p-6 flex flex-col items-center">
-              <BsPatchCheck className="text-[#AC7D53] text-3xl" />
-              <h1 className="text-4xl text-center font-literata">Evite o efeito sanfona</h1>
+            <div className="relative flex flex-col items-center h-[9rem] w-[15rem]">
+              <div className="bg-white border-[8px] border-opacity-30 border-white shadow-lg rounded-2xl mx-[1.37rem] p-4 border-solid border-[1px] border-[#F1C183] flex flex-col items-center h-full w-full">
+                <BsPatchCheck className="text-[#AC7D53] text-3xl mb-2" />
+                <h1 className="text-[1.5rem] text-center font-literata text-[rgba(52,25,0,1)] leading-tight">
+                  Evite o <br /> efeito sanfona
+                </h1>
+              </div>
             </div>
           </div>
 
           <div className="block md:hidden mt-5">
             <div className="bg-white border-2 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6">
-              <BsPatchCheck className="text-[#AC7D53] text-3xl" />
-              <h1 className="text-4xl text-center font-literata">Programa personalizado</h1>
+              <BsPatchCheck className="text-[#AC7D53] text-[1.5rem]" />
+              <h1 className="text-[1.25rem] text-center font-literata">Programa personalizado</h1>
             </div>
             <div className="bg-white border-2 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6">
-              <BsPatchCheck className="text-[#AC7D53] text-3xl" />
-              <h1 className="text-4xl text-center font-literata">Emagreça sem perder massa muscular</h1>
+              <BsPatchCheck className="text-[#AC7D53] text-[1.5rem]" />
+              <h1 className="text-[1.25rem] text-center font-literata">Emagreça sem perder massa muscular</h1>
             </div>
             <div className="bg-white border-2 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6">
-              <BsPatchCheck className="text-[#AC7D53] text-3xl" />
-              <h1 className="text-4xl text-center font-literata">Evite o efeito sanfona</h1>
+              <BsPatchCheck className="text-[#AC7D53] text-[1.5rem]" />
+              <h1 className="text-[1.25rem] text-center font-literata">Evite o efeito sanfona</h1>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="relative min-h-[60vh] mt-16 mr-4 bg-[#FFFFFF] bg-cover bg-no-repeat">
-        <div className="hidden lg:flex w-full justify-center items-center">
+      <div className="relative min-h-screen mt-16 mr-4 bg-[#FFFFFF] bg-cover bg-no-repeat mt-[4rem] mb-[4rem]">
+        <div className="hidden md:flex justify-center items-center mx-auto h-screen">
           <img
-            src="/completa.png"
-            alt="Imagem da esquerda"
-            className="w-[30%] h-[30vh] object-cover rounded-3xl ml-5"
+            src="/completadesktop.png"
+            alt="Imagem da esquerda - desktop"
+            className="w-[19.375rem] h-[28.1875rem] object-cover rounded-[.5rem] ml-[4rem]"
           />
 
-          <div className="flex flex-col items-center justify-center text-center mx-5">
-            <h1 className="text-3xl font-semibold gap-2 items-center mb-5 mt-8 font-literata">
+          <div className="flex flex-col items-center justify-center text-center ml-[1.25rem] mr-[1.25rem]">
+            <h1 className="text-3xl font-semibold gap-2 items-center mb-[1rem] font-literata">
               Não é sobre perder peso, mas sobre transformar seu corpo de forma
               <span className="text-[#AC7D53]"> saudável e sustentável.</span>
             </h1>
-            <p className="text-xl flex font-albert">
+            <p className="text-xl text-[rgba(100,100,100,1)] flex font-albert">
               A sua jornada começa aqui. Agende sua consulta inicial e descubra como podemos ajudar você a alcançar resultados duradouros.
             </p>
-            <button className="mt-16 bg-[#341900] w-[90%] text-white text-lg font-semibold py-3 px-6 rounded-2xl">
+            <button className="mt-16 bg-[#341900] w-[30%] text-white text-lg font-semibold font-albert py-3 px-6 rounded-xl">
               Agendar Agora
             </button>
           </div>
 
           <img
             src="/completa2.png"
-            alt="Imagem da direita"
-            className="w-[30%] h-[30vh] object-cover rounded-3xl ml-5"
+            alt="Imagem da direita - desktop"
+            className="w-[19.375rem] h-[28.1875rem] object-cover rounded-[.5rem] mr-[4rem]"
           />
         </div>
 
-        <div className="lg:hidden mr-4">
+        <div className="md:hidden mr-4">
           <img
             src="/completa.png"
-            alt="Imagem"
-            className="w-full h-[30vh] object-cover rounded-3xl ml-5 mr-5 mt-16"
+            alt="Imagem mobile"
+            className="w-full h-[12.5rem] object-cover rounded-xl mx-5 mt-16"
           />
 
-          <h1 className="text-3xl ml-4 mr-4 font-semibold gap-2 items-center mb-5 mt-8 font-literata">
+          <h1 className="text-[1.5rem] ml-4 font-semibold gap-2 items-center mb-5 mt-[1rem] font-literata">
             Não é sobre perder peso, mas sobre transformar seu corpo de forma
             <span className="text-[#AC7D53]"> saudável e sustentável.</span>
           </h1>
-          <p className="text-xl ml-4 mr-4 flex font-albert">
+          <p className="text-xl ml-4 flex font-albert">
             A sua jornada começa aqui. Agende sua consulta inicial e descubra como podemos ajudar você a alcançar resultados duradouros.
           </p>
-          <button className="mt-16 ml-4 mb-16 mr-4 bg-[#341900] w-[90%] text-white text-lg font-semibold py-3 px-6 rounded-2xl">
+          <button className="mt-[4rem] ml-4 mb-[4rem] bg-[#341900] w-[100%] text-white text-lg font-semibold py-3 px-6 rounded-lg">
             Agendar Agora
           </button>
         </div>
@@ -385,8 +405,8 @@ export default function Home() {
               Entenda
             </h2>
           </div>
-          <h1 className="text-3xl text-center text-white ml-4 mr-4 font-semibold font-literata flex gap-2 items-center mt-8 justify-center">
-            Como funciona o Programa Essência?
+          <h1 className="text-3xl text-center text-white ml-4 mr-4 font-literata items-center mt-8 justify-center">
+            Como funciona o <i>Programa Essência?</i>
           </h1>
           <p className="text-xl text-white text-center mt-8 ml-4 mr-4 flex font-albert">
             Nosso programa é baseado em evidências científicas, com métodos validados que garantem que você perca peso sem comprometer sua saúde ou seu metabolismo.
@@ -401,27 +421,27 @@ export default function Home() {
             {
               title: "Avaliação Completa",
               text: "Consultas presenciais com exames detalhados e plano personalizado.",
-              icon: <BsPatchCheck className="text-xl" />,
+              icon: <BsPatchCheck className="text-xl text-[rgba(255,242,192,1)]" />,
             },
             {
               title: "Uso de Tecnologia Avançada",
               text: "Medicamentos e técnicas que potencializam seus resultados.",
-              icon: <BsPatchCheck className="text-xl" />,
+              icon: <PiMicroscopeDuotone className="text-xl text-[rgba(255,242,192,1)]" />,
             },
             {
               title: "Treinos Rápidos e Eficientes",
               text: "Feitos online, adaptados ao seu corpo e à sua rotina.",
-              icon: <BsPatchCheck className="text-xl" />,
+              icon: <PiPersonSimpleRun className="text-xl text-[rgba(255,242,192,1)]" />,
             },
             {
               title: "Dieta Personalizada",
               text: "Desenvolvida com base nas suas preferências alimentares e necessidades metabólicas.",
-              icon: <BsPatchCheck className="text-xl" />,
+              icon: <PiCookingPotDuotone className="text-xl text-[rgba(255,242,192,1)]" />,
             },
             {
               title: "Acompanhamento Contínuo",
               text: "Suporte dedicado de médicos, nutricionistas e personal trainers.",
-              icon: <BsPatchCheck className="text-xl" />,
+              icon: <PiStethoscopeLight className="text-xl text-[rgba(255,242,192,1)]" />,
             },
           ].map((item, index) => (
             <div
@@ -441,23 +461,23 @@ export default function Home() {
           <h2 className="text-lg px-3 py-1 text-[#FFF2C0] bg-[#F9D689] rounded bg-opacity-10 uppercase font-albert mb-8">
             Entenda
           </h2>
-          <h1 className="text-4xl text-center text-white font-semibold font-literata mb-8">
-            Como Funciona o Programa Essência?
+          <h1 className="text-[2rem] text-center text-white font-literata mb-8">
+            Como Funciona o <i>Programa Essência?</i>
           </h1>
-          <p className="text-xl text-white text-center max-w-3xl font-albert mb-16">
+          <p className="text-[1rem] text-[rgba(225,225,225,1)] text-center max-w-3xl font-albert mb-16">
             Nosso programa é baseado em evidências científicas, com métodos validados que garantem que você perca peso sem comprometer sua saúde ou seu metabolismo.
           </p>
 
           <div className="relative flex justify-center items-center mb-16">
-            <div
-              className="absolute rounded-full bg-white/10 h-[400px] w-[400px] border border-white/20"
-              style={{ borderRadius: "50%" }}
-            ></div>
+            <div className="absolute rounded-full h-[560px] w-[560px] border border-white" style={{ opacity: 0.4 }}></div>
+            <div className="absolute rounded-full h-[760px] w-[760px] border border-white" style={{ opacity: 0.2 }}></div>
+            <div className="absolute rounded-full h-[940px] w-[940px] border border-white" style={{ opacity: 0.1 }}></div>
             <div className="relative z-10">
               <img
                 src="/redonda.png"
                 alt="Programa Essência"
-                className="rounded-full h-[360px] w-[360px] object-cover"
+                className="rounded-full h-[360px] w-[360px] border border-white"
+                style={{ borderWidth: "1px" }}
               />
             </div>
           </div>
@@ -467,32 +487,36 @@ export default function Home() {
               {
                 title: "Avaliação Completa",
                 text: "Consultas presenciais com exames detalhados e plano personalizado.",
-                icon: <BsPatchCheck className="text-2xl" />,
+                icon: <BsPatchCheck className="text-2xl text-[rgba(255,242,192,1)]" />,
               },
               {
                 title: "Uso de Tecnologia Avançada",
                 text: "Medicamentos e técnicas que potencializam seus resultados.",
-                icon: <BsPatchCheck className="text-2xl" />,
+                icon: <PiMicroscopeDuotone className="text-2xl text-[rgba(255,242,192,1)]" />,
               },
               {
                 title: "Treinos Rápidos e Eficientes",
                 text: "Feitos online, adaptados ao seu corpo e à sua rotina.",
-                icon: <BsPatchCheck className="text-2xl" />,
+                icon: <PiPersonSimpleRun className="text-2xl text-[rgba(255,242,192,1)]" />,
               },
               {
                 title: "Dieta Personalizada",
                 text: "Desenvolvida com base nas suas preferências alimentares e necessidades metabólicas.",
-                icon: <BsPatchCheck className="text-2xl" />,
+                icon: <PiCookingPotDuotone className="text-2xl text-[rgba(255,242,192,1)]" />,
               },
               {
                 title: "Acompanhamento Contínuo",
                 text: "Suporte dedicado de médicos, nutricionistas e personal trainers.",
-                icon: <BsPatchCheck className="text-2xl" />,
+                icon: <PiStethoscopeLight className="text-2xl text-[rgba(255,242,192,1)]" />,
               },
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white/10 rounded-2xl p-6 border border-white/20 backdrop-blur-lg"
+                className="bg-white/10 rounded-2xl p-6 border-[8px] border-[rgba(255, 255, 255, 0.05)] backdrop-blur-lg"
+                style={{
+                  border: "8px solid rgba(255, 255, 255, 0.05)",
+                  backdropFilter: "blur(15px)",
+                }}
               >
                 <h1 className="text-xl text-white font-literata mb-4 flex items-center gap-2">
                   {item.icon} {item.title}
