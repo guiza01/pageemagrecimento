@@ -399,10 +399,12 @@ export default function Home() {
 
       <div className="relative min-h-screen mt-16 mr-4 bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mt-[4rem] mb-[4rem]">
         <div className="hidden md:flex justify-center items-center mx-auto h-screen">
-          <img
+          <Image
             src="/completadesktop.png"
             alt="Imagem da esquerda - desktop"
-            className="w-[19.375rem] h-[28.1875rem] object-cover rounded-[.5rem] ml-[4rem]"
+            width={310}
+            height={451}
+            className=" object-cover rounded-[.5rem] ml-[4rem]"
           />
 
           <div className="flex flex-col items-center justify-center text-center ml-[1.25rem] mr-[1.25rem]">
@@ -418,18 +420,22 @@ export default function Home() {
             </button>
           </div>
 
-          <img
+          <Image
             src="/completa2.png"
             alt="Imagem da direita - desktop"
-            className="w-[19.375rem] h-[28.1875rem] object-cover rounded-[.5rem] mr-[4rem]"
+            width={310}
+            height={451}
+            className="object-cover rounded-[0.5rem] mr-[4rem]"
           />
         </div>
 
         <div className="md:hidden mr-4">
-          <img
+          <Image
             src="/completa.png"
             alt="Imagem mobile"
-            className="w-full h-[12.5rem] object-cover rounded-xl mx-5 mt-16"
+            width={340}
+            height={250}
+            className="object-cover rounded-xl mx-5 mt-16"
           />
 
           <h1 className="text-[1.5rem] ml-4 font-semibold text-[rgba(52,25,0,1)] gap-2 items-center mb-5 mt-[1rem] font-literata">
@@ -520,10 +526,12 @@ export default function Home() {
             <div className="absolute rounded-full h-[760px] w-[760px] border border-white" style={{ opacity: 0.2 }}></div>
             <div className="absolute rounded-full h-[940px] w-[940px] border border-white" style={{ opacity: 0.1 }}></div>
             <div className="relative z-10">
-              <img
+              <Image
                 src="/redonda.png"
                 alt="Programa Essência"
-                className="rounded-full h-[360px] w-[360px] border border-white"
+                width={360}
+                height={360}
+                className="rounded-full border border-white"
                 style={{ borderWidth: "1px" }}
               />
             </div>
@@ -559,7 +567,8 @@ export default function Home() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white/15 rounded-xl p-6 border-[8px] border-[rgba(255, 255, 255, 0.05)] backdrop-blur-lg mb-[1.5rem]"
+                className={`bg-white/15 rounded-xl p-6 border-[8px] border-[rgba(255, 255, 255, 0.05)] backdrop-blur-lg mb-[1.5rem] ${index === 4 ? 'col-span-2 mx-auto' : ''
+                  }`}
                 style={{
                   border: "8px solid rgba(255, 255, 255, 0.05)",
                   backdropFilter: "blur(15px)",
@@ -682,7 +691,7 @@ export default function Home() {
 
           <div className="md:w-1/2 flex flex-col gap-4 md:text-left md:ml-8 md:self-end">
             <h1 className="text-[1.5rem] leading-[150%] text-[rgba(52,25,0,1)] gap-2 items-center mt-[2rem] font-albert">
-              "{testimonials[activeIndex].quote}"
+              {testimonials[activeIndex].quote}
             </h1>
             <p className="text-[rgba(131,131,131,1)] text-xl font-albert italic mt-[1rem]">
               - {testimonials[activeIndex].author}
@@ -711,7 +720,7 @@ export default function Home() {
           <div className="relative mt-8">
             <div className="flex flex-col md:flex-row-reverse justify-between items-center md:items-start relative">
               <div className="flex justify-center items-center mb-8 rounded bg-[#FFFFFF] relative md:w-1/2 w-full" style={{ height: '60vh' }}>
-                <Image src="/mulheres.png" alt="Imagem Exemplo" layout="fill" objectFit="cover" className="rounded" />
+                <img src="/mulheres.png" alt="Imagem Exemplo" className="rounded" width="600" height="560" />
               </div>
               <div
                 className="absolute rounded-xl inset-0 flex justify-center items-center"
@@ -760,52 +769,49 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="block md:hidden">
-              <div className="flex justify-center items-center mt-8 rounded bg-[#FFFFFF] relative w-full" style={{ height: '40vh' }}>
-                <Image src="/mulheres.png" alt="Imagem Exemplo" layout="fill" objectFit="cover" className="rounded" />
+          </div>
+        </div>
+        <div className="md:hidden block">
+          <div className="flex justify-center items-center mt-8 rounded bg-[#FFFFFF] relative w-full" style={{ height: '40vh' }}>
+            <Image src="/mulheres.png" alt="Imagem Exemplo" layout="fill" objectFit="cover" className="rounded" />
+          </div>
+          <div className="rounded-xl flex justify-center items-center z-10" style={{
+            margin: '0 auto',
+            opacity: 1.2,
+            border: '8px solid rgba(14, 13, 13, 0.1)',
+            background: 'rgba(255, 255, 255, 0.50)',
+            boxShadow: '0px 2px 20px 0px rgba(0, 0, 0, 0.10)',
+            width: '90%',
+            minHeight: '20rem',
+            marginTop: '-4rem'
+          }}>
+            <div className="text-center w-full px-4 z-10">
+              <h1 className="text-lg  text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert px-2 py-1 inline-block">
+                Exclusividade e benefícios
+              </h1>
+              <h1 className="mt-[1rem] text-start text-[1.5rem] text-[rgba(52,25,0,1)] text-semibold font-literata gap-2 items-center mb-[2.5rem]">
+                Uma experiência exclusiva que garante o seu sucesso!
+              </h1>
+              <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
+                <h1 className="flex text-lg text-start text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                  <FaPeopleGroup className="text-[1.5rem] text-[#AC7D53]" />
+                  Apenas 30 vagas por mês
+                </h1>
+                <p className="font-albert mb-[1.5rem] text-start text-[rgba(52,25,0,1)]">para garantir o cuidado que você merece.</p>
               </div>
-              <div
-                className="rounded-xl flex justify-center items-center"
-                style={{
-                  margin: '0 auto',
-                  opacity: 1.2,
-                  border: '8px solid rgba(14, 13, 13, 0.1)',
-                  background: 'rgba(255, 255, 255, 0.50)',
-                  boxShadow: '0px 2px 20px 0px rgba(0, 0, 0, 0.10)',
-                  width: '90%',
-                  minHeight: '20rem',
-                  marginTop: '-4rem'
-                }}
-              >
-                <div className="text-center w-full px-4">
-                  <h1 className="text-lg text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert px-2 py-1 inline-block">
-                    exclusividade e benefícios
-                  </h1>
-                  <h1 className="mt-[1rem] text-[1.5rem] text-[rgba(52,25,0,1)] text-semibold font-literata gap-2 items-center mb-[2.5rem]">
-                    Uma experiência exclusiva que garante o seu sucesso!
-                  </h1>
-                  <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
-                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
-                      <FaPeopleGroup className="text-[1.5rem] text-[#AC7D53]" />
-                      Apenas 30 vagas por mês
-                    </h1>
-                    <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">para garantir o cuidado que você merece.</p>
-                  </div>
-                  <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
-                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
-                      <PiStethoscopeLight className="text-[1.5rem] text-[#AC7D53]" />
-                      Equipe dedicada ao seu sucesso
-                    </h1>
-                    <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">médicos, nutricionistas e personal trainers renomados.</p>
-                  </div>
-                  <div className="mt-[1.5rem] border-b mb-[1.5rem] border-transparent border-b-[rgba(172,125,83,0.2)]">
-                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
-                      <IoBodyOutline className="text-[1.5rem] text-[#AC7D53]" />
-                      Comunidade que apoia e motiva
-                    </h1>
-                    <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">você nunca estará sozinha nessa jornada.</p>
-                  </div>
-                </div>
+              <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
+                <h1 className="flex text-lg text-[rgba(52,25,0,1)] text-start items-center gap-2 font-literata font-bold">
+                  <PiStethoscopeLight className="text-[1.5rem] text-[#AC7D53]" />
+                  Equipe dedicada ao seu sucesso
+                </h1>
+                <p className="font-albert mb-[1.5rem] text-start text-[rgba(52,25,0,1)]">médicos, nutricionistas e personal trainers renomados.</p>
+              </div>
+              <div className="mt-[1.5rem] border-b mb-[1.5rem] border-transparent border-b-[rgba(172,125,83,0.2)]">
+                <h1 className="flex text-lg text-[rgba(52,25,0,1)] text-start items-center gap-2 font-literata font-bold">
+                  <IoBodyOutline className="text-[1.5rem] text-[#AC7D53]" />
+                  Comunidade que apoia e motiva
+                </h1>
+                <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)] text-start">você nunca estará sozinha nessa jornada.</p>
               </div>
             </div>
           </div>
@@ -960,12 +966,12 @@ export default function Home() {
                     >
                       {item.question}
                       <div className="bg-[#FFF2C0] ml-2 rounded-full w-[1.75rem] h-[1.75rem] flex items-center justify-center">
-                      {openIndex === index ? (
-                        <IoIosArrowUp className="text-[1.5rem]" />
-                      ) : (
-                        <IoIosArrowDown className="text-[1.5rem]" />
-                      )}
-                    </div>
+                        {openIndex === index ? (
+                          <IoIosArrowUp className="text-[1.5rem]" />
+                        ) : (
+                          <IoIosArrowDown className="text-[1.5rem]" />
+                        )}
+                      </div>
                     </button>
                     {openIndex === index && (
                       <p className="mt-2 text-gray-400 font-albert">{item.answer}</p>
@@ -977,57 +983,64 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <footer id="faq" className="mt-10 bg-[#FFFBEC] py-6 text-center md:text-left">
         <div className="block md:hidden">
+          {/* ------- LOGO DA EMPRESA AQUI ---------
           <div className="flex justify-center mb-4">
-            <img src="/logo.png" alt="Logo da Empresa" className="h-10" />
-          </div>
+            <Image src="/logo.png" alt="Logo da Empresa" className="h-10" />
+          </div>*/}
           <div className="flex justify-center space-x-4 mb-4">
             <a href="#" className="text-gray-600 hover:text-gray-900">
-              <FaWhatsapp className="text-2xl" />
+              <FaWhatsapp className="text-[2rem] text-[rgba(172,125,83,1)]" />
             </a>
             <a href="#" className="text-gray-600 hover:text-gray-900">
-              <FaInstagram className="text-2xl" />
+              <FaInstagram className="text-[2rem] text-[rgba(172,125,83,1)]" />
             </a>
             <a href="#" className="text-gray-600 hover:text-gray-900">
-              <CiFacebook className="text-2xl" />
+              <CiFacebook className="text-[2rem] text-[rgba(172,125,83,1)]" />
             </a>
           </div>
-          <p className="text-gray-700">CNPJ: 00.000.000/0000-00</p>
-          <p className="text-gray-700">Localização: Rua Exemplo, 123 - Cidade, Estado</p>
-          <p className="text-gray-500 mt-2">Menopausa</p>
+          <p className="text-[rgba(172,125,83,1)]"><span className="font-semibold">CNPJ:</span> 00.000.000/0000-00</p>
+          <p className="text-[rgba(172,125,83,1)]"><span className="font-semibold">Localização:</span> Rua Exemplo, 123 - Cidade, Estado</p>
+          <p className="text-[rgba(172,125,83,1)] mt-2">Menopausa</p>
         </div>
 
         <div className="hidden md:grid md:grid-cols-3 md:gap-8">
-          <div className="flex flex-col items-center space-y-2">
-            <img src="/logo.png" alt="Logo da Empresa" className="h-10" />
+          <div className="flex flex-col items-center justify-center h-[20rem] space-y-2">
+            {/* ------------ LOGO DA EMPRESA AQUI ------------*/}
+            {/*<Image src="/logo.png" alt="Logo da Empresa" className="h-10" /> */}
             <div className="flex space-x-4">
               <a href="#" className="text-gray-600 hover:text-gray-900">
-                <FaWhatsapp className="text-2xl" />
+                <FaWhatsapp className="text-[2rem] text-[rgba(172,125,83,1)]" />
               </a>
               <a href="#" className="text-gray-600 hover:text-gray-900">
-                <FaInstagram className="text-2xl" />
+                <FaInstagram className="text-[2rem] text-[rgba(172,125,83,1)]" />
               </a>
               <a href="#" className="text-gray-600 hover:text-gray-900">
-                <CiFacebook className="text-2xl" />
+                <CiFacebook className="text-[2rem] text-[rgba(172,125,83,1)]" />
               </a>
             </div>
           </div>
 
-          <div className="flex flex-col items-center justify-center space-y-2">
-            <p className="text-gray-700">CNPJ: 00.000.000/0000-00</p>
-            <p className="text-gray-700">Localização: Rua Exemplo, 123 - Cidade, Estado</p>
+          <div className="flex flex-col justify-center space-y-2">
+            <p className="text-[rgba(172,125,83,1)]"> <span className="font-semibold">CNPJ:</span> 00.000.000/0000-00</p>
+            <p className="text-[rgba(172,125,83,1)]"> <span className="font-semibold">Localização:</span> Rua Exemplo, 123 - Cidade, Estado</p>
           </div>
 
           <div className="flex flex-col items-end justify-center space-y-2 mr-8">
-            <div className="space-y-2">
-              <p className="text-gray-500 font-bold">Menopausa</p>
-              <a href="#home" className="text-gray-600 hover:text-gray-900 block">Como funciona?</a>
-              <a href="#kit" className="text-gray-600 hover:text-gray-900 block">Kit exclusivo</a>
-              <a href="#historia" className="text-gray-600 hover:text-gray-900 block">Histórias de sucesso</a>
-              <a href="#beneficio" className="text-gray-600 hover:text-gray-900 block">Exclusividade e benefícios</a>
-              <a href="#equipe" className="text-gray-600 hover:text-gray-900 block">Equipe</a>
-              <a href="#faq" className="text-gray-600 hover:text-gray-900 block">FAQ</a>
+            <div className="flex space-x-4">
+              <div className="space-y-2 mr-[1rem]">
+                <p className="text-[rgba(172,125,83,1)] font-bold">Menopausa</p>
+                <a href="#home" className="text-[rgba(172,125,83,1)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Como funciona?</a>
+                <a href="#kit" className="text-[rgba(172,125,83,1)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Kit exclusivo</a>
+                <a href="#historia" className="text-[rgba(172,125,83,1)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Histórias de sucesso</a>
+              </div>
+              <div className="space-y-2">
+                <a href="#beneficio" className="text-[rgba(172,125,83,1)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Exclusividade e <br /> benefícios</a>
+                <a href="#equipe" className="text-[rgba(172,125,83,1)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Equipe</a>
+                <a href="#faq" className="text-[rgba(172,125,83,1)] hover:text-[rgba(52,25,0,1)] block">FAQ</a>
+              </div>
             </div>
           </div>
         </div>
