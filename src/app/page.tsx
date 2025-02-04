@@ -56,9 +56,38 @@ export default function Home() {
   const handleClick = (key: ClickedKey) => {
     setClicked((prevState) => ({
       ...prevState,
-      [key]: !prevState[key], 
+      [key]: !prevState[key],
     }));
   };
+
+  const testimonials = [
+    {
+      before: "/antes.png",
+      after: "/depois.png",
+      quote:
+        "Eu já tinha tentado tantas dietas e academias, mas nenhuma me ajudava de verdade. Com o Programa Essência, finalmente consegui entender meu corpo e alcançar resultados que jamais pensei ser possível!",
+      author: "Mariana, 47 anos",
+      result: "Perdeu 12kg em 6 meses, mais energia e autoestima renovada."
+    },
+    {
+      before: "/antes.png",
+      after: "/depois.png",
+      quote:
+        "Nada funcionava para mim até que conheci esse programa. Hoje me sinto mais confiante e feliz!",
+      author: "Carlos, 35 anos",
+      result: "Eliminou 8kg e ganhou mais disposição para o dia a dia."
+    },
+    {
+      before: "/antes.png",
+      after: "/depois.png",
+      quote:
+        "Descobri um estilo de vida sustentável que me fez emagrecer sem sofrimento!",
+      author: "Ana, 29 anos",
+      result: "Perdeu 10kg e manteve os resultados sem efeito sanfona."
+    }
+  ];
+
+  const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <div className="bg-[rgba(250,247,242,1)]">
@@ -377,8 +406,8 @@ export default function Home() {
           />
 
           <div className="flex flex-col items-center justify-center text-center ml-[1.25rem] mr-[1.25rem]">
-            <h1 className="text-3xl font-semibold gap-2 items-center mb-[1rem] font-literata">
-              Não é sobre perder peso, mas sobre transformar seu corpo de forma
+            <h1 className="text-3xl font-semibold gap-2 text-[rgba(52,25,0,1)] items-center mb-[1rem] font-literata">
+              Não é sobre perder peso, <br />  mas sobre transformar seu corpo <br />  de forma
               <span className="text-[#AC7D53]"> saudável e sustentável.</span>
             </h1>
             <p className="text-xl text-[rgba(100,100,100,1)] flex font-albert">
@@ -403,7 +432,7 @@ export default function Home() {
             className="w-full h-[12.5rem] object-cover rounded-xl mx-5 mt-16"
           />
 
-          <h1 className="text-[1.5rem] ml-4 font-semibold gap-2 items-center mb-5 mt-[1rem] font-literata">
+          <h1 className="text-[1.5rem] ml-4 font-semibold text-[rgba(52,25,0,1)] gap-2 items-center mb-5 mt-[1rem] font-literata">
             Não é sobre perder peso, mas sobre transformar seu corpo de forma
             <span className="text-[#AC7D53]"> saudável e sustentável.</span>
           </h1>
@@ -546,16 +575,16 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="kit" className="p-3 max-w-screen mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
-        <div className="flex flex-col items-center">
-          <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert px-3 py-1 inline-block">
-            exclusividade essêncial
+      <div id="kit" className="p-3 max-w-screen mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mt-[4rem] mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
+        <div className="flex flex-col md:items-center items-start">
+          <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert px-3 py-1 inline-block self-start md:self-center">
+            exclusividade essencial
           </h2>
-          <h1 className="text-3xl ml-4 mr-4 font-semibold font-literata gap-2 items-center mb-5 mt-8 text-center md:text-center">
+          <h1 className="text-3xl ml-4 mr-4 font-semibold font-literata gap-2 mb-5 mt-8 text-start md:text-center">
             Bem-vinda ao primeiro passo da sua
             <span className="font-literata italic"> transformação!</span>
           </h1>
-          <p className="text-[1rem] text-[rgba(131,131,131,1)] font-albert ml-4 mr-4 flex md:text-center leading-[130%]">
+          <p className="text-[1rem] text-[rgba(131,131,131,1)] font-albert ml-4 mr-4 flex text-start md:text-center leading-[130%]">
             Cada detalhe foi pensado para tornar sua experiência única e motivadora. Ao se juntar ao nosso programa, você receberá um kit exclusivo, repleto de itens úteis e sofisticados que simbolizam nosso compromisso com o seu bem-estar.
           </p>
           <h1 className="text-[1.5rem] text-[#AC7D53] ml-4 mr-4 font-semibold font-literata flex gap-2 mt-8 text-center">
@@ -577,7 +606,7 @@ export default function Home() {
               className={`${clicked.semaglutida ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
                 } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
             >
-              <h1 className="text-xl text-center">SEMAglutida <br/> (Ozempic)</h1>
+              <h1 className="text-xl text-center">SEMAglutida <br /> (Ozempic)</h1>
             </div>
             <div
               onClick={() => handleClick('kitExercicio')}
@@ -589,7 +618,7 @@ export default function Home() {
           </div>
 
           <div
-            className="flex justify-center items-center ml-10 mt-5 md:ml-0 md:mt-0 rounded-3xl bg-[rgba(250,247,242,1)] bg-garrafa md:w-1/3 md:flex md:justify-center"
+            className="flex justify-center items-center mx-auto mt-5 md:ml-0 md:mt-0 rounded-3xl bg-[rgba(250,247,242,1)] bg-garrafa md:w-1/3 md:flex md:justify-center"
             style={{ height: '50vh', width: '33vh' }}
           ></div>
 
@@ -619,21 +648,21 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="historia" className="p-3 max-w-md mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
+      <div id="historia" className="p-3 mt-[4rem] max-w-md mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
         <div className="text-center md:w-full">
-          <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert mt-16 px-3 py-1 inline-block">
+          <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert px-3 py-1 inline-block mb-[1rem]">
             Transformações que inspiram.
           </h2>
-          <h1 className="text-3xl text-center font-semibold font-literata gap-2 items-center mb-5 mt-8">
+          <h1 className="text-[2rem] text-center font-semibold leading-[130%] font-literata gap-2 items-center mb-[2rem] md:mb-[4rem]">
             Histórias de Sucesso
           </h1>
         </div>
 
-        <div className="md:flex md:items-center md:w-full md:gap-6">
+        <div className="md:flex md:items-end md:w-full md:gap-[1.25rem]">
           <div className="md:w-1/2 flex flex-row gap-6 justify-center">
             <div className="flex justify-center items-center">
               <Image
-                src="/antes.png"
+                src={testimonials[activeIndex].before}
                 alt="Antes"
                 width={300}
                 height={500}
@@ -642,7 +671,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center items-center">
               <Image
-                src="/depois.png"
+                src={testimonials[activeIndex].after}
                 alt="Depois"
                 width={300}
                 height={500}
@@ -651,17 +680,27 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="md:w-1/2 flex flex-col gap-4 md:text-left md:ml-8">
-            <h1 className="text-xl gap-2 items-center mb-5 mt-8 font-albert">
-              “Eu já tinha tentado tantas dietas e academias, mas nenhuma me ajudava de verdade. Com o Programa essência,
-              <span className="font-semibold"> finalmente consegui entender meu corpo e alcançar resultados que jamais pensei ser possível!”</span>
+          <div className="md:w-1/2 flex flex-col gap-4 md:text-left md:ml-8 md:self-end">
+            <h1 className="text-[1.5rem] leading-[150%] text-[rgba(52,25,0,1)] gap-2 items-center mt-[2rem] font-albert">
+              "{testimonials[activeIndex].quote}"
             </h1>
-            <p className="text-gray-400 text-xl font-albert italic mt-4">- Mariana, 47 anos</p>
-            <p className="text-gray-400 text-xl font-albert mt-4">Perdeu 12kg em 6 meses, mais energia e autoestima renovada.</p>
-            <div className="flex justify-between mt-16 mb-8">
-              <div className="w-[30%] h-[8px] bg-gray-400 my-4 rounded"></div>
-              <div className="w-[30%] h-[8px] bg-gray-300 my-4 rounded"></div>
-              <div className="w-[30%] h-[8px] bg-gray-200 my-4 rounded"></div>
+            <p className="text-[rgba(131,131,131,1)] text-xl font-albert italic mt-[1rem]">
+              - {testimonials[activeIndex].author}
+            </p>
+            <p className="text-[rgba(131,131,131,1)] text-xl font-albert mt-[1rem]">
+              {testimonials[activeIndex].result}
+            </p>
+            <div className="flex gap-1 mt-[2rem]">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveIndex(index)}
+                  className={`w-[33%] md:w-[10%] h-[8px] rounded transition-all ${activeIndex === index
+                      ? "bg-[rgba(187,187,187,1)]"
+                      : "bg-[rgba(232,232,232,1)]"
+                    }`}
+                ></button>
+              ))}
             </div>
           </div>
         </div>
