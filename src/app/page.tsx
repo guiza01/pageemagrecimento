@@ -143,7 +143,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="md:bg-white md:mx-[4rem] md:my-[4.38rem] md:p-6">
+      <div className="md:mx-[4rem] md:my-[4.38rem]">
         <div className="relative min-h-screen md:min-h-[calc(100vh-4rem-4.38rem)] md:rounded-2xl bg-gray-100 bg-pilates bg-cover bg-no-repeat p-6 md:p-[4rem_4.38rem]">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between p-6 md:p-16 md:border-2 md:border-white/20 rounded-lg">
             <div className="mb-10 md:mb-0 md:w-1/2">
@@ -350,7 +350,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative min-h-screen mt-16 mr-4 bg-[#FFFFFF] bg-cover bg-no-repeat mt-[4rem] mb-[4rem]">
+      <div className="relative min-h-screen mt-16 mr-4 bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mt-[4rem] mb-[4rem]">
         <div className="hidden md:flex justify-center items-center mx-auto h-screen">
           <img
             src="/completadesktop.png"
@@ -528,7 +528,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="kit" className="p-3 max-w-md mx-auto relative min-h-screen bg-white bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
+      <div id="kit" className="p-3 max-w-md mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
         <div className="text-center md:w-1/2">
           <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert ml-5 mt-8 px-3 py-1 inline-block">
             exclusividade essêncial
@@ -574,7 +574,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="historia" className="p-3 max-w-md mx-auto relative min-h-screen bg-white bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
+      <div id="historia" className="p-3 max-w-md mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
         <div className="text-center md:w-full">
           <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert mt-16 px-3 py-1 inline-block">
             Transformações que inspiram.
@@ -622,7 +622,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="beneficio" className="p-3 mx-auto relative min-h-screen bg-[#FFFBEC] bg-cover bg-no-repeat mb-16 w-full md:w-4/5">
+      <div id="beneficio" className="p-3 mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-16 w-full md:w-4/5">
         <div className="relative mt-8">
           <div className="flex flex-col md:flex-row-reverse justify-between items-center md:items-start">
             <div className="flex justify-center items-center mb-8 rounded bg-[#FFFFFF] relative md:w-1/2 w-full" style={{ height: '50vh' }}>
@@ -729,7 +729,7 @@ export default function Home() {
 
       <div>
         <div className="p-3 flex justify-center items-center">
-          <div className="relative bg-white bg-opacity-60 backdrop-blur-lg rounded-3xl p-8 w-full max-w-3xl mx-auto">
+          <div className="relative bg-[rgba(250,247,242,1)] bg-opacity-60 backdrop-blur-lg rounded-3xl p-8 w-full max-w-3xl mx-auto">
             <div className="text-center">
               <h1 className="text-lg bg-opacity-70 text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert px-2 py-1 inline-block">
                 Você não está sozinha!
@@ -749,13 +749,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="p-3 max-w-full mx-auto relative min-h-screen bg-white bg-cover bg-no-repeat mb-8">
+        <div className="max-w-full mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8">
           <div className="block lg:hidden">
             <div className="justify-center items-center ml-10 mt-20 rounded-2xl bg-[#FFFFFF] bg-faq relative" style={{ height: '50vh', width: '33vh' }}>
               <div className="bg-white bg-opacity-60 border-2 rounded py-2">
                 <div className="flex justify-center mb-6">
                   <div className="bg-[#FFF2C0] rounded-xl px-3 py-1 w-fit">
-                    <h2 className="text-lg text-[#382513] text-center uppercase font-albert">FAQ</h2>
+                    <h2 className="text-[1rem] text-[#382513] text-center uppercase font-albert">FAQ</h2>
                   </div>
                 </div>
                 <h1 className="text-2xl text-center ml-4 mr-4 font-semibold font-literata">
@@ -786,7 +786,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row w-full min-h-screen items-center justify-center p-6">
               <div
                 className="w-full md:w-1/2 flex flex-col justify-start items-start ml-10 mt-20 rounded-2xl bg-[#FFFFFF] bg-faq relative"
-                style={{ height: '50vh', width: '33vh' }}
+                style={{ height: '50vh', width: '40vh' }}
               >
                 <div className="bg-white bg-opacity-60 border-2 rounded py-2 w-full flex flex-col items-start p-6">
                   <div className="flex justify-start mb-6 w-full">
@@ -800,7 +800,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="w-full md:w-1/2 flex flex-col p-6">
+              <div className="w-full md:w-1/2 flex flex-col p-6 ml-[1.5rem]">
                 {faqItems.map((item, index) => (
                   <div key={index} className="border-b border-gray-300 py-4">
                     <button
