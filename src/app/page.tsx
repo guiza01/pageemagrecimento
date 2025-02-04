@@ -143,7 +143,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="md:bg-white md:mx-[4rem] md:my-[4.38rem] md:p-6">
+      <div className="md:bg-[rgba(250,247,242,1)] md:mx-[4rem] md:my-[4.38rem]">
         <div className="relative min-h-screen md:min-h-[calc(100vh-4rem-4.38rem)] md:rounded-2xl bg-gray-100 bg-pilates bg-cover bg-no-repeat p-6 md:p-[4rem_4.38rem]">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between p-6 md:p-16 md:border-2 md:border-white/20 rounded-lg">
             <div className="mb-10 md:mb-0 md:w-1/2">
@@ -286,7 +286,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative min-h-[80vh] md:min-h-[60vh] bg-[#FFFBEC] bg-cover pb-20 md:mx-[9ren] md:my-[6rem]">
+      <div className="relative min-h-[80vh] md:min-h-[60vh] bg-[#FFFBEC] bg-cover md:mx-[9ren] md:my-[6rem]">
         <div className="pt-10">
           <div className="hidden md:block text-center">
             <h1 className="max-w-[640px] text-[2rem] font-semibold mb-[1rem] mx-auto font-literata text-[rgba(52,25,0,1)]">
@@ -350,7 +350,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative min-h-screen mt-16 mr-4 bg-[#FFFFFF] bg-cover bg-no-repeat mt-[4rem] mb-[4rem]">
+      <div className="relative min-h-screen bg-[#FFFFFF] bg-cover bg-no-repeat ">
         <div className="hidden md:flex justify-center items-center mx-auto h-screen">
           <img
             src="/completadesktop.png"
@@ -382,40 +382,49 @@ export default function Home() {
           <img
             src="/completa.png"
             alt="Imagem mobile"
-            className="w-full h-[12.5rem] object-cover rounded-xl mx-5 mt-16"
+            className="w-full h-[12.5rem] object-cover rounded-xl mx-4 mt-16"
           />
 
-          <h1 className="text-[1.5rem] ml-4 font-semibold gap-2 items-center mb-5 mt-[1rem] font-literata">
+          <h1 className="text-[1.5rem] mx-4 font-semibold gap-2 items-center mb-5 mt-[1rem] font-literata">
             Não é sobre perder peso, mas sobre transformar seu corpo de forma
             <span className="text-[#AC7D53]"> saudável e sustentável.</span>
           </h1>
-          <p className="text-xl ml-4 flex font-albert">
+          <p className="text-xl mx-4 flex font-albert">
             A sua jornada começa aqui. Agende sua consulta inicial e descubra como podemos ajudar você a alcançar resultados duradouros.
           </p>
-          <button className="mt-[4rem] ml-4 mb-[4rem] bg-[#341900] w-[100%] text-white text-lg font-semibold py-3 px-6 rounded-lg">
+          <button className="mt-[4rem] mx-4 mb-[4rem] bg-[#341900] w-[100%] text-white text-lg font-semibold py-3 px-6 rounded-lg">
             Agendar Agora
           </button>
         </div>
       </div>
 
-      <div>
-        <div className="p-6 min-h-screen max-w-md mx-auto bg-clorblur bg-no-repeat lg:hidden">
+      <div className="min-h-screen w-full bg-clorblur bg-no-repeat bg-cover lg:hidden">
+        <div className="p-6 max-w-md mx-auto">
           <div className="text-center">
             <h2 className="text-lg px-3 py-1 text-[#FFF2C0] bg-[#F9D689] rounded bg-opacity-10 uppercase font-albert mt-8 inline-block">
               Entenda
             </h2>
           </div>
-          <h1 className="text-3xl text-center text-white ml-4 mr-4 font-literata items-center mt-8 justify-center">
+          <h1 className="text-[1.5rem] text-center text-white ml-4 mr-4 font-literata items-center mt-8 justify-center">
             Como funciona o <i>Programa Essência?</i>
           </h1>
-          <p className="text-xl text-white text-center mt-8 ml-4 mr-4 flex font-albert">
+          <p className="text-[1rem] text-white text-center mt-8 ml-4 mr-4 flex font-albert">
             Nosso programa é baseado em evidências científicas, com métodos validados que garantem que você perca peso sem comprometer sua saúde ou seu metabolismo.
           </p>
 
-          <div
-            className="p-6 mt-16 rounded-3xl ml-5 mr-5 relative bg-redonda"
-            style={{ height: "35vh", borderRadius: "50%" }}
-          ></div>
+          <div className="relative flex justify-center items-center mt-16">
+            <div className="absolute rounded-full h-[420px] w-[420px] border border-white opacity-40"></div>
+            <div className="absolute rounded-full h-[520px] w-[520px] border border-white opacity-20"></div>
+            <div className="absolute rounded-full h-[620px] w-[620px] border border-white opacity-10"></div>
+            <div className="relative z-10">
+              <img
+                src="/redonda.png"
+                alt="Programa Essência"
+                className="rounded-full h-[300px] w-[300px] mb-[3rem] border border-white"
+                style={{ borderWidth: "1px" }}
+              />
+            </div>
+          </div>
 
           {[
             {
@@ -446,7 +455,11 @@ export default function Home() {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-white border-4 border-white/20 rounded-2xl bg-opacity-10 ml-5 mr-5 mt-16 flex items-center flex-col p-6"
+              className="bg-white/15 rounded-xl p-6 border-[1px] border-[rgba(255, 255, 255, 0.05)] backdrop-blur-lg ml-5 mr-5 mb-[1.5rem]"
+              style={{
+                border: "8px solid rgba(255, 255, 255, 0.05)",
+                backdropFilter: "blur(15px)",
+              }}
             >
               <h1 className="text-xl text-white flex items-center font-literata gap-2 text-left w-full">
                 {item.icon}
@@ -458,10 +471,10 @@ export default function Home() {
         </div>
 
         <div className="hidden lg:flex flex-col items-center bg-clorblur min-h-screen py-16">
-          <h2 className="text-lg px-3 py-1 text-[#FFF2C0] bg-[#F9D689] rounded bg-opacity-10 uppercase font-albert mb-8">
+          <h2 className="text-lg px-3 py-1 text-[#FFF2C0] bg-[#F9D689] rounded bg-opacity-10 uppercase font-albert mb-[1rem]">
             Entenda
           </h2>
-          <h1 className="text-[2rem] text-center text-white font-literata mb-8">
+          <h1 className="text-[2rem] text-center text-white font-literata mb-[1rem]">
             Como Funciona o <i>Programa Essência?</i>
           </h1>
           <p className="text-[1rem] text-[rgba(225,225,225,1)] text-center max-w-3xl font-albert mb-16">
@@ -508,11 +521,13 @@ export default function Home() {
                 title: "Acompanhamento Contínuo",
                 text: "Suporte dedicado de médicos, nutricionistas e personal trainers.",
                 icon: <PiStethoscopeLight className="text-2xl text-[rgba(255,242,192,1)]" />,
+                center: true,
               },
-            ].map((item, index) => (
+            ].map((item, index, array) => (
               <div
                 key={index}
-                className="bg-white/10 rounded-2xl p-6 border-[8px] border-[rgba(255, 255, 255, 0.05)] backdrop-blur-lg"
+                className={`bg-white/15 rounded-2xl p-6 border-[1px] border-[rgba(255, 255, 255, 0.05)] backdrop-blur-lg ${item.center && array.length % 2 !== 0 ? "col-span-2 mx-auto max-w-md text-center" : ""
+                  }`}
                 style={{
                   border: "8px solid rgba(255, 255, 255, 0.05)",
                   backdropFilter: "blur(15px)",
@@ -521,7 +536,7 @@ export default function Home() {
                 <h1 className="text-xl text-white font-literata mb-4 flex items-center gap-2">
                   {item.icon} {item.title}
                 </h1>
-                <p className="text-white font-albert">{item.text}</p>
+                <p className="text-[rgba(255,251,236,1)] text-start font-albert">{item.text}</p>
               </div>
             ))}
           </div>
