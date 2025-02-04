@@ -696,8 +696,8 @@ export default function Home() {
                   key={index}
                   onClick={() => setActiveIndex(index)}
                   className={`w-[33%] md:w-[10%] h-[8px] rounded transition-all ${activeIndex === index
-                      ? "bg-[rgba(187,187,187,1)]"
-                      : "bg-[rgba(232,232,232,1)]"
+                    ? "bg-[rgba(187,187,187,1)]"
+                    : "bg-[rgba(232,232,232,1)]"
                     }`}
                 ></button>
               ))}
@@ -708,47 +708,56 @@ export default function Home() {
 
       <div id="beneficio" className="p-3 mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-16 w-full md:w-4/5">
         <div className="relative mt-8">
-          <div className="flex flex-col md:flex-row-reverse justify-between items-center md:items-start">
-            <div className="flex justify-center items-center mb-8 rounded bg-[#FFFFFF] relative md:w-1/2 w-full" style={{ height: '50vh' }}>
+          <div className="flex flex-col md:flex-row-reverse justify-between items-center md:items-start relative">
+            <div className="flex justify-center items-center mb-8 rounded bg-[#FFFFFF] relative md:w-1/2 w-full" style={{ height: '60vh' }}>
               <Image src="/mulheres.png" alt="Imagem Exemplo" layout="fill" objectFit="cover" className="rounded" />
-              <div className="absolute top-0 left-0 w-[50%] h-full bg-gradient-to-r from-[#FFF2C0] via-transparent to-transparent opacity-50 md:block hidden"></div>
             </div>
-            <div className="bg-white mb-8 mx-auto max-w-4xl px-4 relative z-10 md:w-1/2 w-full">
-              <div className="text-center">
-                <h1 className="text-lg text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert mb-5 px-2 py-1 inline-block">
+            <div
+              className="absolute rounded-xl inset-0 flex justify-center items-center"
+              style={{
+                top: '-6rem',
+                left: '2rem',
+                right: '0',
+                bottom: '5rem',
+                opacity: 1.2,
+                border: '8px solid rgba(14, 13, 13, 0.1)',
+                background: 'rgba(255, 255, 255, 0.50)',
+                boxShadow: '0px 2px 20px 0px rgba(0, 0, 0, 0.10)',
+                width: 'calc(60% - 4rem)',
+                minHeight: '20rem'
+              }}
+            >
+              <div className="md:text-left text-center w-full max-w-4xl px-4">
+                <h1 className="text-lg text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert px-2 py-1 inline-block">
                   exclusividade e benefícios
                 </h1>
-              </div>
-              <h1 className="text-4xl text-semibold font-literata gap-2 items-center mb-5 mt-8">
-                Uma experiência exclusiva que garante o seu sucesso!
-              </h1>
-              <div className="ml-4 mt-4">
-                <h1 className="flex text-lg items-center gap-2 font-bold">
-                  <FaPeopleGroup className="text-xl text-[#AC7D53]" />
-                  Apenas 30 vagas por mês
+                <h1 className="mt-[1rem] text-[2rem] text-[rgba(52,25,0,1)] text-semibold font-literata gap-2 items-center mb-[2.5rem]">
+                  Uma experiência exclusiva que <br /> garante o seu sucesso!
                 </h1>
-                <p>para garantir o cuidado que você merece.</p>
+                <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
+                  <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                    <FaPeopleGroup className="text-[1.5rem] text-[#AC7D53]" />
+                    Apenas 30 vagas por mês
+                  </h1>
+                  <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">para garantir o cuidado que você merece.</p>
+                </div>
+                <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
+                  <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                    <PiStethoscopeLight className="text-[1.5rem] text-[#AC7D53]" />
+                    Equipe dedicada ao seu sucesso
+                  </h1>
+                  <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">médicos, nutricionistas e personal trainers renomados.</p>
+                </div>
+                <div className="mt-[1.5rem] border-b mb-[1.5rem] border-transparent border-b-[rgba(172,125,83,0.2)]">
+                  <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                    <IoBodyOutline className="text-[1.5rem] text-[#AC7D53]" />
+                    Comunidade que apoia e motiva
+                  </h1>
+                  <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">você nunca estará sozinha nessa jornada.</p>
+                </div>
               </div>
-              <div className="w-[90%] h-[1px] bg-gray-200 my-4 rounded mx-auto"></div>
-              <div className="ml-4 mt-4">
-                <h1 className="flex text-lg items-center gap-2 font-bold">
-                  <PiStethoscopeLight className="text-xl text-[#AC7D53]" />
-                  Equipe dedicada ao seu sucesso
-                </h1>
-                <p>médicos, nutricionistas e personal trainers renomados.</p>
-              </div>
-              <div className="w-[90%] h-[1px] bg-gray-200 my-4 rounded mx-auto"></div>
-              <div className="ml-4 mt-4 mb-4">
-                <h1 className="flex text-lg items-center gap-2 font-bold">
-                  <IoBodyOutline className="text-xl text-[#AC7D53]" />
-                  Comunidade que apoia e motiva
-                </h1>
-                <p>você nunca estará sozinha nessa jornada.</p>
-              </div>
-              <div className="w-[90%] h-[1px] bg-gray-200 my-4 rounded mx-auto"></div>
             </div>
           </div>
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-white via-transparent to-transparent z-0" style={{ height: '50vh' }}></div>
         </div>
         <div id="equipe">
           <div className="text-center md:w-4/5 mx-auto">
