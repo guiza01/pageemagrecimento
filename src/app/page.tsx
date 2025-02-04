@@ -42,6 +42,24 @@ export default function Home() {
     { question: "Quanto custa o programa?", answer: "Não, este serviço é totalmente gratuito." },
   ];
 
+  type ClickedKey = 'caixa' | 'semaglutida' | 'kitExercicio' | 'squeeze' | 'guia' | 'surpresa';
+
+  const [clicked, setClicked] = useState<{ [key in ClickedKey]: boolean }>({
+    caixa: false,
+    semaglutida: false,
+    kitExercicio: false,
+    squeeze: false,
+    guia: false,
+    surpresa: false,
+  });
+
+  const handleClick = (key: ClickedKey) => {
+    setClicked((prevState) => ({
+      ...prevState,
+      [key]: !prevState[key], 
+    }));
+  };
+
   return (
     <div className="bg-[rgba(250,247,242,1)]">
       <div id="home" className="relative min-h-screen bg-gray-100 bg-cover bg-no-repeat bg-[url('/Hero.png')] md:bg-[url('/HeroDesktop.png')]">
@@ -528,47 +546,74 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="kit" className="p-3 max-w-md mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
-        <div className="text-center md:w-1/2">
-          <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert ml-5 mt-8 px-3 py-1 inline-block">
+      <div id="kit" className="p-3 max-w-screen mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
+        <div className="flex flex-col items-center">
+          <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert px-3 py-1 inline-block">
             exclusividade essêncial
           </h2>
           <h1 className="text-3xl ml-4 mr-4 font-semibold font-literata gap-2 items-center mb-5 mt-8 text-center md:text-center">
             Bem-vinda ao primeiro passo da sua
             <span className="font-literata italic"> transformação!</span>
           </h1>
-          <p className="text-xl text-gray-500 font-albert ml-4 mr-4 flex md:text-center">
+          <p className="text-[1rem] text-[rgba(131,131,131,1)] font-albert ml-4 mr-4 flex md:text-center leading-[130%]">
             Cada detalhe foi pensado para tornar sua experiência única e motivadora. Ao se juntar ao nosso programa, você receberá um kit exclusivo, repleto de itens úteis e sofisticados que simbolizam nosso compromisso com o seu bem-estar.
           </p>
-          <h1 className="text-3xl text-[#AC7D53] ml-4 mr-4 font-semibold font-literata flex gap-2 mt-8 text-center">
+          <h1 className="text-[1.5rem] text-[#AC7D53] ml-4 mr-4 font-semibold font-literata flex gap-2 mt-8 text-center">
             O que vem no Presskit?
           </h1>
         </div>
 
         <div className="md:flex md:gap-6 md:items-center mt-8 md:w-full">
           <div className="md:w-1/3 flex flex-col gap-5">
-            <div className="bg-gray-100 border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6">
-              <h1 className="text-xl text-center text-gray-500">Caixa do Presskit</h1>
+            <div
+              onClick={() => handleClick('caixa')}
+              className={`${clicked.caixa ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
+                } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+            >
+              <h1 className="text-xl text-center">Caixa do Presskit</h1>
             </div>
-            <div className="bg-gray-100 border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6">
-              <h1 className="text-xl text-center text-gray-500">SEMAglutida (Ozempic)</h1>
+            <div
+              onClick={() => handleClick('semaglutida')}
+              className={`${clicked.semaglutida ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
+                } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+            >
+              <h1 className="text-xl text-center">SEMAglutida <br/> (Ozempic)</h1>
             </div>
-            <div className="bg-gray-100 border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6">
-              <h1 className="text-xl text-center text-gray-500">Kit Exercício em Casa</h1>
+            <div
+              onClick={() => handleClick('kitExercicio')}
+              className={`${clicked.kitExercicio ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
+                } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+            >
+              <h1 className="text-xl text-center">Kit Exercício em Casa</h1>
             </div>
           </div>
 
-          <div className="flex justify-center items-center ml-10 mt-8 md:ml-0 md:mt-0 rounded-3xl bg-[rgba(250,247,242,1)] bg-garrafa md:w-1/3 md:flex md:justify-center" style={{ height: '50vh', width: '33vh' }}></div>
+          <div
+            className="flex justify-center items-center ml-10 mt-5 md:ml-0 md:mt-0 rounded-3xl bg-[rgba(250,247,242,1)] bg-garrafa md:w-1/3 md:flex md:justify-center"
+            style={{ height: '50vh', width: '33vh' }}
+          ></div>
 
           <div className="md:w-1/3 flex flex-col gap-5">
-            <div className="bg-[#FFF2C0] border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-8 flex flex-col items-center p-6">
+            <div
+              onClick={() => handleClick('squeeze')}
+              className={`${clicked.squeeze ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
+                } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+            >
               <h1 className="text-xl text-center">Squeeze Personalizada</h1>
             </div>
-            <div className="bg-gray-100 border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-8 flex flex-col items-center p-6">
-              <h1 className="text-xl text-center text-gray-500">Guia de Introdução ao Programa</h1>
+            <div
+              onClick={() => handleClick('guia')}
+              className={`${clicked.guia ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
+                } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+            >
+              <h1 className="text-xl text-center">Guia de Introdução ao Programa</h1>
             </div>
-            <div className="bg-gray-100 border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-8 flex flex-col items-center p-6">
-              <h1 className="text-xl text-center text-gray-500">Itens Surpresa</h1>
+            <div
+              onClick={() => handleClick('surpresa')}
+              className={`${clicked.surpresa ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
+                } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+            >
+              <h1 className="text-xl text-center">Itens Surpresa</h1>
             </div>
           </div>
         </div>
