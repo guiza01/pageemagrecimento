@@ -286,7 +286,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative min-h-[80vh] md:min-h-[60vh] bg-[#FFFBEC] bg-cover md:mx-[9ren] md:my-[6rem]">
+      <div className="relative min-h-[80vh] md:min-h-[60vh] bg-[rgba(250,247,242,1)] bg-cover md:mx-[9ren] md:my-[6rem]">
         <div className="pt-10">
           <div className="hidden md:block text-center">
             <h1 className="max-w-[640px] text-[2rem] font-semibold mb-[1rem] mx-auto font-literata text-[rgba(52,25,0,1)]">
@@ -350,7 +350,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative min-h-screen bg-[#FFFFFF] bg-cover bg-no-repeat ">
+      <div className="relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat ">
         <div className="hidden md:flex justify-center items-center mx-auto h-screen">
           <img
             src="/completadesktop.png"
@@ -543,7 +543,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="kit" className="p-3 max-w-md mx-auto relative min-h-screen bg-white bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
+      <div id="kit" className="p-3 max-w-md mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
         <div className="text-center md:w-1/2">
           <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert ml-5 mt-8 px-3 py-1 inline-block">
             exclusividade essêncial
@@ -589,7 +589,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="historia" className="p-3 max-w-md mx-auto relative min-h-screen bg-white bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
+      <div id="historia" className="p-3 max-w-md mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
         <div className="text-center md:w-full">
           <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert mt-16 px-3 py-1 inline-block">
             Transformações que inspiram.
@@ -637,7 +637,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="beneficio" className="p-3 mx-auto relative min-h-screen bg-[#FFFBEC] bg-cover bg-no-repeat mb-16 w-full md:w-4/5">
+      <div id="beneficio" className="p-3 mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-16 w-full md:w-4/5">
         <div className="relative mt-8">
           <div className="flex flex-col md:flex-row-reverse justify-between items-center md:items-start">
             <div className="flex justify-center items-center mb-8 rounded bg-[#FFFFFF] relative md:w-1/2 w-full" style={{ height: '50vh' }}>
@@ -744,7 +744,7 @@ export default function Home() {
 
       <div>
         <div className="p-3 flex justify-center items-center">
-          <div className="relative bg-white bg-opacity-60 backdrop-blur-lg rounded-3xl p-8 w-full max-w-3xl mx-auto">
+          <div className="relative bg-[rgba(250,247,242,1)] bg-opacity-60 backdrop-blur-lg rounded-3xl p-8 w-full max-w-3xl mx-auto">
             <div className="text-center">
               <h1 className="text-lg bg-opacity-70 text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert px-2 py-1 inline-block">
                 Você não está sozinha!
@@ -764,7 +764,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="p-3 max-w-full mx-auto relative min-h-screen bg-white bg-cover bg-no-repeat mb-8">
+        <div className="p-3 max-w-full mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8">
           <div className="block lg:hidden">
             <div className="justify-center items-center ml-10 mt-20 rounded-2xl bg-[#FFFFFF] bg-faq relative" style={{ height: '50vh', width: '33vh' }}>
               <div className="bg-white bg-opacity-60 border-2 rounded py-2">
