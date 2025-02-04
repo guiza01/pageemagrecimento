@@ -706,136 +706,188 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="beneficio" className="p-3 mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-16 w-full md:w-4/5">
-        <div className="relative mt-8">
-          <div className="flex flex-col md:flex-row-reverse justify-between items-center md:items-start relative">
-            <div className="flex justify-center items-center mb-8 rounded bg-[#FFFFFF] relative md:w-1/2 w-full" style={{ height: '60vh' }}>
-              <Image src="/mulheres.png" alt="Imagem Exemplo" layout="fill" objectFit="cover" className="rounded" />
+      <div id="beneficio" className="p-3 mx-auto mt-[4rem] relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-16 w-full md:w-4/5">
+        <div className="hidden md:block">
+          <div className="relative mt-8">
+            <div className="flex flex-col md:flex-row-reverse justify-between items-center md:items-start relative">
+              <div className="flex justify-center items-center mb-8 rounded bg-[#FFFFFF] relative md:w-1/2 w-full" style={{ height: '60vh' }}>
+                <Image src="/mulheres.png" alt="Imagem Exemplo" layout="fill" objectFit="cover" className="rounded" />
+              </div>
+              <div
+                className="absolute rounded-xl inset-0 flex justify-center items-center"
+                style={{
+                  top: '-6rem',
+                  left: '2rem',
+                  right: '0',
+                  bottom: '5rem',
+                  opacity: 1.2,
+                  border: '8px solid rgba(14, 13, 13, 0.1)',
+                  background: 'rgba(255, 255, 255, 0.50)',
+                  boxShadow: '0px 2px 20px 0px rgba(0, 0, 0, 0.10)',
+                  width: 'calc(60% - 4rem)',
+                  minHeight: '20rem',
+                  zIndex: 1
+                }}
+              >
+                <div className="md:text-left text-center w-full max-w-4xl px-4">
+                  <h1 className="text-lg text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert px-2 py-1 inline-block">
+                    exclusividade e benefícios
+                  </h1>
+                  <h1 className="mt-[1rem] text-[2rem] text-[rgba(52,25,0,1)] text-semibold font-literata gap-2 items-center mb-[2.5rem]">
+                    Uma experiência exclusiva que garante o seu sucesso!
+                  </h1>
+                  <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
+                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                      <FaPeopleGroup className="text-[1.5rem] text-[#AC7D53]" />
+                      Apenas 30 vagas por mês
+                    </h1>
+                    <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">para garantir o cuidado que você merece.</p>
+                  </div>
+                  <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
+                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                      <PiStethoscopeLight className="text-[1.5rem] text-[#AC7D53]" />
+                      Equipe dedicada ao seu sucesso
+                    </h1>
+                    <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">médicos, nutricionistas e personal trainers renomados.</p>
+                  </div>
+                  <div className="mt-[1.5rem] border-b mb-[1.5rem] border-transparent border-b-[rgba(172,125,83,0.2)]">
+                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                      <IoBodyOutline className="text-[1.5rem] text-[#AC7D53]" />
+                      Comunidade que apoia e motiva
+                    </h1>
+                    <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">você nunca estará sozinha nessa jornada.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div
-              className="absolute rounded-xl inset-0 flex justify-center items-center"
-              style={{
-                top: '-6rem',
-                left: '2rem',
-                right: '0',
-                bottom: '5rem',
-                opacity: 1.2,
-                border: '8px solid rgba(14, 13, 13, 0.1)',
-                background: 'rgba(255, 255, 255, 0.50)',
-                boxShadow: '0px 2px 20px 0px rgba(0, 0, 0, 0.10)',
-                width: 'calc(60% - 4rem)',
-                minHeight: '20rem'
-              }}
-            >
-              <div className="md:text-left text-center w-full max-w-4xl px-4">
-                <h1 className="text-lg text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert px-2 py-1 inline-block">
-                  exclusividade e benefícios
-                </h1>
-                <h1 className="mt-[1rem] text-[2rem] text-[rgba(52,25,0,1)] text-semibold font-literata gap-2 items-center mb-[2.5rem]">
-                  Uma experiência exclusiva que <br /> garante o seu sucesso!
-                </h1>
-                <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
-                  <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
-                    <FaPeopleGroup className="text-[1.5rem] text-[#AC7D53]" />
-                    Apenas 30 vagas por mês
+            <div className="block md:hidden">
+              <div className="flex justify-center items-center mt-8 rounded bg-[#FFFFFF] relative w-full" style={{ height: '40vh' }}>
+                <Image src="/mulheres.png" alt="Imagem Exemplo" layout="fill" objectFit="cover" className="rounded" />
+              </div>
+              <div
+                className="rounded-xl flex justify-center items-center"
+                style={{
+                  margin: '0 auto',
+                  opacity: 1.2,
+                  border: '8px solid rgba(14, 13, 13, 0.1)',
+                  background: 'rgba(255, 255, 255, 0.50)',
+                  boxShadow: '0px 2px 20px 0px rgba(0, 0, 0, 0.10)',
+                  width: '90%',
+                  minHeight: '20rem',
+                  marginTop: '-4rem'
+                }}
+              >
+                <div className="text-center w-full px-4">
+                  <h1 className="text-lg text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert px-2 py-1 inline-block">
+                    exclusividade e benefícios
                   </h1>
-                  <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">para garantir o cuidado que você merece.</p>
-                </div>
-                <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
-                  <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
-                    <PiStethoscopeLight className="text-[1.5rem] text-[#AC7D53]" />
-                    Equipe dedicada ao seu sucesso
+                  <h1 className="mt-[1rem] text-[1.5rem] text-[rgba(52,25,0,1)] text-semibold font-literata gap-2 items-center mb-[2.5rem]">
+                    Uma experiência exclusiva que garante o seu sucesso!
                   </h1>
-                  <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">médicos, nutricionistas e personal trainers renomados.</p>
-                </div>
-                <div className="mt-[1.5rem] border-b mb-[1.5rem] border-transparent border-b-[rgba(172,125,83,0.2)]">
-                  <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
-                    <IoBodyOutline className="text-[1.5rem] text-[#AC7D53]" />
-                    Comunidade que apoia e motiva
-                  </h1>
-                  <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">você nunca estará sozinha nessa jornada.</p>
+                  <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
+                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                      <FaPeopleGroup className="text-[1.5rem] text-[#AC7D53]" />
+                      Apenas 30 vagas por mês
+                    </h1>
+                    <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">para garantir o cuidado que você merece.</p>
+                  </div>
+                  <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
+                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                      <PiStethoscopeLight className="text-[1.5rem] text-[#AC7D53]" />
+                      Equipe dedicada ao seu sucesso
+                    </h1>
+                    <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">médicos, nutricionistas e personal trainers renomados.</p>
+                  </div>
+                  <div className="mt-[1.5rem] border-b mb-[1.5rem] border-transparent border-b-[rgba(172,125,83,0.2)]">
+                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                      <IoBodyOutline className="text-[1.5rem] text-[#AC7D53]" />
+                      Comunidade que apoia e motiva
+                    </h1>
+                    <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">você nunca estará sozinha nessa jornada.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div id="equipe">
-          <div className="text-center md:w-4/5 mx-auto">
-            <h1 className="text-lg text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert mb-5 px-2 py-1 inline-block">
-              Conheça a equipe que vai cuidar de você
-            </h1>
-            <h1 className="mb-4 text-4xl font-literata flex items-center justify-center gap-2">
-              Uma equipe dedicada ao seu sucesso
-            </h1>
-            <p className="text-lg font-albert text-gray-500 text-center mx-4">
-              Nosso time é composto por especialistas apaixonados por saúde e bem-estar, prontos para guiar você em cada etapa da sua jornada. Porque cuidar de você é a nossa prioridade.
-            </p>
-          </div>
-
-          <div className="p-6 mt-16 rounded-3xl mb-16 mx-auto bg-[#FFFFFF] bg-equipe relative w-full md:w-4/5" style={{ height: '30vh' }}>
-
-            <div className="absolute top-[-20px] left-[10%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
-              <PiStethoscopeLight className="text-2xl" />
-            </div>
-            <div className="absolute top-[-20px] left-[50%] translate-x-[-50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
-              <FaRegHeart className="text-2xl" />
-            </div>
-
-            <div className="absolute top-[-20px] right-[10%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
-              <FaTruckMedical className="text-2xl" />
-            </div>
-
-            <div className="absolute bottom-[-20px] left-[10%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
-              <CiMedicalCase className="text-2xl" />
-            </div>
-            <div className="absolute bottom-[-20px] left-[50%] translate-x-[-50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
-              <PiHospital className="text-2xl" />
-            </div>
-
-            <div className="absolute bottom-[-20px] right-[10%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
-              <BsCapsule className="text-2xl" />
-            </div>
-
-            <div className="absolute top-[20%] left-[-20px] transform translate-y-[-50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 hidden md:flex">
-              <PiStethoscopeLight className="text-2xl" />
-            </div>
-            <div className="absolute top-[50%] right-[-20px] transform translate-y-[-50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 hidden md:flex">
-              <FaRegHeart className="text-2xl" />
-            </div>
-
-            <div className="absolute top-[50%] left-[-20px] transform translate-y-[-50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 hidden md:flex">
-              <FaTruckMedical className="text-2xl" />
-            </div>
-
-            <div className="absolute bottom-[80%] right-[-20px] transform translate-y-[50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 hidden md:flex">
-              <CiMedicalCase className="text-2xl" />
-            </div>
-            <div className="absolute bottom-[20%] left-[-0px] transform translate-x-[-50%] translate-y-[50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 hidden md:flex">
-              <PiHospital className="text-2xl" />
-            </div>
-            <div className="absolute bottom-[20%] right-[-20px] transform translate-y-[50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 hidden md:flex">
-              <BsCapsule className="text-2xl" />
-            </div>
-          </div>
-        </div>
       </div>
 
-      <div>
-        <div className="p-3 flex justify-center items-center">
-          <div className="relative bg-[rgba(250,247,242,1)] bg-opacity-60 backdrop-blur-lg rounded-3xl p-8 w-full max-w-3xl mx-auto">
-            <div className="text-center">
-              <h1 className="text-lg bg-opacity-70 text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert px-2 py-1 inline-block">
+      <div id="equipe">
+        <div className="text-center md:w-4/5 mx-auto">
+          <h1 className="text-lg  text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert mb-5 px-2 py-1 inline-block">
+            Conheça a equipe que vai cuidar de você
+          </h1>
+          <h1 className="mb-4 text-[2rem] font-literata flex items-center justify-center gap-2">
+            Uma equipe dedicada ao seu sucesso
+          </h1>
+          <p className="text-[1rem] font-albert text-gray-500 text-center mx-4">
+            Nosso time é composto por especialistas apaixonados por saúde e bem-estar, prontos para guiar você em cada etapa da sua jornada. Porque cuidar de você é a nossa prioridade.
+          </p>
+        </div>
+
+        <div className="p-6 mt-16 rounded-[0.5rem] mb-16 mx-auto bg-[#FFFFFF] mx-auto bg-equipe relative w-full md:w-4/5" style={{ height: '29.25rem' }}>
+
+          <div className="absolute top-[-20px] left-[10%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
+            <PiStethoscopeLight className="text-[2rem]" />
+          </div>
+          <div className="absolute top-[-20px] left-[50%] translate-x-[-50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
+            <FaRegHeart className="text-[2rem]" />
+          </div>
+
+          <div className="absolute top-[-20px] right-[10%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
+            <FaTruckMedical className="text-[2rem]" />
+          </div>
+
+          <div className="absolute bottom-[-20px] left-[10%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
+            <CiMedicalCase className="text-[2rem]" />
+          </div>
+          <div className="absolute bottom-[-20px] left-[50%] translate-x-[-50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
+            <PiHospital className="text-[2rem]" />
+          </div>
+
+          <div className="absolute bottom-[-20px] right-[10%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
+            <BsCapsule className="text-[2rem]" />
+          </div>
+
+          <div className="absolute top-[20%] left-[-20px] transform translate-y-[-50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 hidden md:flex">
+            <PiStethoscopeLight className="text-[2rem]" />
+          </div>
+          <div className="absolute top-[50%] right-[-20px] transform translate-y-[-50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 hidden md:flex">
+            <FaRegHeart className="text-[2rem]" />
+          </div>
+
+          <div className="absolute top-[50%] left-[-20px] transform translate-y-[-50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 hidden md:flex">
+            <FaTruckMedical className="text-[2rem]" />
+          </div>
+
+          <div className="absolute bottom-[80%] right-[-20px] transform translate-y-[50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 hidden md:flex">
+            <CiMedicalCase className="text-[2rem]" />
+          </div>
+          <div className="absolute bottom-[20%] left-[-0px] transform translate-x-[-50%] translate-y-[50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 hidden md:flex">
+            <PiHospital className="text-[2rem]" />
+          </div>
+          <div className="absolute bottom-[20%] right-[-20px] transform translate-y-[50%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 hidden md:flex">
+            <BsCapsule className="text-[2rem]" />
+          </div>
+        </div>
+
+
+        <div className="p-3 flex justify-center mt-[4rem] items-center relative">
+          <div className="relative bg-[rgba(250,247,242,1)] bg-opacity-60 backdrop-blur-lg rounded-3xl p-8 w-full max-w-3xl mx-auto position-relative">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-lg bg-[#FFF2c0] rounded-full w-96 h-96 z-0 opacity-40"></div>
+            <div className="text-center z-10 relative">
+              <h1 className="text-lg bg-opacity-70 text-[#382513] bg-[#] md:bg-[#FFF2C0] rounded mt-8 uppercase font-albert px-2 py-1 inline-block">
                 Você não está sozinha!
               </h1>
             </div>
-            <h1 className="text-4xl text-center ml-4 mr-4 font-semibold font-literata flex gap-2 items-center mt-8 justify-center">
+            <h1 className="text-[2rem] text-center ml-4 mr-4 font-semibold font-literata flex gap-2 items-center mt-[1rem] justify-center z-10 relative">
               Pronta para cuidar de si mesma como nunca antes?
             </h1>
-            <p className="text-xl text-gray-500 text-center mt-8 ml-4 mr-4 flex">
+            <p className="text-[1rem] text-gray-500 text-center mt-[1rem] ml-4 mr-4 flex z-10 relative">
               O primeiro passo para transformar sua vida começa agora. Não espere mais para sentir-se confiante, saudável e feliz!
             </p>
-            <div className="flex justify-center mt-8">
-              <button className="bg-[#341900] text-white text-md font-semibold py-2 px-4 rounded-2xl">
+            <div className="flex justify-center mt-[2rem] z-10 relative">
+              <button className="bg-[#341900] text-white text-[1rem] font-albert font-semibold py-[1rem] px-[4rem] rounded-[1rem]">
                 Quero fazer meu programa!
               </button>
             </div>
@@ -844,8 +896,8 @@ export default function Home() {
 
         <div className="max-w-full mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8">
           <div className="block lg:hidden">
-            <div className="justify-center items-center ml-10 mt-20 rounded-2xl bg-[#FFFFFF] bg-faq relative" style={{ height: '50vh', width: '33vh' }}>
-              <div className="bg-white bg-opacity-60 border-2 rounded py-2">
+            <div className="justify-center items-center mb-[1.5rem] mt-20 rounded-2xl bg-[#FFFFFF] bg-faq relative w-auto mx-4" style={{ height: '50vh' }}>
+              <div className="bg-white bg-opacity-60 border-2 rounded mt-[1rem] ml-4 mr-4 py-2 mb-4">
                 <div className="flex justify-center mb-6">
                   <div className="bg-[#FFF2C0] rounded-xl px-3 py-1 w-fit">
                     <h2 className="text-[1rem] text-[#382513] text-center uppercase font-albert">FAQ</h2>
@@ -857,7 +909,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-4 px-4">
+            <div className="mt-4 px-4 p-[0.75rem]">
               {faqItems.map((item, index) => (
                 <div key={index} className="border-b border-gray-300 py-2">
                   <button
@@ -865,10 +917,16 @@ export default function Home() {
                     onClick={() => toggleFAQ(index)}
                   >
                     {item.question}
-                    {openIndex === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                    <div className="bg-[#FFF2C0] ml-2 rounded-full w-[1.75rem] h-[1.75rem] flex items-center justify-center">
+                      {openIndex === index ? (
+                        <IoIosArrowUp className="text-[1.5rem]" />
+                      ) : (
+                        <IoIosArrowDown className="text-[1.5rem]" />
+                      )}
+                    </div>
                   </button>
                   {openIndex === index && (
-                    <p className="mt-2 text-gray-700">{item.answer}</p>
+                    <p className="text-[1rem] text-gray-400">{item.answer}</p>
                   )}
                 </div>
               ))}
@@ -879,32 +937,38 @@ export default function Home() {
             <div className="flex flex-col md:flex-row w-full min-h-screen items-center justify-center p-6">
               <div
                 className="w-full md:w-1/2 flex flex-col justify-start items-start ml-10 mt-20 rounded-2xl bg-[#FFFFFF] bg-faq relative"
-                style={{ height: '50vh', width: '40vh' }}
+                style={{ height: '60vh', width: '50vh' }}
               >
-                <div className="bg-white bg-opacity-60 border-2 rounded py-2 w-full flex flex-col items-start p-6">
-                  <div className="flex justify-start mb-6 w-full">
+                <div className="ml-4 mr-4 mt-[1rem] p-[1rem] max-w-full bg-white bg-opacity-60 border-2 rounded-xl flex flex-col items-start">
+                  <div className="flex justify-start mb-[1rem] w-full">
                     <div className="bg-[#FFF2C0] rounded-xl px-3 py-1 w-fit">
                       <h2 className="text-lg text-[#382513] uppercase font-albert">FAQ</h2>
                     </div>
                   </div>
-                  <h1 className="text-2xl text-left font-semibold font-literata">
+                  <h1 className="text-[2rem] font-medium text-left mb-[1rem] font-semibold font-literata">
                     Respondendo dúvidas que outras mulheres tiveram
                   </h1>
                 </div>
               </div>
 
-              <div className="w-full md:w-1/2 flex flex-col p-6 ml-[1.5rem]">
+              <div className="max-w-[40rem] md:w-1/2 flex flex-col p-6 ml-[1.5rem]">
                 {faqItems.map((item, index) => (
                   <div key={index} className="border-b border-gray-300 py-4">
                     <button
-                      className="flex justify-between items-center w-full text-left text-xl text-albert font-semibold text-[#382513]"
+                      className="flex justify-between items-center w-full h-[1.5rem] mb-[1rem] text-left text-xl font-albert font-semibold text-[#382513]"
                       onClick={() => toggleFAQ(index)}
                     >
                       {item.question}
-                      {openIndex === index ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                      <div className="bg-[#FFF2C0] ml-2 rounded-full w-[1.75rem] h-[1.75rem] flex items-center justify-center">
+                      {openIndex === index ? (
+                        <IoIosArrowUp className="text-[1.5rem]" />
+                      ) : (
+                        <IoIosArrowDown className="text-[1.5rem]" />
+                      )}
+                    </div>
                     </button>
                     {openIndex === index && (
-                      <p className="mt-2 text-gray-700">{item.answer}</p>
+                      <p className="mt-2 text-gray-400 font-albert">{item.answer}</p>
                     )}
                   </div>
                 ))}
@@ -912,8 +976,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-
       </div>
       <footer id="faq" className="mt-10 bg-[#FFFBEC] py-6 text-center md:text-left">
         <div className="block md:hidden">
@@ -970,6 +1032,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </div>
+    </div >
   );
 }
