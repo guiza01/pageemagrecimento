@@ -333,7 +333,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative min-h-[80vh] md:min-h-[60vh] bg-[#FFFBEC] bg-cover pb-20 md:mx-[9ren] md:my-[6rem]">
+      <div className="relative min-h-[80vh] md:min-h-screen bg-[#FFFBEC] bg-cover pb-20 md:mx-[9ren] md:my-[6rem] flex items-center justify-center">
         <div className="pt-10">
           <div className="hidden md:block text-center">
             <h1 className="max-w-[640px] text-[2rem] font-semibold mb-[1rem] mx-auto font-literata text-[rgba(52,25,0,1)]">
