@@ -410,7 +410,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-center text-center ml-[1.25rem] mr-[1.25rem]">
             <h1 className="text-3xl font-semibold gap-2 text-[rgba(52,25,0,1)] items-center mb-[1rem] font-literata">
               Não é sobre perder peso, <br />  mas sobre transformar seu corpo <br />  de forma
-              <span className="text-[#AC7D53]"> saudável e sustentável.</span>
+              <span className="text-[#AC7D53] italic"> saudável e sustentável.</span>
             </h1>
             <p className="text-xl text-[rgba(100,100,100,1)] flex font-albert">
               A sua jornada começa aqui. Agende sua consulta inicial e descubra como podemos ajudar você a alcançar resultados duradouros.
@@ -587,7 +587,7 @@ export default function Home() {
       <div id="kit" className="p-3 max-w-screen mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mt-[4rem] mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
         <div className="flex flex-col md:items-center items-start">
           <h2 className="text-lg text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert px-3 py-1 inline-block self-start md:self-center">
-            exclusividade essencial
+            exclusividade essêncial
           </h2>
           <h1 className="text-3xl ml-4 mr-4 font-semibold font-literata gap-2 mb-5 mt-8 text-start md:text-center">
             Bem-vinda ao primeiro passo da sua
@@ -719,8 +719,8 @@ export default function Home() {
         <div className="hidden md:block">
           <div className="relative mt-8">
             <div className="flex flex-col md:flex-row-reverse justify-between items-center md:items-start relative">
-              <div className="flex justify-center items-center mb-8 rounded bg-[#FFFFFF] relative md:w-1/2 w-full" style={{ height: '60vh' }}>
-                <img src="/mulheres.png" alt="Imagem Exemplo" className="rounded" width="600" height="560" />
+              <div className="flex justify-center items-center mb-8 rounded relative md:w-1/2 w-full" style={{ height: '60vh' }}>
+                <img src="/mulheres.png" alt="Imagem Exemplo" className="rounded" width="800" height="600" />
               </div>
               <div
                 className="absolute rounded-xl inset-0 flex justify-center items-center"
@@ -831,7 +831,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="p-6 mt-16 rounded-[0.5rem] mb-16 mx-auto bg-[#FFFFFF] mx-auto bg-equipe relative w-full md:w-4/5" style={{ height: '29.25rem' }}>
+        <div className="p-6 mt-16 rounded-[0.5rem] mb-16 mx-auto bg-[#FFFFFF] mx-auto bg-equipe relative w-full md:w-4/5" style={{ height: '39.25rem' }}>
 
           <div className="absolute top-[-20px] left-[10%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
             <PiStethoscopeLight className="text-[2rem]" />
@@ -1029,7 +1029,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col items-end justify-center space-y-2 mr-8">
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 mr-[4rem]">
               <div className="space-y-2 mr-[1rem]">
                 <p className="text-[rgba(172,125,83,1)] font-bold">Menopausa</p>
                 <a href="#home" className="text-[rgba(172,125,83,1)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Como funciona?</a>
