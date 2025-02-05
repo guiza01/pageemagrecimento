@@ -192,12 +192,14 @@ export default function Home() {
 
       <div className="md:mx-[4rem] md:my-[4.38rem]">
         <div className="relative min-h-screen md:min-h-[calc(100vh-4rem-4.38rem)] md:rounded-2xl bg-gray-100 bg-pilates bg-cover bg-no-repeat p-6 md:p-[4rem_4.38rem]">
-          <div className="flex flex-col md:flex-row md:items-start md:justify-between p-6 md:p-16 md:border-2 md:border-white/20 rounded-lg">
-            <div className="mb-10 md:mb-0 md:w-1/2">
-              <h2 className="bg-[#FFF2C0] text-[1rem] text-[#382513] uppercase rounded font-semibold font-albert mb-5 mt-20 px-[0.75rem] py-[0.38rem] md:px-[1rem] md:py-[0.5rem] md:tracking-[0.1rem] inline-block">
-                O desafio da menopausa
-              </h2>
-              <h1 className="text-[2.5rem] text-white font-literata">O que acontece com seu corpo?</h1>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-center p-6 md:p-16 md:border-2 md:border-white/20 rounded-lg">
+            <div className="flex items-center justify-center">
+              <div className="mb-10 md:mr-[2rem]">
+                <h2 className="bg-[#FFF2C0] text-[1rem] text-[#382513] uppercase rounded font-semibold font-albert mb-5  px-[0.75rem] py-[0.38rem] md:px-[1rem] md:py-[0.5rem] md:tracking-[0.1rem] inline-block">
+                  O desafio da menopausa
+                </h2>
+                <h1 className="text-[2.5rem] text-white font-literata">O que acontece com seu corpo?</h1>
+              </div>
             </div>
             <div className="md:w-1/2">
               <div className="border-8 border-[#FFFFFF] border-opacity-5 rounded-xl bg-[rgba(33,16,0,0.15)] backdrop-blur-[15px] p-6">
