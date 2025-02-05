@@ -627,7 +627,7 @@ export default function Home() {
           <h2 className="text-[1rem] text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert font-semibold px-[.75rem] py-[.38rem] md:px-[1rem] md:py-[0.5rem] tracking-[0.1rem] inline-block self-start md:self-center">
             exclusividade essêncial
           </h2>
-          <h1 className="text-3xl ml-4 mr-4 font-semibold font-literata gap-2 mb-5 mt-8 text-start md:text-center">
+          <h1 className="text-3xl text-[rgba(52,25,0,1)] ml-4 mr-4 font-semibold font-literata gap-2 mb-5 mt-8 text-start md:text-center">
             Bem-vinda ao primeiro passo da sua
             <span className="font-literata italic"> transformação!</span>
           </h1>
@@ -700,7 +700,7 @@ export default function Home() {
           <h2 className="text-[1rem] text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert font-semibold px-[1rem] py-[.5rem] tracking-[0.1rem] inline-block mb-[1rem]">
             Transformações que inspiram.
           </h2>
-          <h1 className="text-[2rem] text-center font-semibold leading-[130%] font-literata gap-2 items-center mb-[2rem] md:mb-[4rem]">
+          <h1 className="text-[2rem] text-center text-[rgba(52,25,0,1)] font-semibold leading-[130%] font-literata gap-2 items-center mb-[2rem] md:mb-[4rem]">
             Histórias de Sucesso
           </h1>
         </div>
@@ -861,7 +861,7 @@ export default function Home() {
           <h1 className="text-[1rem] text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert font-semibold mb-5 px-[1rem] py-[.5rem] tracking-[0.1rem] inline-block">
             Conheça a equipe que vai cuidar de você
           </h1>
-          <h1 className="mb-4 text-[2rem] font-literata flex items-center justify-center gap-2">
+          <h1 className="mb-4 text-[2rem] text-[rgba(52,25,0,1)] font-literata flex items-center justify-center gap-2">
             Uma equipe dedicada ao seu sucesso
           </h1>
           <p className="text-[1rem] font-albert text-gray-500 text-center mx-4">
@@ -924,7 +924,7 @@ export default function Home() {
                 Você não está sozinha!
               </h1>
             </div>
-            <h1 className="text-[2rem] text-center ml-4 mr-4 font-semibold font-literata flex gap-2 items-center mt-[1rem] justify-center z-10 relative">
+            <h1 className="text-[2rem] text-[rgba(52,25,0,1)] text-center ml-4 mr-4 font-semibold font-literata flex gap-2 items-center mt-[1rem] justify-center z-10 relative">
               Pronta para cuidar de si mesma como nunca antes?
             </h1>
             <p className="text-[1rem] text-gray-500 text-center mt-[1rem] ml-4 mr-4 flex z-10 relative">
@@ -947,7 +947,7 @@ export default function Home() {
                     <h2 className="text-[1rem] text-[#382513] text-center uppercase font-albert">FAQ</h2>
                   </div>
                 </div>
-                <h1 className="text-2xl text-center ml-4 mr-4 font-semibold font-literata">
+                <h1 className="text-2xl text-[rgba(52,25,0,1)] text-center ml-4 mr-4 font-semibold font-literata">
                   Respondendo dúvidas que outras mulheres tiveram
                 </h1>
               </div>
@@ -989,7 +989,7 @@ export default function Home() {
                       <h2 className="text-[1rem] text-[#382513] uppercase font-albert font-semibold px-[.75rem] py-[.38rem] tracking-[.1rem] ">FAQ</h2>
                     </div>
                   </div>
-                  <h1 className="text-[2rem] font-medium text-left mb-[1rem] font-semibold font-literata">
+                  <h1 className="text-[2rem] text-[rgba(52,25,0,1)] font-medium text-left mb-[1rem] font-semibold font-literata">
                     Respondendo dúvidas que outras mulheres tiveram
                   </h1>
                 </div>
