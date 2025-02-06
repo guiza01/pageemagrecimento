@@ -486,20 +486,7 @@ export default function Home() {
           <div
             className="p-6 mt-12 mb-8 rounded-3xl ml-5 mr-5 relative bg-redonda flex items-center justify-center"
             style={{ height: "35vh", borderRadius: "50%" }}
-          >
-            <div
-              className="absolute rounded-full h-[560px] w-screen border border-white"
-              style={{ opacity: 0.4 }}
-            ></div>
-            <div
-              className="absolute rounded-full h-[760px] w-screen border border-white"
-              style={{ opacity: 0.2 }}
-            ></div>
-            <div
-              className="absolute rounded-full h-[940px] w-screen border border-white"
-              style={{ opacity: 0.1 }}
-            ></div>
-          </div>
+          ></div>
 
           {[
             {
