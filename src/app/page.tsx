@@ -1,17 +1,5 @@
 "use client";
 import { useState } from "react";
-import { HiArrowTrendingDown } from "react-icons/hi2";
-import { AiOutlineWoman } from "react-icons/ai";
-import { AiOutlineFieldTime } from "react-icons/ai";
-import { BsPatchCheck } from "react-icons/bs";
-import { FaPeopleGroup } from "react-icons/fa6";
-import { IoBodyOutline } from "react-icons/io5";
-import { CiMedicalCase } from "react-icons/ci";
-import { FaTruckMedical } from "react-icons/fa6";
-import { FaRegHeart } from "react-icons/fa";
-import { PiStethoscopeLight } from "react-icons/pi";
-import { PiHospital } from "react-icons/pi";
-import { BsCapsule } from "react-icons/bs";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
@@ -19,9 +7,6 @@ import { FaInstagram } from "react-icons/fa6";
 import { CiFacebook } from "react-icons/ci";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RiCloseLargeLine } from "react-icons/ri";
-import { PiMicroscopeDuotone } from "react-icons/pi";
-import { PiCookingPotDuotone } from "react-icons/pi";
-import { PiPersonSimpleRun } from "react-icons/pi";
 import Image from 'next/image';
 
 export default function Home() {
@@ -37,9 +22,9 @@ export default function Home() {
 
   const faqItems = [
     { question: "Posso realmente emagrecer sem perder massa muscular?", answer: "Sim! Nosso programa é focado em preservar sua massa muscular durante o processo de emagrecimento, o que mantém seu metabolismo ativo e evita o efeito sanfona." },
-    { question: "Preciso de acompanhamento constante?", answer: "Não, este serviço é totalmente gratuito." },
-    { question: "O Ozempic é obrigatório?", answer: "Não, este serviço é totalmente gratuito." },
-    { question: "Quanto custa o programa?", answer: "Não, este serviço é totalmente gratuito." },
+    { question: "Preciso de acompanhamento constante?", answer: "Sim! Oferecemos suporte contínuo via WhatsApp e consultas presenciais mensais para garantir que você siga no caminho certo." },
+    { question: "O Ozempic é obrigatório?", answer: "O Ozempic é opcional e só será incluído se necessário, após avaliação médica. Ele pode ser uma ferramenta útil para acelerar a perda de peso sem prejudicar a massa muscular." },
+    { question: "Quanto custa o programa?", answer: "O custo é personalizado, dependendo dos serviços e níveis de acompanhamento necessários. Entre em contato via WhatsApp para mais informações e para agendar sua consulta inicial." },
   ];
 
   type ClickedKey = 'caixa' | 'semaglutida' | 'kitExercicio' | 'squeeze' | 'guia' | 'surpresa';
@@ -190,7 +175,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="md:mx-[4rem] md:my-[8.38rem]">
+      <div className="md:mx-[4rem] md:my-[4.38rem]">
         <div className="relative min-h-screen md:min-h-[calc(100vh-4rem-4.38rem)] md:rounded-2xl bg-pilates bg-cover bg-no-repeat md:p-[4rem_4.38rem]">
           <div className="flex flex-col md:flex-row md:items-center md:justify-center mb-[4rem] p-6 md:p-16 md:border-2 md:border-white/20 rounded-lg">
             <div className="flex items-center justify-start md:mr-[4rem]">
@@ -413,19 +398,19 @@ export default function Home() {
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256">
                 <path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
               </svg>
-              <h1 className="text-[1.25rem] text-center font-literata">Programa <br /> personalizado</h1>
+              <h1 className="text-[1.25rem] text-[rgba(52,25,0,1)] text-center font-literata">Programa <br /> personalizado</h1>
+            </div>
+            <div className="bg-white border-2 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6 mb-[.5rem]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256">
+                <path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
+              </svg> 
+              <h1 className="text-[1.25rem] text-[rgba(52,25,0,1)] text-center font-literata">Emagreça sem <br /> perder massa muscular</h1>
             </div>
             <div className="bg-white border-2 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6 mb-[.5rem]">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256">
                 <path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
               </svg>
-              <h1 className="text-[1.25rem] text-center font-literata">Emagreça sem <br /> perder massa muscular</h1>
-            </div>
-            <div className="bg-white border-2 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6 mb-[.5rem]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256">
-                <path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
-              </svg>
-              <h1 className="text-[1.25rem] text-center font-literata">Evite o <br /> efeito sanfona</h1>
+              <h1 className="text-[1.25rem] text-[rgba(52,25,0,1)] text-center font-literata">Evite o <br /> efeito sanfona</h1>
             </div>
           </div>
         </div>
@@ -504,15 +489,15 @@ export default function Home() {
             style={{ height: "35vh", borderRadius: "50%" }}
           >
             <div
-              className="absolute rounded-full h-[560px] w-[560px] border border-white"
+              className="absolute rounded-full h-[560px] w-screen border border-white"
               style={{ opacity: 0.4 }}
             ></div>
             <div
-              className="absolute rounded-full h-[760px] w-[760px] border border-white"
+              className="absolute rounded-full h-[760px] w-screen border border-white"
               style={{ opacity: 0.2 }}
             ></div>
             <div
-              className="absolute rounded-full h-[940px] w-[940px] border border-white"
+              className="absolute rounded-full h-[940px] w-screen border border-white"
               style={{ opacity: 0.1 }}
             ></div>
           </div>
@@ -643,7 +628,7 @@ export default function Home() {
           <p className="text-[1rem] text-[rgba(131,131,131,1)] font-albert ml-4 mr-4 mb-[4rem] flex text-start md:text-center leading-[130%]">
             Cada detalhe foi pensado para tornar sua experiência única e motivadora. Ao se juntar ao nosso programa, você receberá um kit exclusivo, repleto de itens úteis e sofisticados que simbolizam nosso compromisso com o seu bem-estar.
           </p>
-          <h1 className="text-[1.5rem] text-[#AC7D53] ml-4 mr-4 mb-[1rem] font-semibold font-literata flex gap-2 text-center">
+          <h1 className="text-[1.5rem] text-[#AC7D53] ml-4 mr-4 font-semibold font-literata flex gap-2 text-center">
             O que vem no Presskit?
           </h1>
         </div>
@@ -653,21 +638,21 @@ export default function Home() {
             <div
               onClick={() => handleClick('caixa')}
               className={`${clicked.caixa ? 'bg-[rgba(249,249,249,1)] text-[rgba(52,25,0,1)]' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
-                } border-[8px] border-gray/50 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+                } border-[8px] border-gray/50 rounded-2xl ml-5 mr-5 mt-[1.5rem] flex flex-col font-semibold items-center p-6 cursor-pointer`}
             >
               <h1 className="text-xl text-center">Caixa do Presskit</h1>
             </div>
             <div
               onClick={() => handleClick('semaglutida')}
               className={`${clicked.semaglutida ? 'bg-[#FFF2C0] text-[rgba(52,25,0,1)]' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
-                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 flex flex-col font-semibold items-center p-[.5rem] cursor-pointer`}
             >
               <h1 className="text-xl text-center">SEMAglutida <br /> (Ozempic)</h1>
             </div>
             <div
               onClick={() => handleClick('kitExercicio')}
               className={`${clicked.kitExercicio ? 'bg-[#FFF2C0] text-[rgba(52,25,0,1)]' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
-                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
             >
               <h1 className="text-xl text-center">Kit Exercício em Casa</h1>
             </div>
@@ -682,21 +667,21 @@ export default function Home() {
             <div
               onClick={() => handleClick('squeeze')}
               className={`${clicked.squeeze ? 'bg-[#FFF2C0] text-[rgba(52,25,0,1)]' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
-                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 mt-[1.75rem] flex flex-col font-semibold items-center p-6 cursor-pointer`}
             >
               <h1 className="text-xl text-center">Squeeze Personalizada</h1>
             </div>
             <div
               onClick={() => handleClick('guia')}
               className={`${clicked.guia ? 'bg-[#FFF2C0] text-[rgba(52,25,0,1)]' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
-                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
             >
               <h1 className="text-xl text-center">Guia de Introdução ao Programa</h1>
             </div>
             <div
               onClick={() => handleClick('surpresa')}
               className={`${clicked.surpresa ? 'bg-[#FFF2C0] text-[rgba(52,25,0,1)]' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
-                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
             >
               <h1 className="text-xl text-center">Itens Surpresa</h1>
             </div>
@@ -954,10 +939,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-full mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8">
+        <div className="max-w-full mx-auto relative min-h-[50rem] bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8">
           <div className="block lg:hidden">
-            <div className="justify-center items-center mb-[1.5rem] mt-[4rem] rounded-2xl bg-[#FFFFFF] bg-faq relative w-auto mx-4" style={{ height: '50vh' }}>
-              <div className="bg-white bg-opacity-60 border-2 rounded-xl mt-[1rem] ml-4 mr-4 py-2 mb-4">
+            <div className="justify-center items-center mb-[1.5rem] mt-[4rem] p-4 rounded-[.25rem] bg-[#FFFFFF] bg-faq relative w-auto mx-4" style={{ height: '40vh' }}>
+              <div className="bg-white bg-opacity-60 border-2 rounded-[.25rem] py-2 flex flex-col">
                 <div className="flex justify-center mb-6">
                   <div className="bg-[#FFF2C0] rounded-xl px-3 py-1 w-fit">
                     <h2 className="text-[1rem] text-[#382513] text-center uppercase font-albert">FAQ</h2>
@@ -996,8 +981,8 @@ export default function Home() {
           <div className="hidden lg:flex">
             <div className="flex flex-col md:flex-row w-full min-h-screen items-center justify-center p-6">
               <div
-                className="w-full md:w-1/2 flex flex-col justify-start items-start ml-10 mt-20 rounded-2xl bg-[#FFFFFF] bg-faq relative"
-                style={{ height: '60vh', width: '50vh' }}
+                className="w-full md:w-1/2 flex flex-col justify-start items-start ml-10 mt-20 rounded-2xl bg-[#FFFFFF] bg-faq relative m-8"
+                style={{ height: '60vh', width: '55vh' }}
               >
                 <div className="ml-4 mr-4 mt-[1rem] p-[1rem] max-w-full bg-white bg-opacity-60 border-2 rounded-xl flex flex-col items-start">
                   <div className="flex justify-start mb-[1rem] w-full">
@@ -1013,26 +998,26 @@ export default function Home() {
 
               <div className="max-w-[40rem] md:w-1/2 flex flex-col p-6 ml-[1.5rem]">
                 {faqItems.map((item, index) => (
-                  <div key={index} className="border-b border-gray-300 py-4">
+                  <div key={index} className="border-b border-gray-300">
                     <button
-                      className="flex justify-between items-center w-full h-[1.5rem] mb-[1rem] text-left text-xl font-albert font-semibold text-[#382513]"
+                      className="flex justify-between items-center w-full h-[1.5rem] mb-[1.5rem] mt-[1.5rem] text-left text-xl font-albert font-semibold text-[#382513]"
                       onClick={() => toggleFAQ(index)}
                     >
                       {item.question}
-                      <div className="bg-[#FFF2C0] ml-2 rounded-full w-[1.75rem] h-[1.75rem] flex items-center justify-center">
+                      <div className="bg-[#FFF2C0] ml-2 rounded-full w-[2.25rem] h-[2.25rem] flex items-center justify-center">
                         {openIndex === index ? (
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
                             <path d="M213.66,165.66a8,8,0,0,1-11.32,0L128,91.31,53.66,165.66a8,8,0,0,1-11.32-11.32l80-80a8,8,0,0,1,11.32,0l80,80A8,8,0,0,1,213.66,165.66Z"></path>
                           </svg>
                         ) : (
-                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256">
                             <path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
                           </svg>
                         )}
                       </div>
                     </button>
                     {openIndex === index && (
-                      <p className="mt-2 text-gray-400 font-albert">{item.answer}</p>
+                      <p className="mt-2 text-[1rem] text-gray-400 font-albert">{item.answer}</p>
                     )}
                   </div>
                 ))}
@@ -1050,18 +1035,18 @@ export default function Home() {
           </div>*/}
           <div className="flex justify-center space-x-4 mb-4">
             <a href="#" className="text-gray-600 hover:text-gray-900">
-              <FaWhatsapp className="text-[2rem] text-[rgba(172,125,83,1)]" />
+              <FaWhatsapp className="text-[2rem] text-[rgba(52,25,0,0.5)]" />
             </a>
             <a href="#" className="text-gray-600 hover:text-gray-900">
-              <FaInstagram className="text-[2rem] text-[rgba(172,125,83,1)]" />
+              <FaInstagram className="text-[2rem] text-[rgba(52,25,0,0.5)]" />
             </a>
             <a href="#" className="text-gray-600 hover:text-gray-900">
-              <CiFacebook className="text-[2rem] text-[rgba(172,125,83,1)]" />
+              <CiFacebook className="text-[2rem] text-[rgba(52,25,0,0.5)]" />
             </a>
           </div>
-          <p className="text-[rgba(172,125,83,1)]"><span className="font-semibold">CNPJ:</span> 00.000.000/0000-00</p>
-          <p className="text-[rgba(172,125,83,1)]"><span className="font-semibold">Localização:</span> Rua Exemplo, 123 - Cidade, Estado</p>
-          <p className="text-[rgba(172,125,83,1)] mt-2">Menopausa</p>
+          <p className="text-[rgba(52,25,0,0.5)]"><span className="font-semibold">CNPJ:</span> 00.000.000/0000-00</p>
+          <p className="text-[rgba(52,25,0,0.5)]"><span className="font-semibold">Localização:</span> Rua Exemplo, 123 - Cidade, Estado</p>
+          <p className="text-[rgba(52,25,0,0.5)] font-semibold mt-2">Menopausa</p>
         </div>
 
         <div className="hidden md:grid md:grid-cols-3 md:gap-8">
@@ -1070,34 +1055,34 @@ export default function Home() {
             {/*<Image src="/logo.png" alt="Logo da Empresa" className="h-10" /> */}
             <div className="flex space-x-4">
               <a href="#" className="text-gray-600 hover:text-gray-900">
-                <FaWhatsapp className="text-[2rem] text-[rgba(172,125,83,1)]" />
+                <FaWhatsapp className="text-[2rem] text-[rgba(52,25,0,0.5)]" />
               </a>
               <a href="#" className="text-gray-600 hover:text-gray-900">
-                <FaInstagram className="text-[2rem] text-[rgba(172,125,83,1)]" />
+                <FaInstagram className="text-[2rem] text-[rgba(52,25,0,0.5)]" />
               </a>
               <a href="#" className="text-gray-600 hover:text-gray-900">
-                <CiFacebook className="text-[2rem] text-[rgba(172,125,83,1)]" />
+                <CiFacebook className="text-[2rem] text-[rgba(52,25,0,0.5)]" />
               </a>
             </div>
           </div>
 
           <div className="flex flex-col justify-center space-y-2">
-            <p className="text-[rgba(172,125,83,1)]"> <span className="font-semibold">CNPJ:</span> 00.000.000/0000-00</p>
-            <p className="text-[rgba(172,125,83,1)]"> <span className="font-semibold">Localização:</span> Rua Exemplo, 123 - Cidade, Estado</p>
+            <p className="text-[rgba(52,25,0,0.5)]"> <span className="font-semibold">CNPJ:</span> 00.000.000/0000-00</p>
+            <p className="text-[rgba(52,25,0,0.5)]"> <span className="font-semibold">Localização:</span> Rua Exemplo, 123 - Cidade, Estado</p>
           </div>
 
           <div className="flex flex-col items-end justify-center space-y-2 mr-8">
             <div className="flex space-x-4 mr-[4rem]">
               <div className="space-y-2 mr-[1rem]">
-                <p className="text-[rgba(172,125,83,1)] font-bold">Menopausa</p>
-                <a href="#home" className="text-[rgba(172,125,83,1)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Como funciona?</a>
-                <a href="#kit" className="text-[rgba(172,125,83,1)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Kit exclusivo</a>
-                <a href="#historia" className="text-[rgba(172,125,83,1)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Histórias de sucesso</a>
+                <p className="text-[rgba(52,25,0,0.5)] font-bold">Menopausa</p>
+                <a href="#home" className="text-[rgba(52,25,0,0.5)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Como funciona?</a>
+                <a href="#kit" className="text-[rgba(52,25,0,0.5)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Kit exclusivo</a>
+                <a href="#historia" className="text-[rgba(52,25,0,0.5)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Histórias de sucesso</a>
               </div>
               <div className="space-y-2">
-                <a href="#beneficio" className="text-[rgba(172,125,83,1)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Exclusividade e <br /> benefícios</a>
-                <a href="#equipe" className="text-[rgba(172,125,83,1)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Equipe</a>
-                <a href="#faq" className="text-[rgba(172,125,83,1)] hover:text-[rgba(52,25,0,1)] block">FAQ</a>
+                <a href="#beneficio" className="text-[rgba(52,25,0,0.5)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Exclusividade e <br /> benefícios</a>
+                <a href="#equipe" className="text-[rgba(52,25,0,0.5)] mb-[1rem] hover:text-[rgba(52,25,0,1)] block">Equipe</a>
+                <a href="#faq" className="text-[rgba(52,25,0,0.5)] hover:text-[rgba(52,25,0,1)] block">FAQ</a>
               </div>
             </div>
           </div>
