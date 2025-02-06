@@ -62,18 +62,18 @@ export default function Home() {
 
   const testimonials = [
     {
-      before: "/antes.png",
-      after: "/depois.png",
-      quote:
-        "Eu já tinha tentado tantas dietas e academias, mas nenhuma me ajudava de verdade. Com o Programa Essência, finalmente consegui entender meu corpo e alcançar resultados que jamais pensei ser possível!",
-      author: "Mariana, 47 anos",
-      result: "Perdeu 12kg em 6 meses, mais energia e autoestima renovada."
+      "before": "/antes.png",
+      "after": "/depois.png",
+      "quote":
+        "Eu já tinha tentado tantas dietas e academias, mas nenhuma me ajudava de verdade. Com o Programa Essência, <strong>finalmente consegui entender meu corpo e alcançar resultados que jamais pensei ser possível!</strong>",
+      "author": "Mariana, 47 anos",
+      "result": "Perdeu 12kg em 6 meses, mais energia e autoestima renovada."
     },
     {
       before: "/antes.png",
       after: "/depois.png",
       quote:
-        "Nada funcionava para mim até que conheci esse programa. Hoje me sinto mais confiante e feliz!",
+        "Nada funcionava para mim até que conheci esse programa. <strong>Hoje me sinto mais confiante e feliz!</strong>",
       author: "Carlos, 35 anos",
       result: "Eliminou 8kg e ganhou mais disposição para o dia a dia."
     },
@@ -81,7 +81,7 @@ export default function Home() {
       before: "/antes.png",
       after: "/depois.png",
       quote:
-        "Descobri um estilo de vida sustentável que me fez emagrecer sem sofrimento!",
+        "Descobri um estilo de vida sustentável que me fez <strong>emagrecer sem sofrimento!</strong>",
       author: "Ana, 29 anos",
       result: "Perdeu 10kg e manteve os resultados sem efeito sanfona."
     }
@@ -143,27 +143,27 @@ export default function Home() {
 
         <div className="p-6 max-w-md mx-auto md:max-w-none md:grid md:grid-cols-2 md:gap-8 md:p-16">
           <div className="md:items-start md:text-left">
-            <h2 className="bg-[#F9D689] bg-opacity-10 text-[1rem] text-[#FFF2C0] rounded uppercase font-albert mb-5 mt-20 px-[0.75rem] py-[0.38rem] inline-block md:text-[1rem] md:px-[1rem] md:py-[0.5rem] md:tracking-[0.1rem] text-[0.875rem]">
+            <h2 className="bg-[#F9D689] bg-opacity-10 text-[1rem] text-[#FFF2C0] rounded uppercase font-albert mb-[1rem] mt-20 px-[0.75rem] py-[0.38rem] inline-block md:text-[1rem] md:px-[1rem] md:py-[0.5rem] md:tracking-[0.1rem] text-[0.875rem]">
               RESTAM APENAS 15 VAGAS!
             </h2>
 
 
-            <h1 className="text-[1.25rem] text-white mb-5 font-literata md:text-[2.5rem] md:font-medium md:leading-[130%]">
+            <h1 className="text-[1.25rem] text-white mb-[1rem] font-literata md:text-[2.5rem] md:font-medium md:leading-[130%]">
               Programa Essência: Emagrecimento inteligente para{" "}
               <span className="text-[#F9D689] italic">mulheres em Natal.</span>
             </h1>
 
-            <p className="text-[0.875rem] font-semibold text-white mb-5 font-literata md:text-[1.5rem] md:font-medium md:leading-[130%]">
+            <p className="text-[0.875rem] font-semibold text-white mb-[1rem] font-literata md:text-[1.5rem] md:font-medium md:leading-[130%]">
               Proteção muscular e resultados duradouros baseados na ciência.
             </p>
 
-            <p className="text-[0.875rem] mb-5 md:text-[1rem] font-albert md:leading-[150%] text-[#CECECE]">
+            <p className="text-[0.875rem] mb-[1rem] md:text-[1rem] font-albert md:leading-[150%] text-[#CECECE]">
               Um programa personalizado que respeita sua individualidade metabólica
               e cuida da sua saúde de forma completa.{" "}
               <span className="font-bold">Resultados duradouros, sem efeitos radicais.</span>
             </p>
 
-            <div className="md:mt-[3rem] relative z-10">
+            <div className="md:mt-[3rem] mt-[2rem] relative z-10">
               <button className="bg-[#ffffff] bg-opacity-35 w-full text-white text-[0.875rem] font-semibold py-3 px-6 rounded-lg shadow hover:bg-[#4A3723] md:w-auto md:text-[1rem] font-albert md:py-[1rem] md:px-[4rem] backdrop-blur-sm">
                 Quero saber mais
               </button>
@@ -190,15 +190,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="md:mx-[4rem] md:my-[4.38rem]">
-        <div className="relative min-h-screen md:min-h-[calc(100vh-4rem-4.38rem)] md:rounded-2xl bg-gray-100 bg-pilates bg-cover bg-no-repeat p-6 md:p-[4rem_4.38rem]">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-center p-6 md:p-16 md:border-2 md:border-white/20 rounded-lg">
-            <div className="flex items-center justify-center">
-              <div className="mb-10 md:mr-[2rem]">
-                <h2 className="bg-[#FFF2C0] text-[1rem] text-[#382513] uppercase rounded font-semibold font-albert mb-5  px-[0.75rem] py-[0.38rem] md:px-[1rem] md:py-[0.5rem] md:tracking-[0.1rem] inline-block">
+      <div className="md:mx-[4rem] md:my-[8.38rem]">
+        <div className="relative min-h-screen md:min-h-[calc(100vh-4rem-4.38rem)] md:rounded-2xl bg-pilates bg-cover bg-no-repeat md:p-[4rem_4.38rem]">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-center mb-[4rem] p-6 md:p-16 md:border-2 md:border-white/20 rounded-lg">
+            <div className="flex items-center justify-start md:mr-[4rem]">
+              <div className="mb-10 mt-[4rem] md:mr-[2rem]">
+                <h2 className="bg-[#FFF2C0] text-[1rem] text-[#382513] mb-[1rem] uppercase rounded font-semibold font-albert px-[0.75rem] py-[0.38rem] md:px-[1rem] md:py-[0.5rem] md:tracking-[0.1rem] inline-block">
                   O desafio da menopausa
                 </h2>
-                <h1 className="text-[2.5rem] text-white font-literata">O que acontece com seu corpo?</h1>
+                <h1 className="text-[2.5rem] text-white font-literata leading-[130%]">O que acontece <br /> com seu corpo?</h1>
               </div>
             </div>
             <div className="md:w-1/2">
@@ -218,11 +218,11 @@ export default function Home() {
                   </svg>
                   Alterações hormonais
                 </h3>
-                <p className="text-[#FFFBEC] ml-4 mr-4 mt-[0.75rem] mb-[1.5rem] font-albert leading-[150%]">
+                <p className="text-[#FFFBEC] ml-4 mr-4 mt-[0.75rem] mb-[2rem] font-albert leading-[150%]">
                   As mudanças nos níveis de estrogênio e testosterona afetam diretamente o metabolismo e a distribuição de gordura.
                 </p>
                 <div className="w-[90%] h-[1px] bg-opacity-30 bg-gray-300 my-4 mx-auto"></div>
-                <p className="text-[#FFFBEC] ml-4 mr-4 mt-[1.5rem] mb-5 font-albert text-[1.125rem] leading-[150%]">
+                <p className="text-[#FFFBEC] ml-4 mr-4 mt-[2rem] mb-5 font-albert text-[1.125rem] leading-[150%]">
                   Mas isso não significa que você não possa alcançar seus objetivos de emagrecimento - basta entender o que seu corpo precisa e seguir um programa adaptado à sua realidade.
                 </p>
               </div>
@@ -340,8 +340,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center min-h-[40vh]">
-            <h1 className="text-[2rem] text-[rgba(52,25,0,1)] mx-4 font-semibold items-center mt-4 mb-3 text-center font-literata max-w-[40rem]">
+          <div className="flex flex-col justify-center items-center min-h-[30vh]">
+            <h1 className="text-[2rem] text-[rgba(52,25,0,1)] font-semibold items-center mt-4 mb-[1rem] text-center font-literata max-w-[40rem]">
               A boa notícia? Nós sabemos como ajudar você a <i>superar esses desafios!</i>
             </h1>
             <div className="flex justify-center items-center">
@@ -355,13 +355,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="relative min-h-[80vh] md:min-h-screen bg-[#FFFBEC] bg-cover pb-20 md:mx-[9ren] md:my-[6rem] flex items-center justify-center">
-        <div className="pt-10">
+      <div className="relative min-h-[80vh] md:min-h-screen bg-[rgba(255,248,236,1)] bg-cover pb-[4rem] md:mx-[9ren] flex items-center justify-center">
+        <div className="pt-[4rem]">
           <div className="hidden md:block text-center">
             <h1 className="max-w-[640px] text-[2rem] font-semibold mb-[1rem] mx-auto font-literata text-[rgba(52,25,0,1)]">
               Como nosso programa exclusivo ajudará você a <span className="italic">emagrecer de forma sustentável</span>?
             </h1>
-            <p className="max-w-[640px] text-[1rem] text-gray-500 mx-auto font-albert mb-10">
+            <p className="max-w-[640px] text-[1rem] text-[rgba(131,131,131,1)] mx-auto font-albert mb-[2rem]">
               Durante o emagrecimento, a preservação da massa muscular é a chave para manter seu metabolismo ativo. Músculos queimam mais calorias do que gordura, mesmo em repouso. Então, ao preservar seus músculos enquanto você pode perder gordura, você mantém seu metabolismo acelerado.
             </p>
           </div>
@@ -370,18 +370,18 @@ export default function Home() {
             <h1 className="text-[1.5rem] ml-[1rem] mr-[1rem] font-semibold text-start mb-5 font-literata text-[rgba(52,25,0,1)]">
               Como nosso programa exclusivo ajudará você a <span className="italic">emagrecer de forma sustentável</span>?
             </h1>
-            <p className="text-[1rem] text-rgba(131,131,131,1) ml-[1rem] mr-[1rem] text-start flex font-albert">
+            <p className="text-[1rem] text-[rgba(131,131,131,1)] ml-[1rem] mr-[1rem] text-start flex font-albert">
               Durante o emagrecimento, a preservação da massa muscular é a chave para manter seu metabolismo ativo. Músculos queimam mais calorias do que gordura, mesmo em repouso. Então, ao preservar seus músculos enquanto você pode perder gordura, você mantém seu metabolismo acelerado.
             </p>
           </div>
 
-          <div className="hidden md:flex justify-center gap-[1.37rem] mt-10">
+          <div className="hidden md:flex justify-center gap-[1.37rem]">
             <div className="relative flex flex-col items-center h-[9rem] w-[15rem]">
               <div className="bg-white border-[8px] border-opacity-30 border-white shadow-lg rounded-2xl mx-[1.37rem] p-4 border-solid border-[1px] border-[#F1C183] flex flex-col items-center h-full w-full">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256">
                   <path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
                 </svg>
-                <h1 className="text-[1.5rem] text-center font-literata text-[rgba(52,25,0,1)] leading-tight">
+                <h1 className="text-[1.5rem] text-center font-literata font-semibold text-[rgba(52,25,0,1)] leading-tight">
                   Programa <br /> Personalizado
                 </h1>
               </div>
@@ -391,7 +391,7 @@ export default function Home() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256">
                   <path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
                 </svg>
-                <h1 className="text-[1.5rem] text-center font-literata text-[rgba(52,25,0,1)] leading-tight">
+                <h1 className="text-[1.5rem] text-center font-literata font-semibold text-[rgba(52,25,0,1)] leading-tight">
                   Emagreça sem <br /> perder massa muscular
                 </h1>
               </div>
@@ -401,37 +401,37 @@ export default function Home() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256">
                   <path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
                 </svg>
-                <h1 className="text-[1.5rem] text-center font-literata text-[rgba(52,25,0,1)] leading-tight">
+                <h1 className="text-[1.5rem] text-center font-literata font-semibold text-[rgba(52,25,0,1)] leading-tight">
                   Evite o <br /> efeito sanfona
                 </h1>
               </div>
             </div>
           </div>
 
-          <div className="block md:hidden mt-5">
-            <div className="bg-white border-2 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6">
+          <div className="block md:hidden mt-[2rem]">
+            <div className="bg-white border-2 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6 mb-[.5rem]">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256">
                 <path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
               </svg>
-              <h1 className="text-[1.25rem] text-center font-literata">Programa personalizado</h1>
+              <h1 className="text-[1.25rem] text-center font-literata">Programa <br /> personalizado</h1>
             </div>
-            <div className="bg-white border-2 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6">
+            <div className="bg-white border-2 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6 mb-[.5rem]">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256">
                 <path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
               </svg>
-              <h1 className="text-[1.25rem] text-center font-literata">Emagreça sem perder massa muscular</h1>
+              <h1 className="text-[1.25rem] text-center font-literata">Emagreça sem <br /> perder massa muscular</h1>
             </div>
-            <div className="bg-white border-2 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6">
+            <div className="bg-white border-2 rounded-2xl ml-5 mr-5 mt-5 flex flex-col items-center p-6 mb-[.5rem]">
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256">
                 <path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
               </svg>
-              <h1 className="text-[1.25rem] text-center font-literata">Evite o efeito sanfona</h1>
+              <h1 className="text-[1.25rem] text-center font-literata">Evite o <br /> efeito sanfona</h1>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="relative min-h-screen mt-16 mr-4 bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mt-[4rem] mb-[4rem]">
+      <div className="relative min-h-screen mt-16 bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mt-[4rem] mb-[4rem]">
         <div className="hidden md:flex justify-center items-center mx-auto h-screen">
           <Image
             src="/completadesktop.png"
@@ -449,7 +449,7 @@ export default function Home() {
             <p className="text-xl text-[rgba(100,100,100,1)] flex font-albert">
               A sua jornada começa aqui. Agende sua consulta inicial e descubra como podemos ajudar você a alcançar resultados duradouros.
             </p>
-            <button className="mt-16 bg-[#341900] w-[30%] text-white text-lg font-semibold font-albert py-3 px-6 rounded-xl">
+            <button className="mt-8 bg-[#341900] w-[200px] min-w-[200px] max-w-[200px] h-[50px] text-white text-lg font-semibold font-albert py-3 px-6 rounded-xl whitespace-nowrap">
               Agendar Agora
             </button>
           </div>
@@ -463,85 +463,96 @@ export default function Home() {
           />
         </div>
 
-        <div className="md:hidden mr-4">
+        <div className="md:hidden px-4 mt-[4rem] mb-[4rem]">
           <Image
             src="/completa.png"
             alt="Imagem mobile"
             width={340}
             height={250}
-            className="object-cover rounded-xl mx-5 mt-16"
+            className="object-cover rounded-xl w-full h-auto"
           />
 
-          <h1 className="text-[1.5rem] ml-4 font-semibold text-[rgba(52,25,0,1)] gap-2 items-center mb-5 mt-[1rem] font-literata">
+          <h1 className="text-[1.5rem] ml-4 mr-4 font-semibold text-[rgba(52,25,0,1)] gap-2 items-center mb-5 mt-[2rem] font-literata">
             Não é sobre perder peso, mas sobre transformar seu corpo de forma
             <span className="text-[#AC7D53]"> saudável e sustentável.</span>
           </h1>
-          <p className="text-xl ml-4 flex font-albert">
+          <p className="text-xl ml-4 mr-4 text-[rgba(131,131,131,1)] flex font-albert">
             A sua jornada começa aqui. Agende sua consulta inicial e descubra como podemos ajudar você a alcançar resultados duradouros.
           </p>
-          <button className="mt-[4rem] ml-4 mb-[4rem] bg-[#341900] w-[100%] text-white text-lg font-semibold py-3 px-6 rounded-lg">
+          <button className="mt-[2rem] bg-[#341900] w-full text-white text-lg font-semibold py-3 px-6 rounded-lg">
             Agendar Agora
           </button>
         </div>
       </div>
 
       <div>
-        <div className="p-6 min-h-screen max-w-md mx-auto bg-clorblur bg-no-repeat lg:hidden">
+        <div className="p-6 min-h-screen mb-[4rem] max-w-md mx-auto bg-clorblur bg-no-repeat lg:hidden">
           <div className="text-center">
             <h2 className="text-lg px-[.75rem] py-[.38rem] tracking-[.1rem] text-[#FFF2C0] bg-[#F9D689] rounded bg-opacity-10 uppercase font-albert mt-8 inline-block">
               Entenda
             </h2>
           </div>
-          <h1 className="text-3xl text-center text-white ml-4 mr-4 font-literata items-center mt-8 justify-center">
+          <h1 className="text-3xl text-center text-white ml-4 mr-4 font-literata items-center mt-4 justify-center">
             Como funciona o <i>Programa Essência?</i>
           </h1>
-          <p className="text-xl text-white text-center mt-8 ml-4 mr-4 flex font-albert">
+          <p className="text-xl text-white text-center mt-4 ml-4 mr-4 flex font-albert">
             Nosso programa é baseado em evidências científicas, com métodos validados que garantem que você perca peso sem comprometer sua saúde ou seu metabolismo.
           </p>
 
           <div
-            className="p-6 mt-16 rounded-3xl ml-5 mr-5 relative bg-redonda"
+            className="p-6 mt-12 mb-8 rounded-3xl ml-5 mr-5 relative bg-redonda flex items-center justify-center"
             style={{ height: "35vh", borderRadius: "50%" }}
-          ></div>
+          >
+            <div
+              className="absolute rounded-full h-[560px] w-[560px] border border-white"
+              style={{ opacity: 0.4 }}
+            ></div>
+            <div
+              className="absolute rounded-full h-[760px] w-[760px] border border-white"
+              style={{ opacity: 0.2 }}
+            ></div>
+            <div
+              className="absolute rounded-full h-[940px] w-[940px] border border-white"
+              style={{ opacity: 0.1 }}
+            ></div>
+          </div>
 
           {[
             {
               title: "Avaliação Completa",
               text: "Consultas presenciais com exames detalhados e plano personalizado.",
-              icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256">
-                <path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
-              </svg>,
+              icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#F1C183" viewBox="0 0 256 256"><path d="M232,128c0,12.51-17.82,21.95-22.68,33.69-4.68,11.32,1.42,30.65-7.78,39.85s-28.53,3.1-39.85,7.78C150,214.18,140.5,232,128,232s-22-17.82-33.69-22.68c-11.32-4.68-30.65,1.42-39.85-7.78s-3.1-28.53-7.78-39.85C41.82,150,24,140.5,24,128s17.82-22,22.68-33.69C51.36,83,45.26,63.66,54.46,54.46S83,51.36,94.31,46.68C106.05,41.82,115.5,24,128,24S150,41.82,161.69,46.68c11.32,4.68,30.65-1.42,39.85,7.78s3.1,28.53,7.78,39.85C214.18,106.05,232,115.5,232,128Z" opacity="0.2"></path><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path></svg>,
             },
             {
               title: "Uso de Tecnologia Avançada",
               text: "Medicamentos e técnicas que potencializam seus resultados.",
-              icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M224,208H203.94A88.05,88.05,0,0,0,144,64.37V32a16,16,0,0,0-16-16H80A16,16,0,0,0,64,32V136a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V80.46A72,72,0,0,1,181.25,208H32a8,8,0,0,0,0,16H224a8,8,0,0,0,0-16Zm-96-72H80V32h48V136ZM72,184a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Z"></path></svg>,
+              icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#F1C183" viewBox="0 0 256 256"><path d="M224,208H203.94A88.05,88.05,0,0,0,144,64.37V32a16,16,0,0,0-16-16H80A16,16,0,0,0,64,32V136a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V80.46A72,72,0,0,1,181.25,208H32a8,8,0,0,0,0,16H224a8,8,0,0,0,0-16Zm-96-72H80V32h48V136ZM72,184a8,8,0,0,1,0-16h64a8,8,0,0,1,0,16Z"></path></svg>,
             },
             {
               title: "Treinos Rápidos e Eficientes",
               text: "Feitos online, adaptados ao seu corpo e à sua rotina.",
-              icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M152,88a32,32,0,1,0-32-32A32,32,0,0,0,152,88Zm0-48a16,16,0,1,1-16,16A16,16,0,0,1,152,40Zm67.31,100.68c-.61.28-7.49,3.28-19.67,3.28-13.85,0-34.55-3.88-60.69-20a169.31,169.31,0,0,1-15.41,32.34,104.29,104.29,0,0,1,31.31,15.81C173.92,186.65,184,207.35,184,232a8,8,0,0,1-16,0c0-41.7-34.69-56.71-54.14-61.85-.55.7-1.12,1.41-1.69,2.1-19.64,23.8-44.25,36.18-71.63,36.18A92.29,92.29,0,0,1,31.2,208,8,8,0,0,1,32.8,192c25.92,2.58,48.47-7.49,67-30,12.49-15.14,21-33.61,25.25-47C86.13,92.35,61.27,111.63,61,111.84A8,8,0,1,1,51,99.36c1.5-1.2,37.22-29,89.51,6.57,45.47,30.91,71.93,20.31,72.18,20.19a8,8,0,1,1,6.63,14.56Z"></path></svg>,
+              icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#F1C183" viewBox="0 0 256 256"><path d="M152,88a32,32,0,1,0-32-32A32,32,0,0,0,152,88Zm0-48a16,16,0,1,1-16,16A16,16,0,0,1,152,40Zm67.31,100.68c-.61.28-7.49,3.28-19.67,3.28-13.85,0-34.55-3.88-60.69-20a169.31,169.31,0,0,1-15.41,32.34,104.29,104.29,0,0,1,31.31,15.81C173.92,186.65,184,207.35,184,232a8,8,0,0,1-16,0c0-41.7-34.69-56.71-54.14-61.85-.55.7-1.12,1.41-1.69,2.1-19.64,23.8-44.25,36.18-71.63,36.18A92.29,92.29,0,0,1,31.2,208,8,8,0,0,1,32.8,192c25.92,2.58,48.47-7.49,67-30,12.49-15.14,21-33.61,25.25-47C86.13,92.35,61.27,111.63,61,111.84A8,8,0,1,1,51,99.36c1.5-1.2,37.22-29,89.51,6.57,45.47,30.91,71.93,20.31,72.18,20.19a8,8,0,1,1,6.63,14.56Z"></path></svg>,
             },
             {
               title: "Dieta Personalizada",
               text: "Desenvolvida com base nas suas preferências alimentares e necessidades metabólicas.",
-              icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M88,48V16a8,8,0,0,1,16,0V48a8,8,0,0,1-16,0Zm40,8a8,8,0,0,0,8-8V16a8,8,0,0,0-16,0V48A8,8,0,0,0,128,56Zm32,0a8,8,0,0,0,8-8V16a8,8,0,0,0-16,0V48A8,8,0,0,0,160,56Zm92.8,46.4L224,124v60a32,32,0,0,1-32,32H64a32,32,0,0,1-32-32V124L3.2,102.4a8,8,0,0,1,9.6-12.8L32,104V80a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8v24l19.2-14.4a8,8,0,0,1,9.6,12.8ZM208,88H48v96a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16Z"></path></svg>,
+              icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#F1C183" viewBox="0 0 256 256"><path d="M216,80V184a24,24,0,0,1-24,24H64a24,24,0,0,1-24-24V80Z" opacity="0.2"></path><path d="M88,48V16a8,8,0,0,1,16,0V48a8,8,0,0,1-16,0Zm40,8a8,8,0,0,0,8-8V16a8,8,0,0,0-16,0V48A8,8,0,0,0,128,56Zm32,0a8,8,0,0,0,8-8V16a8,8,0,0,0-16,0V48A8,8,0,0,0,160,56Zm92.8,46.4L224,124v60a32,32,0,0,1-32,32H64a32,32,0,0,1-32-32V124L3.2,102.4a8,8,0,0,1,9.6-12.8L32,104V80a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8v24l19.2-14.4a8,8,0,0,1,9.6,12.8ZM208,88H48v96a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16Z"></path></svg>,
             },
             {
               title: "Acompanhamento Contínuo",
               text: "Suporte dedicado de médicos, nutricionistas e personal trainers.",
-              icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M220,160a12,12,0,1,1-12-12A12,12,0,0,1,220,160Zm-4.55,39.29A48.08,48.08,0,0,1,168,240H144a48.05,48.05,0,0,1-48-48V151.49A64,64,0,0,1,40,88V40a8,8,0,0,1,8-8H72a8,8,0,0,1,0,16H56V88a48,48,0,0,0,48.64,48c26.11-.34,47.36-22.25,47.36-48.83V48H136a8,8,0,0,1,0-16h24a8,8,0,0,1,8,8V87.17c0,32.84-24.53,60.29-56,64.31V192a32,32,0,0,0,32,32h24a32.06,32.06,0,0,0,31.22-25,40,40,0,1,1,16.23.27ZM232,160a24,24,0,1,0-24,24A24,24,0,0,0,232,160Z"></path></svg>,
+              icon: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#F1C183" viewBox="0 0 256 256"><path d="M220,160a12,12,0,1,1-12-12A12,12,0,0,1,220,160Zm-4.55,39.29A48.08,48.08,0,0,1,168,240H144a48.05,48.05,0,0,1-48-48V151.49A64,64,0,0,1,40,88V40a8,8,0,0,1,8-8H72a8,8,0,0,1,0,16H56V88a48,48,0,0,0,48.64,48c26.11-.34,47.36-22.25,47.36-48.83V48H136a8,8,0,0,1,0-16h24a8,8,0,0,1,8,8V87.17c0,32.84-24.53,60.29-56,64.31V192a32,32,0,0,0,32,32h24a32.06,32.06,0,0,0,31.22-25,40,40,0,1,1,16.23.27ZM232,160a24,24,0,1,0-24,24A24,24,0,0,0,232,160Z"></path></svg>,
             },
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-white border-4 border-white/20 rounded-2xl bg-opacity-10 ml-5 mr-5 mt-16 flex items-center flex-col p-6"
+              className="bg-white border-4 border-white/20 rounded-2xl bg-opacity-10 ml-5 mr-5 mt-6 flex items-center flex-col p-4"
             >
-              <h1 className="text-xl text-white flex items-center font-literata gap-2 text-left w-full">
+              <h1 className="text-xl text-[rgba(255,251,236,1)] flex items-center font-literata gap-2 text-left w-full">
                 {item.icon}
                 {item.title}
               </h1>
-              <p className="text-white mt-4 font-albert">{item.text}</p>
+              <p className="text-[rgba(255,251,236,1)] mt-4 font-albert">{item.text}</p>
             </div>
           ))}
         </div>
@@ -550,7 +561,7 @@ export default function Home() {
           <h2 className="text-[1rem] px-[1rem] py-[.5rem] tracking-[0.1rem] text-[#FFF2C0] bg-[#F9D689] rounded bg-opacity-10 uppercase font-albert mb-8">
             Entenda
           </h2>
-          <h1 className="text-[2rem] text-center text-white font-literata mb-8">
+          <h1 className="text-[2rem] text-center text-[rgba(255,251,236,1)] font-literata mb-8">
             Como Funciona o <i>Programa Essência?</i>
           </h1>
           <p className="text-[1rem] text-[rgba(225,225,225,1)] text-center max-w-3xl font-albert mb-16">
@@ -578,9 +589,7 @@ export default function Home() {
               {
                 title: "Avaliação Completa",
                 text: "Consultas presenciais com exames detalhados e plano personalizado.",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256">
-                  <path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path>
-                </svg>,
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M232,128c0,12.51-17.82,21.95-22.68,33.69-4.68,11.32,1.42,30.65-7.78,39.85s-28.53,3.1-39.85,7.78C150,214.18,140.5,232,128,232s-22-17.82-33.69-22.68c-11.32-4.68-30.65,1.42-39.85-7.78s-3.1-28.53-7.78-39.85C41.82,150,24,140.5,24,128s17.82-22,22.68-33.69C51.36,83,45.26,63.66,54.46,54.46S83,51.36,94.31,46.68C106.05,41.82,115.5,24,128,24S150,41.82,161.69,46.68c11.32,4.68,30.65-1.42,39.85,7.78s3.1,28.53,7.78,39.85C214.18,106.05,232,115.5,232,128Z" opacity="0.2"></path><path d="M225.86,102.82c-3.77-3.94-7.67-8-9.14-11.57-1.36-3.27-1.44-8.69-1.52-13.94-.15-9.76-.31-20.82-8-28.51s-18.75-7.85-28.51-8c-5.25-.08-10.67-.16-13.94-1.52-3.56-1.47-7.63-5.37-11.57-9.14C146.28,23.51,138.44,16,128,16s-18.27,7.51-25.18,14.14c-3.94,3.77-8,7.67-11.57,9.14C88,40.64,82.56,40.72,77.31,40.8c-9.76.15-20.82.31-28.51,8S41,67.55,40.8,77.31c-.08,5.25-.16,10.67-1.52,13.94-1.47,3.56-5.37,7.63-9.14,11.57C23.51,109.72,16,117.56,16,128s7.51,18.27,14.14,25.18c3.77,3.94,7.67,8,9.14,11.57,1.36,3.27,1.44,8.69,1.52,13.94.15,9.76.31,20.82,8,28.51s18.75,7.85,28.51,8c5.25.08,10.67.16,13.94,1.52,3.56,1.47,7.63,5.37,11.57,9.14C109.72,232.49,117.56,240,128,240s18.27-7.51,25.18-14.14c3.94-3.77,8-7.67,11.57-9.14,3.27-1.36,8.69-1.44,13.94-1.52,9.76-.15,20.82-.31,28.51-8s7.85-18.75,8-28.51c.08-5.25.16-10.67,1.52-13.94,1.47-3.56,5.37-7.63,9.14-11.57C232.49,146.28,240,138.44,240,128S232.49,109.73,225.86,102.82Zm-11.55,39.29c-4.79,5-9.75,10.17-12.38,16.52-2.52,6.1-2.63,13.07-2.73,19.82-.1,7-.21,14.33-3.32,17.43s-10.39,3.22-17.43,3.32c-6.75.1-13.72.21-19.82,2.73-6.35,2.63-11.52,7.59-16.52,12.38S132,224,128,224s-9.15-4.92-14.11-9.69-10.17-9.75-16.52-12.38c-6.1-2.52-13.07-2.63-19.82-2.73-7-.1-14.33-.21-17.43-3.32s-3.22-10.39-3.32-17.43c-.1-6.75-.21-13.72-2.73-19.82-2.63-6.35-7.59-11.52-12.38-16.52S32,132,32,128s4.92-9.15,9.69-14.11,9.75-10.17,12.38-16.52c2.52-6.1,2.63-13.07,2.73-19.82.1-7,.21-14.33,3.32-17.43S70.51,56.9,77.55,56.8c6.75-.1,13.72-.21,19.82-2.73,6.35-2.63,11.52-7.59,16.52-12.38S124,32,128,32s9.15,4.92,14.11,9.69,10.17,9.75,16.52,12.38c6.1,2.52,13.07,2.63,19.82,2.73,7,.1,14.33.21,17.43,3.32s3.22,10.39,3.32,17.43c.1,6.75.21,13.72,2.73,19.82,2.63,6.35,7.59,11.52,12.38,16.52S224,124,224,128,219.08,137.15,214.31,142.11ZM173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34Z"></path></svg>,
               },
               {
                 title: "Uso de Tecnologia Avançada",
@@ -595,7 +604,7 @@ export default function Home() {
               {
                 title: "Dieta Personalizada",
                 text: "Desenvolvida com base nas suas preferências alimentares e necessidades metabólicas.",
-                icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M88,48V16a8,8,0,0,1,16,0V48a8,8,0,0,1-16,0Zm40,8a8,8,0,0,0,8-8V16a8,8,0,0,0-16,0V48A8,8,0,0,0,128,56Zm32,0a8,8,0,0,0,8-8V16a8,8,0,0,0-16,0V48A8,8,0,0,0,160,56Zm92.8,46.4L224,124v60a32,32,0,0,1-32,32H64a32,32,0,0,1-32-32V124L3.2,102.4a8,8,0,0,1,9.6-12.8L32,104V80a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8v24l19.2-14.4a8,8,0,0,1,9.6,12.8ZM208,88H48v96a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16Z"></path></svg>,
+                icon: <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M216,80V184a24,24,0,0,1-24,24H64a24,24,0,0,1-24-24V80Z" opacity="0.2"></path><path d="M88,48V16a8,8,0,0,1,16,0V48a8,8,0,0,1-16,0Zm40,8a8,8,0,0,0,8-8V16a8,8,0,0,0-16,0V48A8,8,0,0,0,128,56Zm32,0a8,8,0,0,0,8-8V16a8,8,0,0,0-16,0V48A8,8,0,0,0,160,56Zm92.8,46.4L224,124v60a32,32,0,0,1-32,32H64a32,32,0,0,1-32-32V124L3.2,102.4a8,8,0,0,1,9.6-12.8L32,104V80a8,8,0,0,1,8-8H216a8,8,0,0,1,8,8v24l19.2-14.4a8,8,0,0,1,9.6,12.8ZM208,88H48v96a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16Z"></path></svg>,
               },
               {
                 title: "Acompanhamento Contínuo",
@@ -612,10 +621,10 @@ export default function Home() {
                   backdropFilter: "blur(15px)",
                 }}
               >
-                <h1 className="text-xl text-white font-literata mb-4 flex items-center gap-2">
+                <h1 className="text-xl text-[rgba(255,251,236,1)] font-literata mb-4 flex items-center gap-2">
                   {item.icon} {item.title}
                 </h1>
-                <p className="text-white font-albert">{item.text}</p>
+                <p className="text-[rgba(255,251,236,1)] font-albert">{item.text}</p>
               </div>
             ))}
           </div>
@@ -623,71 +632,71 @@ export default function Home() {
       </div>
 
       <div id="kit" className="p-3 max-w-screen mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mt-[4rem] mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
-        <div className="flex flex-col md:items-center items-start">
+        <div className="flex max-w-[40rem] flex-col md:items-center items-start">
           <h2 className="text-[1rem] text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert font-semibold px-[.75rem] py-[.38rem] md:px-[1rem] md:py-[0.5rem] tracking-[0.1rem] inline-block self-start md:self-center">
             exclusividade essêncial
           </h2>
-          <h1 className="text-3xl text-[rgba(52,25,0,1)] ml-4 mr-4 font-semibold font-literata gap-2 mb-5 mt-8 text-start md:text-center">
+          <h1 className="text-3xl text-[rgba(52,25,0,1)] ml-4 mr-4 font-semibold font-literata gap-2 mb-4 mt-4 text-start md:text-center">
             Bem-vinda ao primeiro passo da sua
             <span className="font-literata italic"> transformação!</span>
           </h1>
-          <p className="text-[1rem] text-[rgba(131,131,131,1)] font-albert ml-4 mr-4 flex text-start md:text-center leading-[130%]">
+          <p className="text-[1rem] text-[rgba(131,131,131,1)] font-albert ml-4 mr-4 mb-[4rem] flex text-start md:text-center leading-[130%]">
             Cada detalhe foi pensado para tornar sua experiência única e motivadora. Ao se juntar ao nosso programa, você receberá um kit exclusivo, repleto de itens úteis e sofisticados que simbolizam nosso compromisso com o seu bem-estar.
           </p>
-          <h1 className="text-[1.5rem] text-[#AC7D53] ml-4 mr-4 font-semibold font-literata flex gap-2 mt-8 text-center">
+          <h1 className="text-[1.5rem] text-[#AC7D53] ml-4 mr-4 mb-[1rem] font-semibold font-literata flex gap-2 text-center">
             O que vem no Presskit?
           </h1>
         </div>
 
-        <div className="md:flex md:gap-6 md:items-center mt-8 md:w-full">
+        <div className="md:flex md:gap-6 md:items-center md:w-full">
           <div className="md:w-1/3 flex flex-col gap-5">
             <div
               onClick={() => handleClick('caixa')}
-              className={`${clicked.caixa ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
-                } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+              className={`${clicked.caixa ? 'bg-[rgba(249,249,249,1)] text-[rgba(52,25,0,1)]' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
+                } border-[8px] border-gray/50 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
             >
               <h1 className="text-xl text-center">Caixa do Presskit</h1>
             </div>
             <div
               onClick={() => handleClick('semaglutida')}
-              className={`${clicked.semaglutida ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
-                } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+              className={`${clicked.semaglutida ? 'bg-[#FFF2C0] text-[rgba(52,25,0,1)]' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
+                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
             >
               <h1 className="text-xl text-center">SEMAglutida <br /> (Ozempic)</h1>
             </div>
             <div
               onClick={() => handleClick('kitExercicio')}
-              className={`${clicked.kitExercicio ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
-                } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+              className={`${clicked.kitExercicio ? 'bg-[#FFF2C0] text-[rgba(52,25,0,1)]' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
+                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
             >
               <h1 className="text-xl text-center">Kit Exercício em Casa</h1>
             </div>
           </div>
 
           <div
-            className="flex justify-center items-center mx-auto mt-5 md:ml-0 md:mt-0 rounded-3xl bg-[rgba(250,247,242,1)] bg-garrafa md:w-1/3 md:flex md:justify-center"
+            className="flex justify-center items-center mx-auto md:ml-0 md:mt-0 rounded-3xl bg-[rgba(250,247,242,1)] bg-garrafa md:w-1/3 md:flex md:justify-center"
             style={{ height: '50vh', width: '33vh' }}
           ></div>
 
           <div className="md:w-1/3 flex flex-col gap-5">
             <div
               onClick={() => handleClick('squeeze')}
-              className={`${clicked.squeeze ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
-                } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+              className={`${clicked.squeeze ? 'bg-[#FFF2C0] text-[rgba(52,25,0,1)]' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
+                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
             >
               <h1 className="text-xl text-center">Squeeze Personalizada</h1>
             </div>
             <div
               onClick={() => handleClick('guia')}
-              className={`${clicked.guia ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
-                } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+              className={`${clicked.guia ? 'bg-[#FFF2C0] text-[rgba(52,25,0,1)]' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
+                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
             >
               <h1 className="text-xl text-center">Guia de Introdução ao Programa</h1>
             </div>
             <div
               onClick={() => handleClick('surpresa')}
-              className={`${clicked.surpresa ? 'bg-[#FFF2C0] text-black' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
-                } border-4 border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
+              className={`${clicked.surpresa ? 'bg-[#FFF2C0] text-[rgba(52,25,0,1)]' : 'bg-gray-100 text-[rgba(131,131,131,1)]'
+                } border-[8px] border-gray/60 rounded-2xl ml-5 mr-5 mt-5 flex flex-col font-semibold items-center p-6 cursor-pointer`}
             >
               <h1 className="text-xl text-center">Itens Surpresa</h1>
             </div>
@@ -695,12 +704,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="historia" className="p-3 mt-[4rem] max-w-md mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8 md:max-w-6xl md:flex md:flex-col md:items-center md:justify-center">
+      <div
+        id="historia"
+        className="p-3 m-0 w-full h-full mb-[4rem] max-w-none mx-auto relative bg-[rgba(255,255,255,1)] bg-cover bg-no-repeat md:max-w-full md:flex md:flex-col md:items-center md:justify-center"
+      >
         <div className="text-center md:w-full">
-          <h2 className="text-[1rem] text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert font-semibold px-[1rem] py-[.5rem] tracking-[0.1rem] inline-block mb-[1rem]">
+          <h2 className="text-[1rem] text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert font-semibold px-[1rem] py-[.5rem] tracking-[0.1rem] inline-block mt-[4rem] mb-[1rem]">
             Transformações que inspiram.
           </h2>
-          <h1 className="text-[2rem] text-center text-[rgba(52,25,0,1)] font-semibold leading-[130%] font-literata gap-2 items-center mb-[2rem] md:mb-[4rem]">
+          <h1 className="text-[2rem] text-center text-[rgba(52,25,0,1)] font-semibold leading-[130%] font-literata gap-2 items-center mb-[1rem] md:mb-[4rem]">
             Histórias de Sucesso
           </h1>
         </div>
@@ -713,7 +725,7 @@ export default function Home() {
                 alt="Antes"
                 width={300}
                 height={500}
-                className="rounded-2xl"
+                className="rounded-[.5rem]"
               />
             </div>
             <div className="flex justify-center items-center">
@@ -722,19 +734,22 @@ export default function Home() {
                 alt="Depois"
                 width={300}
                 height={500}
-                className="rounded-2xl"
+                className="rounded-[.5rem]"
               />
             </div>
           </div>
 
-          <div className="md:w-1/2 flex flex-col gap-4 md:text-left md:ml-8 md:self-end">
-            <h1 className="text-[1.5rem] leading-[150%] text-[rgba(52,25,0,1)] gap-2 items-center mt-[2rem] font-albert">
-              {testimonials[activeIndex].quote}
-            </h1>
-            <p className="text-[rgba(131,131,131,1)] text-xl font-albert italic mt-[1rem]">
+          <div className="md:w-1/2 flex flex-col gap-[1rem] md:text-left md:ml-8 md:self-end">
+            <h1
+              className="text-[1.5rem] leading-[150%] text-[rgba(52,25,0,1)] gap-1 items-center mt-[2rem] font-albert"
+              dangerouslySetInnerHTML={{
+                __html: `&ldquo;${testimonials[activeIndex].quote}&rdquo;`
+              }}
+            ></h1>
+            <p className="text-[rgba(131,131,131,1)] text-xl font-albert italic">
               - {testimonials[activeIndex].author}
             </p>
-            <p className="text-[rgba(131,131,131,1)] text-xl font-albert mt-[1rem]">
+            <p className="text-[rgba(131,131,131,1)] text-xl font-albert ">
               {testimonials[activeIndex].result}
             </p>
             <div className="flex gap-1 mt-[2rem]">
@@ -753,15 +768,15 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="beneficio" className="p-3 mx-auto mt-[4rem] relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-16 w-full md:w-4/5">
+      <div id="beneficio" className="p-3 mx-auto mt-[4rem] relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat w-full md:w-4/5">
         <div className="hidden md:block">
           <div className="relative mt-8">
             <div className="flex flex-col md:flex-row-reverse justify-between items-center md:items-start relative">
               <div className="flex justify-center items-center mb-8 rounded relative md:w-1/2 w-full" style={{ height: '60vh' }}>
-                <img src="/mulheres.png" alt="Imagem Exemplo" className="rounded" width="800" height="600" />
+                <img src="/mulheres.png" alt="Imagem Exemplo" className="rounded" width="800" height="800" />
               </div>
               <div
-                className="absolute rounded-xl inset-0 flex justify-center items-center"
+                className="absolute mt-[4rem] rounded-xl inset-0 flex justify-center items-center"
                 style={{
                   top: '-6rem',
                   left: '2rem',
@@ -780,25 +795,25 @@ export default function Home() {
                   <h1 className="text-[1rem] text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert font-semibold px-[1rem] py-[.5rem] tracking-[.1rem] inline-block">
                     exclusividade e benefícios
                   </h1>
-                  <h1 className="mt-[1rem] text-[2rem] text-[rgba(52,25,0,1)] text-semibold font-literata gap-2 items-center mb-[2.5rem]">
+                  <h1 className="mt-[1rem] text-[2rem] text-[rgba(52,25,0,1)] text-semibold font-literata gap-2 items-center mb-[4rem]">
                     Uma experiência exclusiva que garante o seu sucesso!
                   </h1>
                   <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
-                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 mb-[.75rem] font-literata font-bold">
                       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"></path></svg>
                       Apenas 30 vagas por mês
                     </h1>
                     <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">para garantir o cuidado que você merece.</p>
                   </div>
                   <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
-                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 mb-[.75rem] font-literata font-bold">
                       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M220,160a12,12,0,1,1-12-12A12,12,0,0,1,220,160Zm-4.55,39.29A48.08,48.08,0,0,1,168,240H144a48.05,48.05,0,0,1-48-48V151.49A64,64,0,0,1,40,88V40a8,8,0,0,1,8-8H72a8,8,0,0,1,0,16H56V88a48,48,0,0,0,48.64,48c26.11-.34,47.36-22.25,47.36-48.83V48H136a8,8,0,0,1,0-16h24a8,8,0,0,1,8,8V87.17c0,32.84-24.53,60.29-56,64.31V192a32,32,0,0,0,32,32h24a32.06,32.06,0,0,0,31.22-25,40,40,0,1,1,16.23.27ZM232,160a24,24,0,1,0-24,24A24,24,0,0,0,232,160Z"></path></svg>
                       Equipe dedicada ao seu sucesso
                     </h1>
                     <p className="font-albert mb-[1.5rem] text-[rgba(52,25,0,1)]">médicos, nutricionistas e personal trainers renomados.</p>
                   </div>
                   <div className="mt-[1.5rem] border-b mb-[1.5rem] border-transparent border-b-[rgba(172,125,83,0.2)]">
-                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                    <h1 className="flex text-lg text-[rgba(52,25,0,1)] items-center gap-2 mb-[.75rem] font-literata font-bold">
                       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M160,40a32,32,0,1,0-32,32A32,32,0,0,0,160,40ZM128,56a16,16,0,1,1,16-16A16,16,0,0,1,128,56ZM231.5,87.71A19.62,19.62,0,0,0,212,72H44a20,20,0,0,0-8.38,38.16l.13,0,50.75,22.35-21,79.72A20,20,0,0,0,102,228.8l26-44.87,26,44.87a20,20,0,0,0,36.4-16.52l-21-79.72,50.75-22.35.13,0A19.64,19.64,0,0,0,231.5,87.71Zm-17.8,7.9-56.93,25.06a8,8,0,0,0-4.51,9.36L175.13,217a7,7,0,0,0,.49,1.35,4,4,0,0,1-5,5.45,4,4,0,0,1-2.25-2.07,6.31,6.31,0,0,0-.34-.63L134.92,164a8,8,0,0,0-13.84,0L88,221.05a6.31,6.31,0,0,0-.34.63,4,4,0,0,1-2.25,2.07,4,4,0,0,1-5-5.45,7,7,0,0,0,.49-1.35L103.74,130a8,8,0,0,0-4.51-9.36L42.3,95.61A4,4,0,0,1,44,88H212a4,4,0,0,1,1.73,7.61Z"></path></svg>
                       Comunidade que apoia e motiva
                     </h1>
@@ -813,7 +828,7 @@ export default function Home() {
           <div className="flex justify-center items-center mt-8 rounded bg-[#FFFFFF] relative w-full" style={{ height: '40vh' }}>
             <Image src="/mulheres.png" alt="Imagem Exemplo" layout="fill" objectFit="cover" className="rounded" />
           </div>
-          <div className="rounded-xl flex justify-center items-center z-10" style={{
+          <div className="rounded-xl flex justify-center items-center z-20" style={{
             margin: '0 auto',
             opacity: 1.2,
             border: '8px solid rgba(14, 13, 13, 0.1)',
@@ -821,31 +836,32 @@ export default function Home() {
             boxShadow: '0px 2px 20px 0px rgba(0, 0, 0, 0.10)',
             width: '90%',
             minHeight: '20rem',
-            marginTop: '-4rem'
+            marginTop: '-4rem',
+            position: 'relative',
           }}>
             <div className="text-center w-full px-4 z-10">
-              <h1 className="text-[.875rem] text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert font-semibold tracking-[.1rem] px-[.75rem] py-[.38rem] inline-block">
+              <h1 className="text-[.875rem] leading-[130%] text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert font-semibold tracking-[.1rem] px-[.75rem] py-[.38rem] inline-block">
                 Exclusividade e benefícios
               </h1>
-              <h1 className="mt-[1rem] text-start text-[1.5rem] text-[rgba(52,25,0,1)] text-semibold font-literata gap-2 items-center mb-[2.5rem]">
+              <h1 className="mt-[1rem] leading-[130%] text-start text-[1.5rem] text-[rgba(52,25,0,1)] font-semibold font-literata gap-2 items-center mb-[2.5rem]">
                 Uma experiência exclusiva que garante o seu sucesso!
               </h1>
               <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
-                <h1 className="flex text-lg text-start text-[rgba(52,25,0,1)] items-center gap-2 font-literata font-bold">
+                <h1 className="flex text-lg text-start text-[rgba(52,25,0,1)] items-center gap-2 mb-[.75rem] font-literata font-bold">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M244.8,150.4a8,8,0,0,1-11.2-1.6A51.6,51.6,0,0,0,192,128a8,8,0,0,1-7.37-4.89,8,8,0,0,1,0-6.22A8,8,0,0,1,192,112a24,24,0,1,0-23.24-30,8,8,0,1,1-15.5-4A40,40,0,1,1,219,117.51a67.94,67.94,0,0,1,27.43,21.68A8,8,0,0,1,244.8,150.4ZM190.92,212a8,8,0,1,1-13.84,8,57,57,0,0,0-98.16,0,8,8,0,1,1-13.84-8,72.06,72.06,0,0,1,33.74-29.92,48,48,0,1,1,58.36,0A72.06,72.06,0,0,1,190.92,212ZM128,176a32,32,0,1,0-32-32A32,32,0,0,0,128,176ZM72,120a8,8,0,0,0-8-8A24,24,0,1,1,87.24,82a8,8,0,1,0,15.5-4A40,40,0,1,0,37,117.51,67.94,67.94,0,0,0,9.6,139.19a8,8,0,1,0,12.8,9.61A51.6,51.6,0,0,1,64,128,8,8,0,0,0,72,120Z"></path></svg>
                   Apenas 30 vagas por mês
                 </h1>
                 <p className="font-albert mb-[1.5rem] text-start text-[rgba(52,25,0,1)]">para garantir o cuidado que você merece.</p>
               </div>
               <div className="mt-[1.5rem] border-b border-transparent border-b-[rgba(172,125,83,0.2)]">
-                <h1 className="flex text-lg text-[rgba(52,25,0,1)] text-start items-center gap-2 font-literata font-bold">
+                <h1 className="flex text-lg text-[rgba(52,25,0,1)] text-start items-center gap-2 mb-[.75rem] font-literata font-bold">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M220,160a12,12,0,1,1-12-12A12,12,0,0,1,220,160Zm-4.55,39.29A48.08,48.08,0,0,1,168,240H144a48.05,48.05,0,0,1-48-48V151.49A64,64,0,0,1,40,88V40a8,8,0,0,1,8-8H72a8,8,0,0,1,0,16H56V88a48,48,0,0,0,48.64,48c26.11-.34,47.36-22.25,47.36-48.83V48H136a8,8,0,0,1,0-16h24a8,8,0,0,1,8,8V87.17c0,32.84-24.53,60.29-56,64.31V192a32,32,0,0,0,32,32h24a32.06,32.06,0,0,0,31.22-25,40,40,0,1,1,16.23.27ZM232,160a24,24,0,1,0-24,24A24,24,0,0,0,232,160Z"></path></svg>
                   Equipe dedicada ao seu sucesso
                 </h1>
                 <p className="font-albert mb-[1.5rem] text-start text-[rgba(52,25,0,1)]">médicos, nutricionistas e personal trainers renomados.</p>
               </div>
               <div className="mt-[1.5rem] border-b mb-[1.5rem] border-transparent border-b-[rgba(172,125,83,0.2)]">
-                <h1 className="flex text-lg text-[rgba(52,25,0,1)] text-start items-center gap-2 font-literata font-bold">
+                <h1 className="flex text-lg text-[rgba(52,25,0,1)] text-start items-center gap-2 mb-[.75rem] font-literata font-bold">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M160,40a32,32,0,1,0-32,32A32,32,0,0,0,160,40ZM128,56a16,16,0,1,1,16-16A16,16,0,0,1,128,56ZM231.5,87.71A19.62,19.62,0,0,0,212,72H44a20,20,0,0,0-8.38,38.16l.13,0,50.75,22.35-21,79.72A20,20,0,0,0,102,228.8l26-44.87,26,44.87a20,20,0,0,0,36.4-16.52l-21-79.72,50.75-22.35.13,0A19.64,19.64,0,0,0,231.5,87.71Zm-17.8,7.9-56.93,25.06a8,8,0,0,0-4.51,9.36L175.13,217a7,7,0,0,0,.49,1.35,4,4,0,0,1-5,5.45,4,4,0,0,1-2.25-2.07,6.31,6.31,0,0,0-.34-.63L134.92,164a8,8,0,0,0-13.84,0L88,221.05a6.31,6.31,0,0,0-.34.63,4,4,0,0,1-2.25,2.07,4,4,0,0,1-5-5.45,7,7,0,0,0,.49-1.35L103.74,130a8,8,0,0,0-4.51-9.36L42.3,95.61A4,4,0,0,1,44,88H212a4,4,0,0,1,1.73,7.61Z"></path></svg>
                   Comunidade que apoia e motiva
                 </h1>
@@ -857,19 +873,19 @@ export default function Home() {
       </div>
 
       <div id="equipe">
-        <div className="text-center md:w-4/5 mx-auto">
-          <h1 className="text-[1rem] text-[#382513] bg-[#FFF2C0] rounded mt-8 uppercase font-albert font-semibold mb-5 px-[1rem] py-[.5rem] tracking-[0.1rem] inline-block">
+        <div className="text-center md:w-4/5 mx-auto mt-[4rem]">
+          <h1 className="text-[1rem] text-[#382513] bg-[#FFF2C0] rounded uppercase font-albert font-semibold mb-[1rem] px-[1rem] py-[.5rem] tracking-[0.1rem] inline-block">
             Conheça a equipe que vai cuidar de você
           </h1>
           <h1 className="mb-4 text-[2rem] text-[rgba(52,25,0,1)] font-literata flex items-center justify-center gap-2">
             Uma equipe dedicada ao seu sucesso
           </h1>
-          <p className="text-[1rem] font-albert text-gray-500 text-center mx-4">
+          <p className="text-[1rem] font-albert text-[rgba(131,131,131,1)] text-center mx-4">
             Nosso time é composto por especialistas apaixonados por saúde e bem-estar, prontos para guiar você em cada etapa da sua jornada. Porque cuidar de você é a nossa prioridade.
           </p>
         </div>
 
-        <div className="p-6 mt-16 rounded-[0.5rem] mb-16 mx-auto bg-[#FFFFFF] mx-auto bg-equipe relative w-full md:w-4/5" style={{ height: '39.25rem' }}>
+        <div className="p-6 mt-[4rem] md:mt-[3.25rem] rounded-[0.5rem] mb-[4rem] mx-auto bg-[#FFFFFF] mx-auto bg-equipe relative w-[92%] md:w-4/5" style={{ height: '29.25rem', width: '67.25' }}>
 
           <div className="absolute top-[-20px] left-[10%] border-2 bg-[#FFF2C0] bg-opacity-70 rounded-full flex justify-center items-center w-12 h-12 md:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#F1C183" viewBox="0 0 256 256"><path d="M220,160a12,12,0,1,1-12-12A12,12,0,0,1,220,160Zm-4.55,39.29A48.08,48.08,0,0,1,168,240H144a48.05,48.05,0,0,1-48-48V151.49A64,64,0,0,1,40,88V40a8,8,0,0,1,8-8H72a8,8,0,0,1,0,16H56V88a48,48,0,0,0,48.64,48c26.11-.34,47.36-22.25,47.36-48.83V48H136a8,8,0,0,1,0-16h24a8,8,0,0,1,8,8V87.17c0,32.84-24.53,60.29-56,64.31V192a32,32,0,0,0,32,32h24a32.06,32.06,0,0,0,31.22-25,40,40,0,1,1,16.23.27ZM232,160a24,24,0,1,0-24,24A24,24,0,0,0,232,160Z"></path></svg>
@@ -916,22 +932,22 @@ export default function Home() {
         </div>
 
 
-        <div className="p-3 flex justify-center mt-[4rem] items-center relative">
+        <div className="p-3 flex justify-center mt-[8rem] items-center relative">
           <div className="relative bg-[rgba(250,247,242,1)] bg-opacity-60 backdrop-blur-lg rounded-3xl p-8 w-full max-w-3xl mx-auto position-relative">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-lg bg-[#FFF2c0] rounded-full w-96 h-96 z-0 opacity-40"></div>
             <div className="text-center z-10 relative">
-              <h1 className="text-[1rem] bg-opacity-70 text-[#382513] bg-[#FFF2C0] md:bg-[#FFF2C0] rounded mt-8 uppercase font-albert font-semibold px-[1rem] py-[.5rem] tracking-[.1rem] inline-block">
+              <h1 className="text-[1rem] bg-opacity-70 text-[rgba(52,25,0,1)] bg-[rgba(255,255,255,1)]/60 md:bg-[rgba(255,255,255,1)]/60 rounded mt-8 uppercase font-albert font-semibold px-[1rem] py-[.5rem] tracking-[.1rem] inline-block">
                 Você não está sozinha!
               </h1>
             </div>
-            <h1 className="text-[2rem] text-[rgba(52,25,0,1)] text-center ml-4 mr-4 font-semibold font-literata flex gap-2 items-center mt-[1rem] justify-center z-10 relative">
-              Pronta para cuidar de si mesma como nunca antes?
+            <h1 className="text-[2rem] text-[rgba(52,25,0,1)] text-center font-semibold font-literata items-center mt-[1rem] justify-center z-10 relative">
+              Pronta para cuidar de si mesma <br /> <span className="italic">como nunca antes?</span>
             </h1>
-            <p className="text-[1rem] text-gray-500 text-center mt-[1rem] ml-4 mr-4 flex z-10 relative">
+            <p className="text-[1rem] text-[rgba(131,131,131,1)] text-center font-albert mt-[1rem] ml-4 mr-4 flex z-10 relative">
               O primeiro passo para transformar sua vida começa agora. Não espere mais para sentir-se confiante, saudável e feliz!
             </p>
             <div className="flex justify-center mt-[2rem] z-10 relative">
-              <button className="bg-[#341900] text-white text-[1rem] font-albert font-semibold py-[1rem] px-[4rem] rounded-[1rem]">
+              <button className="bg-[#341900] text-white text-[1rem] font-albert font-semibold py-[1rem] px-[2rem] rounded-[.5rem]">
                 Quero fazer meu programa!
               </button>
             </div>
@@ -940,8 +956,8 @@ export default function Home() {
 
         <div className="max-w-full mx-auto relative min-h-screen bg-[rgba(250,247,242,1)] bg-cover bg-no-repeat mb-8">
           <div className="block lg:hidden">
-            <div className="justify-center items-center mb-[1.5rem] mt-20 rounded-2xl bg-[#FFFFFF] bg-faq relative w-auto mx-4" style={{ height: '50vh' }}>
-              <div className="bg-white bg-opacity-60 border-2 rounded mt-[1rem] ml-4 mr-4 py-2 mb-4">
+            <div className="justify-center items-center mb-[1.5rem] mt-[4rem] rounded-2xl bg-[#FFFFFF] bg-faq relative w-auto mx-4" style={{ height: '50vh' }}>
+              <div className="bg-white bg-opacity-60 border-2 rounded-xl mt-[1rem] ml-4 mr-4 py-2 mb-4">
                 <div className="flex justify-center mb-6">
                   <div className="bg-[#FFF2C0] rounded-xl px-3 py-1 w-fit">
                     <h2 className="text-[1rem] text-[#382513] text-center uppercase font-albert">FAQ</h2>
